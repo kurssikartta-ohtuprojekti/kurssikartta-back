@@ -35,7 +35,7 @@ let courses = [
 
 
 app.get('/', (req, res) => {
-  res.send('<h1>Kurssikartta!</h1>')
+  res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For single course /course/:id </p>')
 })
 
 app.get('/courses', (req, res) => {
