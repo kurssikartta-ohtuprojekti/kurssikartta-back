@@ -2,36 +2,17 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const jsonfile = require('jsonfile')
+const fileLocation = 'resources/kandikurssit.json'
+
 
 app.use(cors())
 app.use(bodyParser.json())
 
-let courses = [
-  {
-    id: 1,
-    name: 'Johdatus tietojenkäsittelytieteeseen',
-    courseId: 'TKT10001',
-    compulsory: true,
-    level: 'Peruskurssi',
-    url: 'https://courses.helsinki.fi/fi/TKT10001'
-  },
-  {
-    id: 2,
-    name: 'Ohjelmoinnin perusteet',
-    courseId: 'TKT10002',
-    compulsory: true,
-    level: 'Peruskurssi',
-    url: 'https://courses.helsinki.fi/fi/TKT10002'
-  },
-  {
-    id: 3,
-    name: 'Ohjelmoinnin jatkokurssi',
-    courseId: 'TKT10003',
-    compulsory: true,
-    level: 'Peruskurssi',
-    url: 'https://courses.helsinki.fi/fi/TKT10003'
-  },
-]
+let courses
+jsonfile.readFile(fileLocation, function(err, obj) {
+  courses = obj
+})
 
 
 app.get('/', (req, res) => {
