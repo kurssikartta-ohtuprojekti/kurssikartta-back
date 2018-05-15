@@ -52,7 +52,7 @@ app.get('/courses/:id', (request, response) => {
 })
 
 const generateId = () => {
-  const maxId = notes.length > 0 ? notes.map(n => n.id).sort().reverse()[0] : 1
+  const maxId = courses.length > 0 ? courses.map(n => n.id).sort().reverse()[0] : 1
   return maxId + 1
 }
 
