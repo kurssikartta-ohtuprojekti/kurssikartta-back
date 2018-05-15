@@ -1,0 +1,27 @@
+{
+  "name": "kurssikartta-back",
+  "version": "1.0.0",
+  "description": "Ohjelmistotuotantoprojekti kesä 2018",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurssikartta-ohtuprojekti/kurssikartta-back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurssikartta-ohtuprojekti/kurssikartta-back/issues"
+  },
+  "homepage": "https://github.com/kurssikartta-ohtuprojekti/kurssikartta-back#readme",
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
