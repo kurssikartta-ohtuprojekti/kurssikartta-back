@@ -25,7 +25,7 @@ app.get('/courses', (req, res) => {
 
 app.get('/courses/:id', (request, response) => {
   const id = request.params.id
-  const course = courses.find(course => course.Kurssikoodi === id)
+  const course = courses.find(course => course.code === id)
 
   if (course) {
     response.json(course)
