@@ -4,6 +4,8 @@
    "name": "Johdatus tietojenkäsittelytieteeseen",
    "level": "Perusopinnot",
    "compulsory": true,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT10001"
  },
@@ -12,6 +14,8 @@
    "name": "Ohjelmoinnin perusteet",
    "level": "Perusopinnot",
    "compulsory": true,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT10002"
  },
@@ -20,6 +24,8 @@
    "name": "Ohjelmoinnin jatkokurssi",
    "level": "Perusopinnot",
    "compulsory": true,
+   "prereqs": ["TKT10002"],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT10003"
  },
@@ -28,6 +34,8 @@
    "name": "Tietokantojen perusteet",
    "level": "Perusopinnot",
    "compulsory": true,
+   "prereqs": ["TKT10002"],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT10004"
  },
@@ -36,6 +44,8 @@
    "name": "Tietokoneen toiminta",
    "level": "Perusopinnot",
    "compulsory": true,
+   "prereqs": ["TKT10002"],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT10005"
  },
@@ -44,6 +54,8 @@
    "name": "Tietorakenteet ja algoritmit",
    "level": "Aineopinnot",
    "compulsory": true,
+   "prereqs": ["TKT10003"],
+   "study track": [],
    "ects": "10",
    "url": "https://courses.helsinki.fi/fi/TKT20001"
  },
@@ -52,6 +64,8 @@
    "name": "Ohjelmistotekniikan menetelmät",
    "level": "Aineopinnot",
    "compulsory": true,
+   "prereqs": ["TKT10003"],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT20002"
  },
@@ -60,6 +74,8 @@
    "name": "Käyttöjärjestelmät",
    "level": "Aineopinnot",
    "compulsory": true,
+   "prereqs": ["TKT10005"],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT20003"
  },
@@ -68,6 +84,8 @@
    "name": "Tietoliikenteen perusteet",
    "level": "Aineopinnot",
    "compulsory": true,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT20004"
  },
@@ -76,6 +94,8 @@
    "name": "Laskennan mallit",
    "level": "Aineopinnot",
    "compulsory": true,
+   "prereqs": ["TKT20001"],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT20005"
  },
@@ -84,6 +104,8 @@
    "name": "Ohjelmistotuotanto",
    "level": "Aineopinnot",
    "compulsory": true,
+   "prereqs": [],
+   "study track": [],
    "ects": "6",
    "url": "https://courses.helsinki.fi/fi/TKT20006"
  },
@@ -92,6 +114,8 @@
    "name": "Ohjelmistotuotantoprojekti",
    "level": "Aineopinnot",
    "compulsory": true,
+   "prereqs": ["TKT20006"],
+   "study track": [],
    "ects": "10",
    "url": "https://courses.helsinki.fi/fi/TKT20007"
  },
@@ -100,6 +124,8 @@
    "name": "Johdatus tekoälyyn",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": ["TKT20001"],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT20008"
  },
@@ -108,6 +134,8 @@
    "name": "Tietoturvan perusteet",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT20009"
  },
@@ -116,6 +144,8 @@
    "name": "Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit",
    "level": "Aineopinnot",
    "compulsory": false,
+    "prereqs": ["TKT20001"],
+    "study track": [],
    "ects": "4",
    "url": "https://courses.helsinki.fi/fi/TKT20010"
  },
@@ -124,6 +154,8 @@
    "name": "Aineopintojen harjoitustyö: Tietokantasovellus",
    "level": "Aineopinnot",
    "compulsory": false,
+    "prereqs": ["TKT10003", "TKT10004"],
+    "study track": [],
    "ects": "4",
    "url": "https://courses.helsinki.fi/fi/TKT20011"
  },
@@ -132,6 +164,8 @@
    "name": "Aineopintojen harjoitustyö: Tietoliikenne",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": ["TKT20004"],
+   "study track": [],
    "ects": "4",
    "url": "https://courses.helsinki.fi/fi/TKT20012"
  },
@@ -140,6 +174,8 @@
    "name": "Tietokannan suunnittelu",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": ["TKT10004"],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT21001"
  },
@@ -148,6 +184,8 @@
    "name": "Introduction to Game Programming",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT21002"
  },
@@ -156,6 +194,8 @@
    "name": "Web-palvelinohjelmointi Ruby on Rails",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT21003"
  },
@@ -164,6 +204,8 @@
    "name": "Computer Organization II",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT21004"
  },
@@ -172,6 +214,8 @@
    "name": "Ohjelmointitekniikka (JavaScript)",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT21005"
  },
@@ -180,6 +224,8 @@
    "name": "Web-palvelinohjelmointi Java",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT21007"
  },
@@ -188,6 +234,8 @@
    "name": "Programming in C",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT21008"
  },
@@ -196,6 +244,8 @@
    "name": "Full Stack -websovelluskehitys",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT21009"
  },
@@ -204,6 +254,8 @@
    "name": "Full Stack -websovelluskehitys harjoitustyö",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "1-10",
    "url": "https://courses.helsinki.fi/fi/TKT21010"
  },
@@ -212,6 +264,8 @@
    "name": "Algoritmit ongelmanratkaisussa",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "10",
    "url": "https://courses.helsinki.fi/fi/TKT21012"
  },
@@ -220,6 +274,8 @@
    "name": "Robottiohjelmoinnin harjoitustyö",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "4",
    "url": "https://courses.helsinki.fi/fi/TKT21013"
  },
@@ -228,6 +284,8 @@
    "name": "Johdatus funktionaaliseen ohjelmointiin (Haskell)",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "5",
    "url": "https://courses.helsinki.fi/fi/TKT21014"
  },
@@ -236,6 +294,8 @@
    "name": "Versionhallinta",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "1",
    "url": "https://courses.helsinki.fi/fi/TKT21015"
  },
@@ -244,6 +304,8 @@
    "name": "Web-palvelinohjelmointi Ruby on Rails, harjoitustyö",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "1-10",
    "url": "https://courses.helsinki.fi/fi/TKT21016"
  },
@@ -252,6 +314,8 @@
    "name": "Kilpaohjelmointi",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "1-3",
    "url": "https://courses.helsinki.fi/fi/TKT21017"
  },
@@ -260,6 +324,8 @@
    "name": "The Elements of AI",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "2",
    "url": "https://courses.helsinki.fi/fi/TKT21018"
  },
@@ -268,6 +334,8 @@
    "name": "Introduction to Lambda Calculus",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "2-5",
    "url": "https://courses.helsinki.fi/fi/TKT21019"
  },
@@ -276,6 +344,8 @@
    "name": "Shell Scripting",
    "level": "Aineopinnot",
    "compulsory": false,
+   "prereqs": [],
+   "study track": [],
    "ects": "2-4",
    "url": "https://courses.helsinki.fi/fi/CSM13501"
  }
