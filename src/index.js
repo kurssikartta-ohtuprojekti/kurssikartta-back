@@ -24,16 +24,17 @@ app.get('/courses', (req, res) => {
 })
 
 app.get('/courses/:id', (request, response) => {
-  const id = Number(request.params.id)
-  const note = notes.find(note => note.id === id)
+  const id = request.params.id
+  const course = courses.find(course => course.Kurssikoodi === id)
 
-  if (note) {
-    response.json(note)
+  if (course) {
+    response.json(course)
   } else {
     response.status(404).end()
   }
 })
 
+/*
 const generateId = () => {
   const maxId = courses.length > 0 ? courses.map(n => n.id).sort().reverse()[0] : 1
   return maxId + 1
@@ -66,7 +67,7 @@ app.delete('/courses/:id', (request, response) => {
 
   response.status(204).end()
 })
-
+*/
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
