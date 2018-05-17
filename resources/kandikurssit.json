@@ -5,7 +5,7 @@
     "level": "Perusopinnot",
     "compulsory": true,
     "prereqs": [],
-    "study track": [],
+    "study track": ["none"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT10001"
   },
@@ -383,7 +383,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM11002"
   },
   {
@@ -393,7 +393,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12101"
   },
   {
@@ -403,7 +403,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12103"
   },
   {
@@ -413,7 +413,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12104"
   },
   {
@@ -423,7 +423,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12105"
   },
   {
@@ -433,7 +433,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12108"
   },
   {
@@ -443,7 +443,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12110"
   },
   {
@@ -453,7 +453,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12111"
   },
   {
@@ -463,7 +463,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12112"
   },
   {
@@ -473,7 +473,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13001"
   },
   {
@@ -483,7 +483,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13101"
   },
   {
@@ -493,7 +493,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13102"
   },
   {
@@ -503,7 +503,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13103"
   },
   {
@@ -513,7 +513,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13104"
   },
   {
@@ -523,7 +523,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13181"
   },
   {
@@ -533,7 +533,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13202"
   },
   {
@@ -543,7 +543,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13204"
   },
   {
@@ -553,7 +553,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13281"
   },
   {
@@ -563,7 +563,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13301"
   },
   {
@@ -573,7 +573,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13302"
   },
   {
@@ -583,7 +583,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13304"
   },
   {
@@ -593,7 +593,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13401"
   },
   {
@@ -603,7 +603,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13402"
   },
   {
@@ -613,7 +613,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13403"
   },
   {
@@ -623,7 +623,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14101"
   },
   {
@@ -633,7 +633,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14102"
   },
   {
@@ -643,7 +643,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14103"
   },
   {
@@ -653,7 +653,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14104"
   },
   {
@@ -663,7 +663,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14105"
   },
   {
@@ -673,7 +673,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14106"
   },
   {
@@ -683,7 +683,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14107"
   },
   {
@@ -693,7 +693,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14201"
   },
   {
@@ -703,7 +703,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14203"
   },
   {
@@ -713,7 +713,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14204"
   },
   {
@@ -723,7 +723,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14205"
   },
   {
@@ -733,7 +733,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14208"
   },
   {
@@ -743,7 +743,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14209"
   },
   {
@@ -753,67 +753,67 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14303"
   },
   {
-    "code": "DATA1100",
+    "code": "DATA11001",
     "name": "Introduction to Data Science",
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
-    "url": "https://courses.helsinki.fi/fi/DATA1100"
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/DATA1101"
   },
   {
-    "code": "DATA1100",
+    "code": "DATA11002",
     "name": "Introduction to Machine Learning",
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
-    "url": "https://courses.helsinki.fi/fi/DATA1100"
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/DATA1102"
   },
   {
-    "code": "DATA1200",
+    "code": "DATA12001",
     "name": "Advanced Course in Machine Learning",
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/DATA1200"
   },
   {
-    "code": "DATA1400",
+    "code": "DATA14002",
     "name": "Introduction to Big Data Management",
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/DATA1400"
   },
   {
-    "code": "DATA1500",
+    "code": "DATA15003",
     "name": "Interactive Data Visualization",
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/DATA1500"
   },
   {
-    "code": "DATA2000",
+    "code": "DATA20002",
     "name": "Seminar: Deep Learning for Natural Language Processing",
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/DATA2000"
   },
   {
@@ -823,7 +823,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/LSI31003"
   },
   {
@@ -833,7 +833,7 @@
     "compulsory": false,
     "prereqs": [],
     "study track": [],
-    "ects": "",
+    "ects": "5",
     "url": "https://courses.helsinki.fi/fi/LSI31004"
   }
 ]
