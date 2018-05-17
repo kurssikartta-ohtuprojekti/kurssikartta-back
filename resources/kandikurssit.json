@@ -377,7 +377,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13501"
   },
   {
-    "Kurssikoodi": "CSM11002",
+    "code": "CSM11002",
     "name": "Computer Science Colloquium",
     "level": "Syventävät",
     "compulsory": false,
@@ -387,7 +387,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM11002"
   },
   {
-    "Kurssikoodi": "CSM12101",
+    "code": "CSM12101",
     "name": "Design and Analysis of Algorithms",
     "level": "Syventävät",
     "compulsory": false,
@@ -397,7 +397,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM12101"
   },
   {
-    "Kurssikoodi": "CSM12103",
+    "code": "CSM12103",
     "name": "Data Compression Techniques",
     "level": "Syventävät",
     "compulsory": false,
@@ -407,7 +407,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM12103"
   },
   {
-    "Kurssikoodi": "CSM12104",
+    "code": "CSM12104",
     "name": "Randomized Algorithms I",
     "level": "Syventävät",
     "compulsory": false,
@@ -417,7 +417,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM12104"
   },
   {
-    "Kurssikoodi": "CSM12105",
+    "code": "CSM12105",
     "name": "Randomized Algorithms II",
     "level": "Syventävät",
     "compulsory": false,
@@ -427,7 +427,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM12105"
   },
   {
-    "Kurssikoodi": "CSM12108",
+    "code": "CSM12108",
     "name": "Biological Sequence Analysis",
     "level": "Syventävät",
     "compulsory": false,
@@ -437,7 +437,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM12108"
   },
   {
-    "Kurssikoodi": "CSM12110",
+    "code": "CSM12110",
     "name": "Seminar in Experimental Algorithmics",
     "level": "Syventävät",
     "compulsory": false,
@@ -447,7 +447,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM12110"
   },
   {
-    "Kurssikoodi": "CSM12111",
+    "code": "CSM12111",
     "name": "Seminar on Parameterized Algorithms",
     "level": "Syventävät",
     "compulsory": false,
@@ -457,7 +457,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM12111"
   },
   {
-    "Kurssikoodi": "CSM12112",
+    "code": "CSM12112",
     "name": "Seminar on Applied Discrete Algorithms A",
     "level": "Syventävät",
     "compulsory": false,
@@ -467,7 +467,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM12112"
   },
   {
-    "Kurssikoodi": "CSM13001",
+    "code": "CSM13001",
     "name": "Distributed Systems",
     "level": "Syventävät",
     "compulsory": false,
@@ -477,7 +477,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13001"
   },
   {
-    "Kurssikoodi": "CSM13101",
+    "code": "CSM13101",
     "name": "Networked Systems and Services",
     "level": "Syventävät",
     "compulsory": false,
@@ -487,7 +487,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13101"
   },
   {
-    "Kurssikoodi": "CSM13102",
+    "code": "CSM13102",
     "name": "Internet Protocols",
     "level": "Syventävät",
     "compulsory": false,
@@ -497,7 +497,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13102"
   },
   {
-    "Kurssikoodi": "CSM13103",
+    "code": "CSM13103",
     "name": "Cloud and Edge Computing",
     "level": "Syventävät",
     "compulsory": false,
@@ -507,7 +507,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13103"
   },
   {
-    "Kurssikoodi": "CSM13104",
+    "code": "CSM13104",
     "name": "Scalable Overlay Networks",
     "level": "Syventävät",
     "compulsory": false,
@@ -517,7 +517,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13104"
   },
   {
-    "Kurssikoodi": "CSM13181",
+    "code": "CSM13181",
     "name": "Seminar on Cloud-based Mobile Networking",
     "level": "Syventävät",
     "compulsory": false,
@@ -527,7 +527,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13181"
   },
   {
-    "Kurssikoodi": "CSM13202",
+    "code": "CSM13202",
     "name": "Cryptography in Networking",
     "level": "Syventävät",
     "compulsory": false,
@@ -537,7 +537,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13202"
   },
   {
-    "Kurssikoodi": "CSM13204",
+    "code": "CSM13204",
     "name": "Cyber Security II",
     "level": "Syventävät",
     "compulsory": false,
@@ -547,7 +547,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13204"
   },
   {
-    "Kurssikoodi": "CSM13281",
+    "code": "CSM13281",
     "name": "Seminar on Communication Security",
     "level": "Syventävät",
     "compulsory": false,
@@ -557,7 +557,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13281"
   },
   {
-    "Kurssikoodi": "CSM13301",
+    "code": "CSM13301",
     "name": "Service Ecosystems",
     "level": "Syventävät",
     "compulsory": false,
@@ -567,7 +567,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13301"
   },
   {
-    "Kurssikoodi": "CSM13302",
+    "code": "CSM13302",
     "name": "Services Engineering with Models",
     "level": "Syventävät",
     "compulsory": false,
@@ -577,7 +577,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13302"
   },
   {
-    "Kurssikoodi": "CSM13304",
+    "code": "CSM13304",
     "name": "Seminar on Collaborative and Interoperable Computing",
     "level": "Syventävät",
     "compulsory": false,
@@ -587,7 +587,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13304"
   },
   {
-    "Kurssikoodi": "CSM13401",
+    "code": "CSM13401",
     "name": "Human Computer Interaction",
     "level": "Syventävät",
     "compulsory": false,
@@ -597,7 +597,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13401"
   },
   {
-    "Kurssikoodi": "CSM13402",
+    "code": "CSM13402",
     "name": "Designing Interactive Systems",
     "level": "Syventävät",
     "compulsory": false,
@@ -607,7 +607,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13402"
   },
   {
-    "Kurssikoodi": "CSM13403",
+    "code": "CSM13403",
     "name": "Seminar on Advanced Topics in Human Computer Interaction",
     "level": "Syventävät",
     "compulsory": false,
@@ -617,7 +617,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM13403"
   },
   {
-    "Kurssikoodi": "CSM14101",
+    "code": "CSM14101",
     "name": "Ohjelmistoarkkitehtuurit",
     "level": "Syventävät",
     "compulsory": false,
@@ -627,7 +627,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14101"
   },
   {
-    "Kurssikoodi": "CSM14102",
+    "code": "CSM14102",
     "name": "Methods for Software Engineering Research",
     "level": "Syventävät",
     "compulsory": false,
@@ -637,7 +637,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14102"
   },
   {
-    "Kurssikoodi": "CSM14103",
+    "code": "CSM14103",
     "name": "Ohjelmistoarkkitehtuurien harjoitustyö",
     "level": "Syventävät",
     "compulsory": false,
@@ -647,7 +647,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14103"
   },
   {
-    "Kurssikoodi": "CSM14104",
+    "code": "CSM14104",
     "name": "Software Product Management",
     "level": "Syventävät",
     "compulsory": false,
@@ -657,7 +657,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14104"
   },
   {
-    "Kurssikoodi": "CSM14105",
+    "code": "CSM14105",
     "name": "Ohjelmistoprojektien johtaminen ja ryhmadynamiikka",
     "level": "Syventävät",
     "compulsory": false,
@@ -667,7 +667,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14105"
   },
   {
-    "Kurssikoodi": "CSM14106",
+    "code": "CSM14106",
     "name": "Software Factory Experience",
     "level": "Syventävät",
     "compulsory": false,
@@ -677,7 +677,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14106"
   },
   {
-    "Kurssikoodi": "CSM14107",
+    "code": "CSM14107",
     "name": "Seminar in Empirical Software Engineering",
     "level": "Syventävät",
     "compulsory": false,
@@ -687,7 +687,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14107"
   },
   {
-    "Kurssikoodi": "CSM14201",
+    "code": "CSM14201",
     "name": "Ohjelmistojen testaus",
     "level": "Syventävät",
     "compulsory": false,
@@ -697,7 +697,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14201"
   },
   {
-    "Kurssikoodi": "CSM14203",
+    "code": "CSM14203",
     "name": "Ohjelmointikielten periaatteet",
     "level": "Syventävät",
     "compulsory": false,
@@ -707,7 +707,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14203"
   },
   {
-    "Kurssikoodi": "CSM14204",
+    "code": "CSM14204",
     "name": "Compilers",
     "level": "Syventävät",
     "compulsory": false,
@@ -717,7 +717,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14204"
   },
   {
-    "Kurssikoodi": "CSM14205",
+    "code": "CSM14205",
     "name": "Code Generation",
     "level": "Syventävät",
     "compulsory": false,
@@ -727,7 +727,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14205"
   },
   {
-    "Kurssikoodi": "CSM14208",
+    "code": "CSM14208",
     "name": "Seminaari: Ohjelmistotuotanto ja tietokonepelit",
     "level": "Syventävät",
     "compulsory": false,
@@ -737,7 +737,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14208"
   },
   {
-    "Kurssikoodi": "CSM14209",
+    "code": "CSM14209",
     "name": "Seminar in Novel Software Architecture Design",
     "level": "Syventävät",
     "compulsory": false,
@@ -747,7 +747,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14209"
   },
   {
-    "Kurssikoodi": "CSM14303",
+    "code": "CSM14303",
     "name": "Seminar on Big Data Management",
     "level": "Syventävät",
     "compulsory": false,
@@ -757,7 +757,7 @@
     "url": "https://courses.helsinki.fi/fi/CSM14303"
   },
   {
-    "Kurssikoodi": "DATA1100",
+    "code": "DATA1100",
     "name": "Introduction to Data Science",
     "level": "Syventävät",
     "compulsory": false,
@@ -767,7 +767,7 @@
     "url": "https://courses.helsinki.fi/fi/DATA1100"
   },
   {
-    "Kurssikoodi": "DATA1100",
+    "code": "DATA1100",
     "name": "Introduction to Machine Learning",
     "level": "Syventävät",
     "compulsory": false,
@@ -777,7 +777,7 @@
     "url": "https://courses.helsinki.fi/fi/DATA1100"
   },
   {
-    "Kurssikoodi": "DATA1200",
+    "code": "DATA1200",
     "name": "Advanced Course in Machine Learning",
     "level": "Syventävät",
     "compulsory": false,
@@ -787,7 +787,7 @@
     "url": "https://courses.helsinki.fi/fi/DATA1200"
   },
   {
-    "Kurssikoodi": "DATA1400",
+    "code": "DATA1400",
     "name": "Introduction to Big Data Management",
     "level": "Syventävät",
     "compulsory": false,
@@ -797,7 +797,7 @@
     "url": "https://courses.helsinki.fi/fi/DATA1400"
   },
   {
-    "Kurssikoodi": "DATA1500",
+    "code": "DATA1500",
     "name": "Interactive Data Visualization",
     "level": "Syventävät",
     "compulsory": false,
@@ -807,7 +807,7 @@
     "url": "https://courses.helsinki.fi/fi/DATA1500"
   },
   {
-    "Kurssikoodi": "DATA2000",
+    "code": "DATA2000",
     "name": "Seminar: Deep Learning for Natural Language Processing",
     "level": "Syventävät",
     "compulsory": false,
@@ -817,7 +817,7 @@
     "url": "https://courses.helsinki.fi/fi/DATA2000"
   },
   {
-    "Kurssikoodi": "LSI31003",
+    "code": "LSI31003",
     "name": "Machine Learning in Molecular Biology",
     "level": "Syventävät",
     "compulsory": false,
@@ -827,7 +827,7 @@
     "url": "https://courses.helsinki.fi/fi/LSI31003"
   },
   {
-    "Kurssikoodi": "LSI31004",
+    "code": "LSI31004",
     "name": "Seminar in machine learning methods for fossil data analysis",
     "level": "Syventävät",
     "compulsory": false,
