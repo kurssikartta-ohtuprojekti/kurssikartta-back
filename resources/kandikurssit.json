@@ -5,7 +5,7 @@
     "level": "Perusopinnot",
     "compulsory": true,
     "prereqs": [],
-    "study track": ["none"],
+    "studytrack": ["none"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT10001"
   },
@@ -15,7 +15,7 @@
     "level": "Perusopinnot",
     "compulsory": true,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT10002"
   },
@@ -27,7 +27,7 @@
     "prereqs": [
       "TKT10002"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT10003"
   },
@@ -39,7 +39,7 @@
     "prereqs": [
       "TKT10002"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT10004"
   },
@@ -51,7 +51,7 @@
     "prereqs": [
       "TKT10002"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT10005"
   },
@@ -63,7 +63,7 @@
     "prereqs": [
       "TKT10003"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "10",
     "url": "https://courses.helsinki.fi/fi/TKT20001"
   },
@@ -75,7 +75,7 @@
     "prereqs": [
       "TKT10003"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20002"
   },
@@ -87,7 +87,7 @@
     "prereqs": [
       "TKT10005"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20003"
   },
@@ -97,7 +97,7 @@
     "level": "Aineopinnot",
     "compulsory": true,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20004"
   },
@@ -109,7 +109,7 @@
     "prereqs": [
       "TKT20001"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20005"
   },
@@ -119,7 +119,7 @@
     "level": "Aineopinnot",
     "compulsory": true,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "6",
     "url": "https://courses.helsinki.fi/fi/TKT20006"
   },
@@ -131,7 +131,7 @@
     "prereqs": [
       "TKT20006"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "10",
     "url": "https://courses.helsinki.fi/fi/TKT20007"
   },
@@ -143,7 +143,7 @@
     "prereqs": [
       "TKT20001"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20008"
   },
@@ -153,7 +153,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20009"
   },
@@ -165,7 +165,7 @@
     "prereqs": [
       "TKT20001"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "4",
     "url": "https://courses.helsinki.fi/fi/TKT20010"
   },
@@ -178,7 +178,7 @@
       "TKT10003",
       "TKT10004"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "4",
     "url": "https://courses.helsinki.fi/fi/TKT20011"
   },
@@ -190,7 +190,7 @@
     "prereqs": [
       "TKT20004"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "4",
     "url": "https://courses.helsinki.fi/fi/TKT20012"
   },
@@ -202,7 +202,7 @@
     "prereqs": [
       "TKT10004"
     ],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21001"
   },
@@ -212,7 +212,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21002"
   },
@@ -222,7 +222,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21003"
   },
@@ -232,7 +232,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21004"
   },
@@ -242,7 +242,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21005"
   },
@@ -252,7 +252,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21007"
   },
@@ -262,7 +262,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21008"
   },
@@ -272,7 +272,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21009"
   },
@@ -282,7 +282,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "1-10",
     "url": "https://courses.helsinki.fi/fi/TKT21010"
   },
@@ -292,7 +292,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "10",
     "url": "https://courses.helsinki.fi/fi/TKT21012"
   },
@@ -302,7 +302,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "4",
     "url": "https://courses.helsinki.fi/fi/TKT21013"
   },
@@ -312,7 +312,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21014"
   },
@@ -322,7 +322,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "1",
     "url": "https://courses.helsinki.fi/fi/TKT21015"
   },
@@ -332,7 +332,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "1-10",
     "url": "https://courses.helsinki.fi/fi/TKT21016"
   },
@@ -342,7 +342,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "1-3",
     "url": "https://courses.helsinki.fi/fi/TKT21017"
   },
@@ -352,7 +352,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "2",
     "url": "https://courses.helsinki.fi/fi/TKT21018"
   },
@@ -362,7 +362,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "2-5",
     "url": "https://courses.helsinki.fi/fi/TKT21019"
   },
@@ -372,7 +372,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "study track": [],
+    "studytrack": [],
     "ects": "2-4",
     "url": "https://courses.helsinki.fi/fi/CSM13501"
   }
