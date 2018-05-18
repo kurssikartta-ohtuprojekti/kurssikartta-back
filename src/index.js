@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const jsonfile = require('jsonfile')
-const fileLocation = 'resources/kandikurssit.json'
+const fileLocation = 'resources/kaikkikurssit.json'
 
 
 app.use(cors())
