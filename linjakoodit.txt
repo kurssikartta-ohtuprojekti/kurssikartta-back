@@ -1,0 +1,4 @@
+ds: data science
+ns: networking and services
+ss: software systems
+adm: algorithms, data analytics and machine learning
