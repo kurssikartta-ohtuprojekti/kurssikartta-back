@@ -16,34 +16,27 @@ app.get('/', (req, res) => {
 })
 
 app.get('/courses', (req, res) => {
-
-  jsonfile.readFile(fileLocation, function (err, obj) {
+  jsonfile.readFile(fileLocation,  (err, obj) => {
     res.json(obj)
   })
-
 })
 
 app.get('/courses/:id', (req, res) => {
-  console.log('3')
-  const id = req.params.id
-  console.log('4')
-  console.log('id:', id)
-//  console.log('courses:', courses)
-  jsonfile.readFile(fileLocation, function (err, obj) {
-   // console.log('obj', obj)
-    console.log('id:', id)
-    const course = obj.find(item => item.code === id)
-    //console.log('course:', course)
+  jsonfile.readFile(fileLocation, (err, obj) => {
+    if (err) {
+      console.log(err)
+      return
+    }
 
+    const id = req.params.id
+    const course = obj.find(item => item.code === id)
     if (course) {
-      console.log('1')
       res.json(course)
     } else {
       res.status(404).end()
-      console.log('2')
     }
+
   })
-  console.log('5')
 
 })
 
@@ -53,7 +46,7 @@ const generateId = () => {
   return maxId + 1
 }
 */
-
+/*
 app.get('/courses/:id/info', (req, res) => {
   const id = req.params.id
   const url = 'https://weboodi.helsinki.fi/hy/api/public/opetushaku/hae?nimiTaiTunniste='.concat(id)
@@ -95,6 +88,7 @@ app.get('/courses/:id/info', (req, res) => {
   })
 
 })
+*/
 
 app.post('/courses', (request, response) => {
   const body = request.body

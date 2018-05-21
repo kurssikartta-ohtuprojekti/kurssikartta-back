@@ -12,8 +12,6 @@ test('courses are returned as json', async () => {
 })
 
 test('with course id correct course is returned', async () => {
-
-    console.log(TKT10001)
        response = await api
         .get('/courses/TKT10001')
         .expect(200)
