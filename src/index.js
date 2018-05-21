@@ -30,10 +30,10 @@ app.get('/courses/:id', (req, res) => {
   console.log('id:', id)
 //  console.log('courses:', courses)
   jsonfile.readFile(fileLocation, function (err, obj) {
-    console.log('obj', obj)
+   // console.log('obj', obj)
     console.log('id:', id)
     const course = obj.find(item => item.code === id)
-    console.log('course:', course)
+    //console.log('course:', course)
 
     if (course) {
       console.log('1')

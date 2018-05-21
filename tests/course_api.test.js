@@ -12,13 +12,19 @@ test('courses are returned as json', async () => {
 })
 
 test('with course id correct course is returned', async () => {
-    
+
     console.log(TKT10001)
        response = await api
         .get('/courses/TKT10001')
         .expect(200)
         .expect('Content-Type', /application\/json/)
     expect(response.body).toEqual(TKT10001)
+})
+
+test('with incorrect id status 404 error message is returned', async () => {
+       response = await api
+        .get('/courses/TKT1001')
+        .expect(404)
 })
 
 afterAll(() => {
