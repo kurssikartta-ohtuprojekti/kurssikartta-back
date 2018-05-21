@@ -29,6 +29,7 @@ app.get('/courses/:id', (req, res) => {
   const id = req.params.id
   console.log('4')
   console.log('id:', id)
+  console.log('courses:', courses)
   const course = courses.find(course => course.code === id)
   console.log('5')
   console.log('index.js course:', course)
