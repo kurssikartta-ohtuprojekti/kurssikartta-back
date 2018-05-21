@@ -25,14 +25,20 @@ app.get('/courses', (req, res) => {
 })
 
 app.get('/courses/:id', (req, res) => {
+  console.log('3')
   const id = req.params.id
+  console.log('4')
+
   const course = courses.find(course => course.code === id)
-  //console.log('indexjs course', course)
+  console.log('5')
+
+  console.log('index.js course:', course)
   if (course) {
+    console.log('1')
     res.json(course)
   } else {
     res.status(404).end()
-
+    console.log('2')
   }
 })
 
