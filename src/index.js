@@ -25,7 +25,7 @@ app.get('/courses', (req, res) => {
 })
 
 app.get('/courses/:id', (req, res) => {
-  const id = request.params.id
+  const id = req.params.id
   const course = courses.find(course => course.code === id)
 
   if (course) {
@@ -117,11 +117,13 @@ app.delete('/courses/:id', (request, response) => {
   response.status(204).end()
 })
 */
+const server = require('http').createServer(app);
+
 const PORT = process.env.PORT || 3001
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
 
 module.exports = {
-  app
+  app, server
 }
