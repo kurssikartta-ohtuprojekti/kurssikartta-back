@@ -28,10 +28,9 @@ app.get('/courses/:id', (req, res) => {
   console.log('3')
   const id = req.params.id
   console.log('4')
-
+  console.log('id:', id)
   const course = courses.find(course => course.code === id)
   console.log('5')
-
   console.log('index.js course:', course)
   if (course) {
     console.log('1')
