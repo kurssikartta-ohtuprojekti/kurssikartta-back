@@ -4,9 +4,9 @@
   "description": "Ohjelmistotuotantoprojekti kesä 2018",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "watch": "nodemon src/index.js"
+    "start": "NODE_ENV=production node src/index.js",
+    "test": "NODE_ENV=test jest --verbose",
+    "watch": "NODE_ENV=development nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/kurssikartta-ohtuprojekti/kurssikartta-back#readme",
   "devDependencies": {
-    "nodemon": "^1.17.4"
+    "jest": "^22.4.4",
+    "nodemon": "^1.17.4",
+    "supertest": "^3.1.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "jsonfile": "^4.0.0"

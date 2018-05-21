@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const jsonfile = require('jsonfile')
 const fileLocation = 'resources/kaikkikurssit.json'
+const axios = require('axios');
 
 
 app.use(cors())
@@ -23,14 +24,15 @@ app.get('/courses', (req, res) => {
   res.json(courses)
 })
 
-app.get('/courses/:id', (request, response) => {
+app.get('/courses/:id', (req, res) => {
   const id = request.params.id
   const course = courses.find(course => course.code === id)
 
   if (course) {
-    response.json(course)
+    res.json(course)
   } else {
-    response.status(404).end()
+    res.status(404).end()
+
   }
 })
 
@@ -40,6 +42,49 @@ const generateId = () => {
   return maxId + 1
 }
 */
+
+app.get('/courses/:id/info', (req, res) => {
+  const id = req.params.id
+  const url = 'https://weboodi.helsinki.fi/hy/api/public/opetushaku/hae?nimiTaiTunniste='.concat(id)
+  console.log('url', url)
+  axios.get(url).then(response => {
+    console.log(response.data)
+    if (response.data.length == 0) {
+      
+      res.status(404).json({error: 'ei löytynyt'})
+    }
+
+    const array = response.data
+    const opintokohteet = new Array(array.length)
+    for (i = 0; i < opintokohteet.length; i++) {
+      console.log("array", array[i])
+      opintokohteet[i] = {
+        opintokohteenTunniste: array[i].opintokohde.opintokohteenTunniste,
+        opintokohteenNimi: array[i].opintokohde.opintokohteenNimi,
+        opetustapahtumat: array[i].opetustapahtumat.map((item) => {
+          const obj = {
+            nimi: item.opetustapahtumanNimi,
+            alkamisaika: item.alkuPvm,
+            loppumisaika: item.loppuPvm,
+            tyyppi: item.opetustapahtumanTyyppiSelite,
+            ilmoittautuminenKaynnissa: (item.tila === "ilmoittautuminen_kaynnissa")
+          }
+
+          return obj
+        }
+        )
+      }
+    }
+
+    // console.log('axios:', response.data )
+    res.json(opintokohteet)
+  }
+  ).catch(error => {
+    console.log(error)
+  })
+
+})
+
 app.post('/courses', (request, response) => {
   const body = request.body
   console.log('request', body)
@@ -58,9 +103,9 @@ app.post('/courses', (request, response) => {
     ects: body.ects,
     url: body.url
   }
-  console.log('course:' , course)
+  console.log('course:', course)
   courses = courses.concat(course)
-  console.log('courses',)
+  console.log('courses', )
   response.json(course)
 })
 
@@ -76,3 +121,7 @@ const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
+
+module.exports = {
+  app
+}
