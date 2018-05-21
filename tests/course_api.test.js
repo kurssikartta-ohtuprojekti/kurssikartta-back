@@ -8,3 +8,4 @@ test('courses are returned as json', async () => {
         .expect(200)
         .expect('Content-Type', /application\/json/)
 })
+
