@@ -27,7 +27,7 @@ app.get('/courses', (req, res) => {
 app.get('/courses/:id', (req, res) => {
   const id = req.params.id
   const course = courses.find(course => course.code === id)
-
+  console.log('indexjs course', course)
   if (course) {
     res.json(course)
   } else {

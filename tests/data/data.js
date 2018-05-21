@@ -4,7 +4,7 @@ const TKT10001 = {
     "level": "Perusopinnot",
     "compulsory": true,
     "prereqs": [],
-    "studytrack": ["none"],
+    "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT10001"
 }

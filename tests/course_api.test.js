@@ -12,11 +12,12 @@ test('courses are returned as json', async () => {
 })
 
 test('with course id correct course is returned', async () => {
-        await api
+    console.log(TKT10001)
+       response = await api
         .get('/courses/TKT10001')
         .expect(200)
         .expect('Content-Type', /application\/json/)
-   
+    expect(response.body).toEqual(TKT10001.TKT10001)
 })
 
 afterAll(() => {
