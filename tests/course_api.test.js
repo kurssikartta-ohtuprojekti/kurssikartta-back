@@ -1,5 +1,5 @@
 const supertest = require('supertest')
-const {app} = require('../src/index.js')
+const {app, server} = require('../src/index.js')
 const api = supertest(app)
 
 test('courses are returned as json', async () => {
@@ -9,3 +9,6 @@ test('courses are returned as json', async () => {
         .expect('Content-Type', /application\/json/)
 })
 
+afterAll(() => {
+   server.close()
+})
