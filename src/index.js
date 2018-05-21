@@ -10,18 +10,17 @@ const axios = require('axios');
 app.use(cors())
 app.use(bodyParser.json())
 
-let courses
-jsonfile.readFile(fileLocation, function (err, obj) {
-  courses = obj
-})
-
 
 app.get('/', (req, res) => {
   res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For a single course /courses/:id </p>')
 })
 
 app.get('/courses', (req, res) => {
-  res.json(courses)
+
+  jsonfile.readFile(fileLocation, function (err, obj) {
+    res.json(obj)
+  })
+
 })
 
 app.get('/courses/:id', (req, res) => {
@@ -29,17 +28,23 @@ app.get('/courses/:id', (req, res) => {
   const id = req.params.id
   console.log('4')
   console.log('id:', id)
-  console.log('courses:', courses)
-  const course = courses.find(course => course.code === id)
+//  console.log('courses:', courses)
+  jsonfile.readFile(fileLocation, function (err, obj) {
+    console.log('obj', obj)
+    console.log('id:', id)
+    const course = obj.find(item => item.code === id)
+    console.log('course:', course)
+
+    if (course) {
+      console.log('1')
+      res.json(course)
+    } else {
+      res.status(404).end()
+      console.log('2')
+    }
+  })
   console.log('5')
-  console.log('index.js course:', course)
-  if (course) {
-    console.log('1')
-    res.json(course)
-  } else {
-    res.status(404).end()
-    console.log('2')
-  }
+
 })
 
 /*
@@ -56,8 +61,8 @@ app.get('/courses/:id/info', (req, res) => {
   axios.get(url).then(response => {
     console.log(response.data)
     if (response.data.length == 0) {
-      
-      res.status(404).json({error: 'ei löytynyt'})
+
+      res.status(404).json({ error: 'ei löytynyt' })
     }
 
     const array = response.data
