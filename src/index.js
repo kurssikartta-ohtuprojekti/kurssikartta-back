@@ -10,30 +10,34 @@ const axios = require('axios');
 app.use(cors())
 app.use(bodyParser.json())
 
-let courses
-jsonfile.readFile(fileLocation, function (err, obj) {
-  courses = obj
-})
-
 
 app.get('/', (req, res) => {
   res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For a single course /courses/:id </p>')
 })
 
 app.get('/courses', (req, res) => {
-  res.json(courses)
+  jsonfile.readFile(fileLocation,  (err, obj) => {
+    res.json(obj)
+  })
 })
 
 app.get('/courses/:id', (req, res) => {
-  const id = request.params.id
-  const course = courses.find(course => course.code === id)
+  jsonfile.readFile(fileLocation, (err, obj) => {
+    if (err) {
+      console.log(err)
+      return
+    }
 
-  if (course) {
-    res.json(course)
-  } else {
-    res.status(404).end()
+    const id = req.params.id
+    const course = obj.find(item => item.code === id)
+    if (course) {
+      res.json(course)
+    } else {
+      res.status(404).end()
+    }
 
-  }
+  })
+
 })
 
 /*
@@ -42,7 +46,7 @@ const generateId = () => {
   return maxId + 1
 }
 */
-
+/*
 app.get('/courses/:id/info', (req, res) => {
   const id = req.params.id
   const url = 'https://weboodi.helsinki.fi/hy/api/public/opetushaku/hae?nimiTaiTunniste='.concat(id)
@@ -50,8 +54,8 @@ app.get('/courses/:id/info', (req, res) => {
   axios.get(url).then(response => {
     console.log(response.data)
     if (response.data.length == 0) {
-      
-      res.status(404).json({error: 'ei löytynyt'})
+
+      res.status(404).json({ error: 'ei löytynyt' })
     }
 
     const array = response.data
@@ -84,6 +88,7 @@ app.get('/courses/:id/info', (req, res) => {
   })
 
 })
+*/
 
 app.post('/courses', (request, response) => {
   const body = request.body
@@ -117,6 +122,7 @@ app.delete('/courses/:id', (request, response) => {
   response.status(204).end()
 })
 */
+
 
 const server = require('http').createServer(app);
 
