@@ -3,9 +3,9 @@ const app = express()
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const jsonfile = require('jsonfile')
-const fileLocation = 'resources/kaikkikurssit.json'
+const filepath = 'resources/kaikkikurssit.json'
 const axios = require('axios');
-
+const {readFileAsync} = require('./utils/filehandler.js')
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -16,13 +16,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/courses', (req, res) => {
-  jsonfile.readFile(fileLocation,  (err, obj) => {
+  jsonfile.readFile(filepath,  (err, obj) => {
     res.json(obj)
   })
 })
 
 app.get('/courses/:id', (req, res) => {
-  jsonfile.readFile(fileLocation, (err, obj) => {
+  jsonfile.readFile(filepath, (err, obj) => {
     if (err) {
       console.log(err)
       return
@@ -125,10 +125,13 @@ app.delete('/courses/:id', (request, response) => {
 const server = require('http').createServer(app);
 
 const PORT = process.env.PORT || 3001
-server.listen(PORT, () => {
+server.listen(PORT, async () => {
+
+  const courses = await readFileAsync()
+
   console.log(`Server running on port ${PORT}`)
 })
 
 module.exports = {
-  app, server
+  app, server, filepath
 }
