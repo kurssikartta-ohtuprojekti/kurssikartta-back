@@ -122,6 +122,8 @@ app.delete('/courses/:id', (request, response) => {
   response.status(204).end()
 })
 */
+
+
 const server = require('http').createServer(app);
 
 const PORT = process.env.PORT || 3001
