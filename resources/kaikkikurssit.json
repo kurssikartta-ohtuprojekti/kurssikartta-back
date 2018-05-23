@@ -51,7 +51,9 @@
     "prereqs": [
       "TKT10002"
     ],
-    "studytrack": ["ns"],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT10005"
   },
@@ -75,7 +77,9 @@
     "prereqs": [
       "TKT10003", "TKT10004"
     ],
-    "studytrack": ["ss"],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20002"
   },
@@ -87,7 +91,9 @@
     "prereqs": [
       "TKT10005"
     ],
-    "studytrack": ["ns"],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20003"
   },
@@ -97,7 +103,9 @@
     "level": "Aineopinnot",
     "compulsory": true,
     "prereqs": [],
-    "studytrack": ["ns"],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20004"
   },
@@ -132,7 +140,9 @@
       "TKT20006", "TKT20010", "TKT20011",
       "TKT20012"
     ],
-    "studytrack": ["ss"],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "10",
     "url": "https://courses.helsinki.fi/fi/TKT20007"
   },
@@ -179,7 +189,9 @@
       "TKT10003",
       "TKT10004"
     ],
-    "studytrack": ["ss"],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "4",
     "url": "https://courses.helsinki.fi/fi/TKT20011"
   },
@@ -191,7 +203,9 @@
     "prereqs": [
       "TKT20004"
     ],
-    "studytrack": ["ns"],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "4",
     "url": "https://courses.helsinki.fi/fi/TKT20012"
   },
@@ -203,7 +217,9 @@
     "prereqs": [
       "TKT10004"
     ],
-    "studytrack": ["ss"],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21001"
   },
@@ -323,7 +339,9 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": ["ss"],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "1",
     "url": "https://courses.helsinki.fi/fi/TKT21015"
   },
@@ -373,7 +391,9 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": ["ns"],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "2-4",
     "url": "https://courses.helsinki.fi/fi/CSM13501"
   },
@@ -513,7 +533,9 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": ["ns"],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13104"
   },
@@ -836,5 +858,132 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/LSI31004"
+  },
+  {
+    "code": "MAT11001",
+    "name": "Johdatus yliopistomatematiikkaan",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [],
+    "studytrack": [],
+    "faculty": "math",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT11001"
+  },
+  {
+    "code": "MAT11002",
+    "name": "Lineaarialgebra ja matriisilaskenta I",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [],
+    "studytrack": [],
+    "faculty": "math",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT11002"
+  },
+  {
+    "code": "MAT11003",
+    "name": "Raja-arvot",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [],
+    "studytrack": [],
+    "faculty": "math",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT11003"
+  },
+  {
+    "code": "MAT11004",
+    "name": "Differentiaalilaskenta",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [
+      "MAT11003"
+    ],
+    "studytrack": [],
+    "faculty": "math",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT11004"
+  },
+  {
+    "code": "MAT11005",
+    "name": "Integraalilaskenta",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [
+      "MAT11003",
+      "MAT11004"
+    ],
+    "studytrack": [],
+    "faculty": "math",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT11005"
+  },
+  {
+    "code": "MAT11010",
+    "name": "Matemaattinen analyysi I",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [],
+    "studytrack": [],
+    "faculty": "math",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT11010"
+  },
+  {
+    "code": "MAT11011",
+    "name": "Matemaattinen analyysi II",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [
+      "MAT11010",
+      "MAT11002"
+    ],
+    "studytrack": [],
+    "faculty": "math",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT11011"
+  },
+  {
+    "code": "MAT11012",
+    "name": "Matemaattinen analyysi III",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [
+      "MAT11010",
+      "MAT11011",
+      "MAT11002"
+    ],
+    "studytrack": [],
+    "faculty": "math",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT11012"
+  },
+  {
+    "code": "MAT11013",
+    "name": "Matemaattinen analyysi IV",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [
+      "MAT11010",
+      "MAT11011",
+      "MAT11012",
+      "MAT11002"
+    ],
+    "studytrack": [],
+    "faculty": "math",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT11013"
+  },
+  {
+    "code": "MAT12001",
+    "name": "Tilastotiede ja R tutuksi I",
+    "level": "Perusopinnot",
+    "compulsory": false,
+    "prereqs": [],
+    "studytrack": [],
+    "faculty": "stats",
+    "ects": "5",
+    "url": "https://courses.helsinki.fi/fi/MAT12001"
   }
 ]
