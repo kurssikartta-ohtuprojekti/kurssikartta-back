@@ -63,9 +63,9 @@
     "level": "Aineopinnot",
     "compulsory": true,
     "prereqs": [
-      "TKT10003"
+      "TKT10003", "MAT11001"
     ],
-    "studytrack": [],
+    "studytrack": ["adm"],
     "ects": "10",
     "url": "https://courses.helsinki.fi/fi/TKT20001"
   },
@@ -75,7 +75,7 @@
     "level": "Aineopinnot",
     "compulsory": true,
     "prereqs": [
-      "TKT10003"
+      "TKT10003", "TKT10004"
     ],
     "studytrack": [
       "ss"
@@ -117,7 +117,7 @@
     "prereqs": [
       "TKT20001"
     ],
-    "studytrack": [],
+    "studytrack": ["adm"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20005"
   },
@@ -126,10 +126,8 @@
     "name": "Ohjelmistotuotanto",
     "level": "Aineopinnot",
     "compulsory": true,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
+    "prereqs": ["TKT20002"],
+    "studytrack": ["ss"],
     "ects": "6",
     "url": "https://courses.helsinki.fi/fi/TKT20006"
   },
@@ -139,7 +137,8 @@
     "level": "Aineopinnot",
     "compulsory": true,
     "prereqs": [
-      "TKT20006"
+      "TKT20006", "TKT20010", "TKT20011",
+      "TKT20012"
     ],
     "studytrack": [
       "ss"
@@ -155,7 +154,7 @@
     "prereqs": [
       "TKT20001"
     ],
-    "studytrack": [],
+    "studytrack": ["adm"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20008"
   },
@@ -165,7 +164,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT20009"
   },
@@ -177,7 +176,7 @@
     "prereqs": [
       "TKT20001"
     ],
-    "studytrack": [],
+    "studytrack": ["adm"],
     "ects": "4",
     "url": "https://courses.helsinki.fi/fi/TKT20010"
   },
@@ -229,10 +228,8 @@
     "name": "Introduction to Game Programming",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
+    "prereqs": ["TKT10002"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21002"
   },
@@ -241,10 +238,8 @@
     "name": "Web-palvelinohjelmointi Ruby on Rails",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
+    "prereqs": ["TKT10002", "TKT10003", "TKT10004"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21003"
   },
@@ -253,10 +248,8 @@
     "name": "Computer Organization II",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
+    "prereqs": ["TKT10005"],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21004"
   },
@@ -265,10 +258,8 @@
     "name": "Ohjelmointitekniikka (JavaScript)",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
+    "prereqs": ["TKT10003"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21005"
   },
@@ -277,10 +268,8 @@
     "name": "Web-palvelinohjelmointi Java",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
+    "prereqs": ["TKT10002", "TKT10003", "TKT10004"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21007"
   },
@@ -289,10 +278,8 @@
     "name": "Programming in C",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
+    "prereqs": ["TKT10002", "TKT10003", "TKT20001", "TKT10005"],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21008"
   },
@@ -301,10 +288,8 @@
     "name": "Full Stack -websovelluskehitys",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
+    "prereqs": ["TKT10002", "TKT10003", "TKT10004"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21009"
   },
@@ -313,10 +298,8 @@
     "name": "Full Stack -websovelluskehitys harjoitustyö",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
+    "prereqs": ["TKT21009"],
+    "studytrack": ["ss"],
     "ects": "1-10",
     "url": "https://courses.helsinki.fi/fi/TKT21010"
   },
@@ -325,10 +308,8 @@
     "name": "Algoritmit ongelmanratkaisussa",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "adm"
-    ],
+    "prereqs": ["TKT20001"],
+    "studytrack": ["adm"],
     "ects": "10",
     "url": "https://courses.helsinki.fi/fi/TKT21012"
   },
@@ -347,8 +328,8 @@
     "name": "Johdatus funktionaaliseen ohjelmointiin (Haskell)",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT10002", "TKT10003"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT21014"
   },
@@ -369,10 +350,8 @@
     "name": "Web-palvelinohjelmointi Ruby on Rails, harjoitustyö",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
+    "prereqs": ["TKT21003"],
+    "studytrack": ["ss"],
     "ects": "1-10",
     "url": "https://courses.helsinki.fi/fi/TKT21016"
   },
@@ -381,8 +360,8 @@
     "name": "Kilpaohjelmointi",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT10002", "TKT10003"],
+    "studytrack": ["ss"],
     "ects": "1-3",
     "url": "https://courses.helsinki.fi/fi/TKT21017"
   },
@@ -392,7 +371,7 @@
     "level": "Aineopinnot",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["adm"],
     "ects": "2",
     "url": "https://courses.helsinki.fi/fi/TKT21018"
   },
@@ -401,7 +380,7 @@
     "name": "Introduction to Lambda Calculus",
     "level": "Aineopinnot",
     "compulsory": false,
-    "prereqs": [],
+    "prereqs": ["MAT11001"],
     "studytrack": [],
     "ects": "2-5",
     "url": "https://courses.helsinki.fi/fi/TKT21019"
@@ -433,8 +412,8 @@
     "name": "Design and Analysis of Algorithms",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT20001"],
+    "studytrack": ["adm"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12101"
   },
@@ -443,8 +422,8 @@
     "name": "Data Compression Techniques",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT20001"],
+    "studytrack": ["adm"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12103"
   },
@@ -453,8 +432,8 @@
     "name": "Randomized Algorithms I",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["CSM12101"],
+    "studytrack": ["adm"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12104"
   },
@@ -463,8 +442,8 @@
     "name": "Randomized Algorithms II",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["CSM12104"],
+    "studytrack": ["adm"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12105"
   },
@@ -473,7 +452,7 @@
     "name": "Biological Sequence Analysis",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
+    "prereqs": ["TKT20001"],
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12108"
@@ -484,7 +463,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["adm"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12110"
   },
@@ -493,10 +472,8 @@
     "name": "Seminar on Parameterized Algorithms",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "adm"
-    ],
+    "prereqs": ["CSM12101"],
+    "studytrack": ["adm"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12111"
   },
@@ -506,7 +483,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["adm"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12112"
   },
@@ -515,10 +492,8 @@
     "name": "Distributed Systems",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
+    "prereqs": ["TKT10002", "TKT10003", "TKT10005", "TKT20003", "TKT20004"],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13001"
   },
@@ -527,10 +502,8 @@
     "name": "Networked Systems and Services",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
+    "prereqs": ["TKT20004"],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13101"
   },
@@ -539,10 +512,8 @@
     "name": "Internet Protocols",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
+    "prereqs": ["TKT20004"],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13102"
   },
@@ -551,10 +522,8 @@
     "name": "Cloud and Edge Computing",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [
-      "CSM13101"
-    ],
-    "studytrack": [],
+    "prereqs": ["CSM13101", "CSM13001"],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13103"
   },
@@ -576,7 +545,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13181"
   },
@@ -586,7 +555,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13202"
   },
@@ -596,7 +565,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13204"
   },
@@ -606,7 +575,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13281"
   },
@@ -615,8 +584,8 @@
     "name": "Service Ecosystems",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["CSM13101", "CSM13001", "CSM14101"],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13301"
   },
@@ -625,8 +594,8 @@
     "name": "Services Engineering with Models",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["CSM14101", "CSM13101"],
+    "studytrack": ["ns"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13302"
   },
@@ -655,7 +624,7 @@
     "name": "Designing Interactive Systems",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
+    "prereqs": ["CSM13401"],
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13402"
@@ -665,7 +634,7 @@
     "name": "Seminar on Advanced Topics in Human Computer Interaction",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
+    "prereqs": ["CSM13401"],
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13403"
@@ -675,10 +644,8 @@
     "name": "Ohjelmistoarkkitehtuurit",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
+    "prereqs": ["TKT20006", "TKT20002"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14101"
   },
@@ -688,7 +655,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14102"
   },
@@ -697,8 +664,8 @@
     "name": "Ohjelmistoarkkitehtuurien harjoitustyö",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["CSM14101"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14103"
   },
@@ -708,7 +675,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14104"
   },
@@ -718,7 +685,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14105"
   },
@@ -727,8 +694,8 @@
     "name": "Software Factory Experience",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT20006", "TKT20007"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14106"
   },
@@ -738,7 +705,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14107"
   },
@@ -747,8 +714,8 @@
     "name": "Ohjelmistojen testaus",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT10002", "TKT10003", "TKT20002"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14201"
   },
@@ -757,8 +724,8 @@
     "name": "Ohjelmointikielten periaatteet",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT10002", "TKT10003", "TKT20002", "TKT20006", "TKT20001"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14203"
   },
@@ -768,7 +735,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14204"
   },
@@ -777,8 +744,8 @@
     "name": "Code Generation",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["CSM14204"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14205"
   },
@@ -788,7 +755,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14208"
   },
@@ -798,7 +765,7 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14209"
   },
@@ -807,8 +774,8 @@
     "name": "Seminar on Big Data Management",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT10004"],
+    "studytrack": ["ss"],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14303"
   },
@@ -817,60 +784,60 @@
     "name": "Introduction to Data Science",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT10002", "TKT10003"],
+    "studytrack": ["ds"],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1101"
+    "url": "https://courses.helsinki.fi/fi/data11001/"
   },
   {
     "code": "DATA11002",
     "name": "Introduction to Machine Learning",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT10002", "TKT10003", "MAT11002", "MAT12001"],
+    "studytrack": ["adm"],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1102"
+    "url": "https://courses.helsinki.fi/fi/DATA11002"
   },
   {
     "code": "DATA12001",
     "name": "Advanced Course in Machine Learning",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["DATA11002"],
+    "studytrack": ["adm"],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1200"
+    "url": "https://courses.helsinki.fi/fi/DATA12001"
   },
   {
     "code": "DATA14002",
     "name": "Introduction to Big Data Management",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT10002", "MAT11001"],
+    "studytrack": ["ds"],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1400"
+    "url": "https://courses.helsinki.fi/fi/DATA14002"
   },
   {
     "code": "DATA15003",
     "name": "Interactive Data Visualization",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["TKT10002"],
+    "studytrack": ["ds"],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1500"
+    "url": "https://courses.helsinki.fi/fi/DATA15003"
   },
   {
     "code": "DATA20002",
     "name": "Seminar: Deep Learning for Natural Language Processing",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": ["DATA11002"],
+    "studytrack": ["adm"],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA2000"
+    "url": "https://courses.helsinki.fi/fi/DATA20002"
   },
   {
     "code": "LSI31003",
@@ -887,7 +854,7 @@
     "name": "Seminar in machine learning methods for fossil data analysis",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
+    "prereqs": ["DATA11002"],
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/LSI31004"
