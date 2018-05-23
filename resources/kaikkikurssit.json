@@ -899,9 +899,7 @@
     "compulsory": false,
     "prereqs": [],
     "studytrack": [],
-    "faculty": [
-      "math"
-    ],
+    "faculty": "math",
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/MAT11001"
   },
@@ -912,9 +910,7 @@
     "compulsory": false,
     "prereqs": [],
     "studytrack": [],
-    "faculty": [
-      "math"
-    ],
+    "faculty": "math",
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/MAT11002"
   },
@@ -925,9 +921,7 @@
     "compulsory": false,
     "prereqs": [],
     "studytrack": [],
-    "faculty": [
-      "math"
-    ],
+    "faculty": "math",
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/MAT11003"
   },
@@ -940,9 +934,7 @@
       "MAT11003"
     ],
     "studytrack": [],
-    "faculty": [
-      "math"
-    ],
+    "faculty": "math",
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/MAT11004"
   },
@@ -956,9 +948,7 @@
       "MAT11004"
     ],
     "studytrack": [],
-    "faculty": [
-      "math"
-    ],
+    "faculty": "math",
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/MAT11005"
   },
@@ -969,9 +959,7 @@
     "compulsory": false,
     "prereqs": [],
     "studytrack": [],
-    "faculty": [
-      "math"
-    ],
+    "faculty": "math",
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/MAT11010"
   },
@@ -985,9 +973,7 @@
       "MAT11002"
     ],
     "studytrack": [],
-    "faculty": [
-      "math"
-    ],
+    "faculty": "math",
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/MAT11011"
   },
@@ -1002,9 +988,7 @@
       "MAT11002"
     ],
     "studytrack": [],
-    "faculty": [
-      "math"
-    ],
+    "faculty": "math",
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/MAT11012"
   },
@@ -1020,9 +1004,7 @@
       "MAT11002"
     ],
     "studytrack": [],
-    "faculty": [
-      "math"
-    ],
+    "faculty": "math",
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/MAT11013"
   },
@@ -1033,10 +1015,8 @@
     "compulsory": false,
     "prereqs": [],
     "studytrack": [],
-    "faculty": [
-      "stats"
-    ],
+    "faculty": "stats",
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11013"
+    "url": "https://courses.helsinki.fi/fi/MAT12001"
   }
 ]
