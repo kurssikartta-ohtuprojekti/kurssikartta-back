@@ -5,6 +5,7 @@ const baseUrl = 'https://weboodi.helsinki.fi/hy/api/public/opetushaku/hae?nimiTa
 const opetustapahtumaMapper = (item) => {
     console.log('item: ', item)
     return {
+        key: item.alkuPvm,   
         nimi: item.opetustapahtumanNimi,
         alkamisaika: item.alkuPvm,
         loppumisaika: item.loppuPvm,
@@ -21,13 +22,14 @@ const getCourseInfo = (id) => {
             console.log('response.data: ', response.data)
             return response.data.map((opintokohde) => {
                 console.log('opetustapahtumat: ', opintokohde.opetustapahtumat)
-               return {
+                return {
+                    key: opintokohde.opintokohde.opintokohteenTunniste,
                     opintokohteenTunniste: opintokohde.opintokohde.opintokohteenTunniste,
-                //    opintokohteenNimi: kohde.opintokohde.opintokohteenNimi,
-                   opetustapahtumat: opintokohde.opetustapahtumat.map(opetustapahtumaMapper),
-                  //  ilmoauki: kohde.ilmoittautumiskelpoinen
+                    //    opintokohteenNimi: kohde.opintokohde.opintokohteenNimi,
+                    opetustapahtumat: opintokohde.opetustapahtumat.map(opetustapahtumaMapper),
+                    //  ilmoauki: kohde.ilmoittautumiskelpoinen
                 }
-                
+
             })
 
         })
