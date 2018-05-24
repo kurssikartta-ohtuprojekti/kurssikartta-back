@@ -2,10 +2,10 @@ const axios = require('axios');
 
 const baseUrl = 'https://weboodi.helsinki.fi/hy/api/public/opetushaku/hae?nimiTaiTunniste='
 
-const opetustapahtumaMapper = (item) => {
+const opetustapahtumaMapper = (item, index = 1) => {
     console.log('item: ', item)
     return {
-        key: item.alkuPvm,   
+        key: index,
         nimi: item.opetustapahtumanNimi,
         alkamisaika: item.alkuPvm,
         loppumisaika: item.loppuPvm,
@@ -14,25 +14,23 @@ const opetustapahtumaMapper = (item) => {
     }
 }
 
+const opintokohdeMapper = (item, index = 1) => {
+    console.log('item1: ', item)
+    return {
+        key: index,
+        opintokohteenTunniste: item.opintokohde.opintokohteenTunniste,
+        opetustapahtumat: item.opetustapahtumat.map(opetustapahtumaMapper),
+    }
+
+}
 const getCourseInfo = (id) => {
     console.log('url: ', baseUrl.concat(id))
     return axios
         .get(baseUrl.concat(id))
-        .then(response => {
-            console.log('response.data: ', response.data)
-            return response.data.map((opintokohde) => {
-                console.log('opetustapahtumat: ', opintokohde.opetustapahtumat)
-                return {
-                    key: opintokohde.opintokohde.opintokohteenTunniste,
-                    opintokohteenTunniste: opintokohde.opintokohde.opintokohteenTunniste,
-                    //    opintokohteenNimi: kohde.opintokohde.opintokohteenNimi,
-                    opetustapahtumat: opintokohde.opetustapahtumat.map(opetustapahtumaMapper),
-                    //  ilmoauki: kohde.ilmoittautumiskelpoinen
-                }
+        .then(response =>
+            response.data.map(opintokohdeMapper)
 
-            })
-
-        })
+        )
 }
 
 module.exports = {
