@@ -1,9 +1,9 @@
 const axios = require('axios');
 
-const baseUrl = 'https://weboodi.helsinki.fi/hy/api/public/opetushaku/hae?nimiTaiTunniste='
+const {weboodiApiBase} = require('../urls')
 
 const opetustapahtumaMapper = (item, index = 1) => {
-    console.log('item: ', item)
+   // console.log('item: ', item)
     return {
         key: index,
         nimi: item.opetustapahtumanNimi,
@@ -15,7 +15,7 @@ const opetustapahtumaMapper = (item, index = 1) => {
 }
 
 const opintokohdeMapper = (item, index = 1) => {
-    console.log('item1: ', item)
+ //   console.log('item1: ', item)
     return {
         key: index,
         opintokohteenTunniste: item.opintokohde.opintokohteenTunniste,
@@ -24,13 +24,10 @@ const opintokohdeMapper = (item, index = 1) => {
 
 }
 const getCourseInfo = (id) => {
-    console.log('url: ', baseUrl.concat(id))
+    console.log('url: ', weboodiApiBase.concat(id))
     return axios
-        .get(baseUrl.concat(id))
-        .then(response =>
-            response.data.map(opintokohdeMapper)
-
-        )
+        .get(weboodiApiBase.concat(id))
+        .then(response => response.data.map(opintokohdeMapper))
 }
 
 module.exports = {

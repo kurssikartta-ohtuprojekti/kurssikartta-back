@@ -45,13 +45,10 @@ app.get('/courses/:id', (req, res) => {
 
 })
 app.get('/courses/info/:id', (req, res) => {
-
-  const id = req.params.id
-  const info = courseInfo.getCourseInfo(id)
-  console.log('info: ', info)
-
+  const info = courseInfo.getCourseInfo(req.params.id)
+ 
   info.then((result) => {
-    console.log('then', result)
+    console.log('info', info)
     res.json(result)
   }).catch(() => {
     res.status(404).end()
