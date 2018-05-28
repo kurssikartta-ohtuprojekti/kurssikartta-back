@@ -74,7 +74,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12110",
-    "visible": true
+    "visible": false
   },
   {
     "code": "CSM12111",
@@ -85,7 +85,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12111",
-    "visible": true
+    "visible": false
   },
   {
     "code": "CSM12112",
@@ -96,7 +96,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM12112",
-    "visible": true
+    "visible": false
   },
   {
     "code": "CSM13001",
@@ -162,7 +162,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13181",
-    "visible": true
+    "visible": false
   },
   {
     "code": "CSM13202",
@@ -195,7 +195,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13281",
-    "visible": true
+    "visible": false
   },
   {
     "code": "CSM13301",
@@ -228,7 +228,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13304",
-    "visible": true
+    "visible": false
   },
   {
     "code": "CSM13401",
@@ -261,7 +261,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM13403",
-    "visible": true
+    "visible": false
   },
   {
     "code": "CSM14101",
@@ -338,7 +338,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14107",
-    "visible": true
+    "visible": false
   },
   {
     "code": "CSM14201",
@@ -404,7 +404,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14209",
-    "visible": true
+    "visible": false
   },
   {
     "code": "CSM14303",
@@ -415,7 +415,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/CSM14303",
-    "visible": true
+    "visible": false
   },
   {
     "code": "DATA11001",
@@ -481,7 +481,7 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/DATA2000",
-    "visible": true
+    "visible": false
   },
   {
     "code": "LSI31003",
@@ -503,6 +503,6 @@
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/LSI31004",
-    "visible": true
+    "visible": false
   }
 ]
