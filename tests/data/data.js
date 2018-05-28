@@ -6,7 +6,8 @@ const TKT10001 = {
     "prereqs": [],
     "studytrack": [],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT10001"
+    "url": "https://courses.helsinki.fi/fi/TKT10001",
+    "visible": true
 }
 
 module.exports = {
