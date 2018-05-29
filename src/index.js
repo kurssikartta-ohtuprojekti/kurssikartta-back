@@ -6,10 +6,13 @@ const jsonfile = require('jsonfile')
 const fileLocation = 'resources/kaikkikurssit.json'
 const axios = require('axios');
 const courseInfo = require('./weboodi/courseInfo')
+require('dotenv').config()
 
+const loginRouter = require('./routers/loginRouter')
 app.use(cors())
 app.use(bodyParser.json())
 
+app.use('/', loginRouter)
 
 app.get('/', (req, res) => {
   res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For a single course /courses/:id </p>')

@@ -25,8 +25,13 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "bcrypt": "^2.0.1",
     "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
-    "jsonfile": "^4.0.0"
+    "install": "^0.11.0",
+    "jsonfile": "^4.0.0",
+    "jsonwebtoken": "^8.2.1",
+    "npm": "^6.1.0"
   }
 }
