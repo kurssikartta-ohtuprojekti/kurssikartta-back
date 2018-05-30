@@ -4,9 +4,10 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 
+
 const validateLogin = async (username, password) => {
-    
-    if (process.env.NODE_ENV === 'development') {
+
+    if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'production') {
         const dbUserAccount = require('./../../resources/accounts').accounts.find(account => account.username === username)
         return (dbUserAccount !== undefined && await bcrypt.compare(password, dbUserAccount.passwordHash))
     }
@@ -19,8 +20,7 @@ const validateLogin = async (username, password) => {
 
 loginRouter.post('/login', async (req, res) => {
 
-    const dbUserAccount = await validateLogin(req.body.username, req.body.password)
-    if (dbUserAccount) {
+    if (await validateLogin(req.body.username, req.body.password)) {
 
         const token = jwt.sign({ username: req.body.username, }, process.env.SECRET)
 
