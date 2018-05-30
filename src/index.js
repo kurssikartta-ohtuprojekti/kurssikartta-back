@@ -6,6 +6,7 @@ const jsonfile = require('jsonfile')
 const fileLocation = 'resources/kaikkikurssit.json'
 const axios = require('axios');
 const courseInfo = require('./weboodi/courseInfo')
+const courseUpdate = require('./utils/courseUpdate')
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -46,7 +47,7 @@ app.get('/courses/:id', (req, res) => {
 })
 app.get('/courses/info/:id', (req, res) => {
   const info = courseInfo.getCourseInfo(req.params.id)
- 
+
   info.then((result) => {
     console.log('info', info)
     res.json(result)
@@ -140,6 +141,8 @@ app.delete('/courses/:id', (request, response) => {
   response.status(204).end()
 })
 */
+
+app.get('/update', courseUpdate);
 
 
 const server = require('http').createServer(app);
