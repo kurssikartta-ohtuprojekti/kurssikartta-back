@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 
 app.get('/', (req, res) => {
-  res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For a single course /courses/:id </p>')
+  res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For a single course /courses/:id </br> For database update /update </p>')
 })
 
 app.get('/courses', (req, res) => {
