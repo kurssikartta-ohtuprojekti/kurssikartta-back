@@ -1,13 +1,20 @@
 # kurssikartta-back
 [![Build Status](https://travis-ci.org/kurssikartta-ohtuprojekti/kurssikartta-back.svg?branch=master)](https://travis-ci.org/kurssikartta-ohtuprojekti/kurssikartta-back)
 
+## Introduction
+
+This repository contains the backend side of course map software, coded during University course 'Software development project, Summer 2018'.
+
 ## Project links
+* [Kurssikartta-API](https://kurssikartta-backend.herokuapp.com/)
+* [Frontend](https://github.com/kurssikartta-ohtuprojekti/kurssikartta-front)
+* [Documentation](https://github.com/kurssikartta-ohtuprojekti/kurssikartta-front#documentation)
 
-### Application links
+## Development
 
-[Kurssikartta-API](https://kurssikartta-backend.herokuapp.com/)
+### Local development
 
-[Frontend](https://github.com/kurssikartta-ohtuprojekti/kurssikartta-front)
+To run the backend, run either `npm start` or `npm run watch`. If you're lacking some packages, run `npm install` first. Deployment to Heroku goes via Travis if all tests pass.
 
-### Documentation
-* [Backlog and progress](https://docs.google.com/spreadsheets/d/1PXgQVgB_MMsUWzie6D0eFcQnCfmKfAFmBePvULNeHoE/edit#gid=422100513)
+### Git
+* [Git workflow](https://github.com/kurssikartta-ohtuprojekti/kurssikartta-front#git-workflow)
