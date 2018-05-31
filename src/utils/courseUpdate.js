@@ -3,10 +3,12 @@ var path = require('path');
 var fs = require('fs');
 
 module.exports = function (req, res, next) {
+  // Annetaan spreadsheetin tiedot
   var id = "1K0w4aGHVwqZJpB8wm9sa9eye3nsQXPn2KvacnZGmlh8",
     sheet = 1,
     url = 'https://spreadsheets.google.com/feeds/list/' + id + '/' + sheet + '/public/values?alt=json';
 
+  // Haetaan spreadsheetin tiedot ja käsitellään ne JSONiin sopivaan muotoon
   request(url, function (error, response, body) {
     if (!error && response.statusCode === 200) {
       var data = JSON.parse(response.body);
