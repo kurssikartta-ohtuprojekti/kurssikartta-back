@@ -6,10 +6,10 @@ const jsonfile = require('jsonfile')
 const fileLocation = 'resources/kaikkikurssit.json'
 const axios = require('axios');
 const courseInfo = require('./weboodi/courseInfo')
-
+const matrixRouter = require('./routers/matrixRouter')
 app.use(cors())
 app.use(bodyParser.json())
-
+app.use(matrixRouter)
 
 app.get('/', (req, res) => {
   res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For a single course /courses/:id </p>')
