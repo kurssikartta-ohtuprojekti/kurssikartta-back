@@ -6,11 +6,14 @@ const jsonfile = require('jsonfile')
 const fileLocation = 'resources/kaikkikurssit.json'
 const axios = require('axios');
 const courseInfo = require('./weboodi/courseInfo')
+require('dotenv').config()
 const matrixRouter = require('./routers/matrixRouter')
 const courseUpdate = require('./utils/courseUpdate')
+const loginRouter = require('./routers/loginRouter')
 
 app.use(cors())
 app.use(bodyParser.json())
+app.use('/', loginRouter)
 app.use(matrixRouter)
 
 app.get('/', (req, res) => {
@@ -151,6 +154,9 @@ const server = require('http').createServer(app);
 const PORT = process.env.PORT || 3001
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
+})
+server.once('error', ()=> {
+  server.listen(PORT + 1)
 })
 
 module.exports = {
