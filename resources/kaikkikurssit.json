@@ -1,1332 +1,1332 @@
 [
-  {
-    "code": "TKT10001",
-    "name": "Johdatus tietojenkäsittelytieteeseen",
-    "level": "Perusopinnot",
-    "compulsory": true,
-    "prereqs": [],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT10001",
-    "visible": true
-  },
-  {
-    "code": "TKT10002",
-    "name": "Ohjelmoinnin perusteet",
-    "level": "Perusopinnot",
-    "compulsory": true,
-    "prereqs": [],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT10002",
-    "visible": true
-  },
-  {
-    "code": "TKT10003",
-    "name": "Ohjelmoinnin jatkokurssi",
-    "level": "Perusopinnot",
-    "compulsory": true,
-    "prereqs": [
-      "TKT10002"
-    ],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT10003",
-    "visible": true
-  },
-  {
-    "code": "TKT10004",
-    "name": "Tietokantojen perusteet",
-    "level": "Perusopinnot",
-    "compulsory": true,
-    "prereqs": [
-      "TKT10002"
-    ],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT10004",
-    "visible": true
-  },
-  {
-    "code": "TKT10005",
-    "name": "Tietokoneen toiminta",
-    "level": "Perusopinnot",
-    "compulsory": true,
-    "prereqs": [
-      "TKT10002"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT10005",
-    "visible": true
-  },
-  {
-    "code": "TKT20001",
-    "name": "Tietorakenteet ja algoritmit",
-    "level": "Aineopinnot",
-    "compulsory": true,
-    "prereqs": [
-      "TKT10003",
-      "MAT11001"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "10",
-    "url": "https://courses.helsinki.fi/fi/TKT20001",
-    "visible": true
-  },
-  {
-    "code": "TKT20002",
-    "name": "Ohjelmistotekniikan menetelmät",
-    "level": "Aineopinnot",
-    "compulsory": true,
-    "prereqs": [
-      "TKT10003",
-      "TKT10004"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT20002",
-    "visible": true
-  },
-  {
-    "code": "TKT20003",
-    "name": "Käyttöjärjestelmät",
-    "level": "Aineopinnot",
-    "compulsory": true,
-    "prereqs": [
-      "TKT10005"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT20003",
-    "visible": true
-  },
-  {
-    "code": "TKT20004",
-    "name": "Tietoliikenteen perusteet",
-    "level": "Aineopinnot",
-    "compulsory": true,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT20004",
-    "visible": true
-  },
-  {
-    "code": "TKT20005",
-    "name": "Laskennan mallit",
-    "level": "Aineopinnot",
-    "compulsory": true,
-    "prereqs": [
-      "TKT20001"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT20005",
-    "visible": true
-  },
-  {
-    "code": "TKT20006",
-    "name": "Ohjelmistotuotanto",
-    "level": "Aineopinnot",
-    "compulsory": true,
-    "prereqs": [
-      "TKT20002"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "6",
-    "url": "https://courses.helsinki.fi/fi/TKT20006",
-    "visible": true
-  },
-  {
-    "code": "TKT20007",
-    "name": "Ohjelmistotuotantoprojekti",
-    "level": "Aineopinnot",
-    "compulsory": true,
-    "prereqs": [
-      "TKT20006",
-      "TKT20010",
-      "TKT20011",
-      "TKT20012"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "10",
-    "url": "https://courses.helsinki.fi/fi/TKT20007",
-    "visible": true
-  },
-  {
-    "code": "TKT20008",
-    "name": "Johdatus tekoälyyn",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20001"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT20008",
-    "visible": true
-  },
-  {
-    "code": "TKT20009",
-    "name": "Tietoturvan perusteet",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT20009",
-    "visible": true
-  },
-  {
-    "code": "TKT20010",
-    "name": "Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20001"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "4",
-    "url": "https://courses.helsinki.fi/fi/TKT20010",
-    "visible": true
-  },
-  {
-    "code": "TKT20011",
-    "name": "Aineopintojen harjoitustyö: Tietokantasovellus",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10003",
-      "TKT10004"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "4",
-    "url": "https://courses.helsinki.fi/fi/TKT20011",
-    "visible": true
-  },
-  {
-    "code": "TKT20012",
-    "name": "Aineopintojen harjoitustyö: Tietoliikenne",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20004"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "4",
-    "url": "https://courses.helsinki.fi/fi/TKT20012",
-    "visible": true
-  },
-  {
-    "code": "TKT21001",
-    "name": "Tietokannan suunnittelu",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10004"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT21001",
-    "visible": true
-  },
-  {
-    "code": "TKT21002",
-    "name": "Introduction to Game Programming",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT21002",
-    "visible": true
-  },
-  {
-    "code": "TKT21003",
-    "name": "Web-palvelinohjelmointi Ruby on Rails",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003",
-      "TKT10004"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT21003",
-    "visible": true
-  },
-  {
-    "code": "TKT21004",
-    "name": "Computer Organization II",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10005"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT21004",
-    "visible": true
-  },
-  {
-    "code": "TKT21005",
-    "name": "Ohjelmointitekniikka (JavaScript)",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10003"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT21005",
-    "visible": true
-  },
-  {
-    "code": "TKT21007",
-    "name": "Web-palvelinohjelmointi Java",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003",
-      "TKT10004"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT21007",
-    "visible": true
-  },
-  {
-    "code": "TKT21008",
-    "name": "Programming in C",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003",
-      "TKT20001",
-      "TKT10005"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT21008",
-    "visible": true
-  },
-  {
-    "code": "TKT21009",
-    "name": "Full Stack -websovelluskehitys",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003",
-      "TKT10004"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT21009",
-    "visible": true
-  },
-  {
-    "code": "TKT21010",
-    "name": "Full Stack -websovelluskehitys harjoitustyö",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT21009"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "1-10",
-    "url": "https://courses.helsinki.fi/fi/TKT21010",
-    "visible": true
-  },
-  {
-    "code": "TKT21012",
-    "name": "Algoritmit ongelmanratkaisussa",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20001"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "10",
-    "url": "https://courses.helsinki.fi/fi/TKT21012",
-    "visible": true
-  },
-  {
-    "code": "TKT21013",
-    "name": "Robottiohjelmoinnin harjoitustyö",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
-    "ects": "4",
-    "url": "https://courses.helsinki.fi/fi/TKT21013",
-    "visible": true
-  },
-  {
-    "code": "TKT21014",
-    "name": "Johdatus funktionaaliseen ohjelmointiin (Haskell)",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/TKT21014",
-    "visible": true
-  },
-  {
-    "code": "TKT21015",
-    "name": "Versionhallinta",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "1",
-    "url": "https://courses.helsinki.fi/fi/TKT21015",
-    "visible": true
-  },
-  {
-    "code": "TKT21016",
-    "name": "Web-palvelinohjelmointi Ruby on Rails, harjoitustyö",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT21003"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "1-10",
-    "url": "https://courses.helsinki.fi/fi/TKT21016",
-    "visible": true
-  },
-  {
-    "code": "TKT21017",
-    "name": "Kilpaohjelmointi",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "1-3",
-    "url": "https://courses.helsinki.fi/fi/TKT21017",
-    "visible": true
-  },
-  {
-    "code": "TKT21018",
-    "name": "The Elements of AI",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "2",
-    "url": "https://courses.helsinki.fi/fi/TKT21018",
-    "visible": true
-  },
-  {
-    "code": "TKT21019",
-    "name": "Introduction to Lambda Calculus",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "MAT11001"
-    ],
-    "studytrack": [],
-    "ects": "2-5",
-    "url": "https://courses.helsinki.fi/fi/TKT21019",
-    "visible": true
-  },
-  {
-    "code": "CSM13501",
-    "name": "Shell Scripting",
-    "level": "Aineopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "2-4",
-    "url": "https://courses.helsinki.fi/fi/CSM13501",
-    "visible": true
-  },
-  {
-    "code": "CSM11002",
-    "name": "Computer Science Colloquium",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM11002",
-    "visible": false
-  },
-  {
-    "code": "CSM12101",
-    "name": "Design and Analysis of Algorithms",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20001"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12101",
-    "visible": true
-  },
-  {
-    "code": "CSM12103",
-    "name": "Data Compression Techniques",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20001"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12103",
-    "visible": true
-  },
-  {
-    "code": "CSM12104",
-    "name": "Randomized Algorithms I",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM12101"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12104",
-    "visible": true
-  },
-  {
-    "code": "CSM12105",
-    "name": "Randomized Algorithms II",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM12104"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12105",
-    "visible": true
-  },
-  {
-    "code": "CSM12108",
-    "name": "Biological Sequence Analysis",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20001"
-    ],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12108",
-    "visible": true
-  },
-  {
-    "code": "CSM12110",
-    "name": "Seminar in Experimental Algorithmics",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12110",
-    "visible": false
-  },
-  {
-    "code": "CSM12111",
-    "name": "Seminar on Parameterized Algorithms",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM12101"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12111",
-    "visible": false
-  },
-  {
-    "code": "CSM12112",
-    "name": "Seminar on Applied Discrete Algorithms A",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12112",
-    "visible": false
-  },
-  {
-    "code": "CSM13001",
-    "name": "Distributed Systems",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003",
-      "TKT10005",
-      "TKT20003",
-      "TKT20004"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13001",
-    "visible": true
-  },
-  {
-    "code": "CSM13101",
-    "name": "Networked Systems and Services",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20004"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13101",
-    "visible": true
-  },
-  {
-    "code": "CSM13102",
-    "name": "Internet Protocols",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20004"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13102",
-    "visible": true
-  },
-  {
-    "code": "CSM13103",
-    "name": "Cloud and Edge Computing",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM13101",
-      "CSM13001"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13103",
-    "visible": true
-  },
-  {
-    "code": "CSM13104",
-    "name": "Scalable Overlay Networks",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13104",
-    "visible": true
-  },
-  {
-    "code": "CSM13181",
-    "name": "Seminar on Cloud-based Mobile Networking",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13181",
-    "visible": false
-  },
-  {
-    "code": "CSM13202",
-    "name": "Cryptography in Networking",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13202",
-    "visible": true
-  },
-  {
-    "code": "CSM13204",
-    "name": "Cyber Security II",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13204",
-    "visible": true
-  },
-  {
-    "code": "CSM13281",
-    "name": "Seminar on Communication Security",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13281",
-    "visible": false
-  },
-  {
-    "code": "CSM13301",
-    "name": "Service Ecosystems",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM13101",
-      "CSM13001",
-      "CSM14101"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13301",
-    "visible": true
-  },
-  {
-    "code": "CSM13302",
-    "name": "Services Engineering with Models",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM14101",
-      "CSM13101"
-    ],
-    "studytrack": [
-      "ns"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13302",
-    "visible": true
-  },
-  {
-    "code": "CSM13304",
-    "name": "Seminar on Collaborative and Interoperable Computing",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13304",
-    "visible": false
-  },
-  {
-    "code": "CSM13401",
-    "name": "Human Computer Interaction",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13401",
-    "visible": true
-  },
-  {
-    "code": "CSM13402",
-    "name": "Designing Interactive Systems",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM13401"
-    ],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13402",
-    "visible": true
-  },
-  {
-    "code": "CSM13403",
-    "name": "Seminar on Advanced Topics in Human Computer Interaction",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM13401"
-    ],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13403",
-    "visible": false
-  },
-  {
-    "code": "CSM14101",
-    "name": "Ohjelmistoarkkitehtuurit",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20006",
-      "TKT20002"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14101",
-    "visible": true
-  },
-  {
-    "code": "CSM14102",
-    "name": "Methods for Software Engineering Research",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14102",
-    "visible": true
-  },
-  {
-    "code": "CSM14103",
-    "name": "Ohjelmistoarkkitehtuurien harjoitustyö",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM14101"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14103",
-    "visible": true
-  },
-  {
-    "code": "CSM14104",
-    "name": "Software Product Management",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14104",
-    "visible": true
-  },
-  {
-    "code": "CSM14105",
-    "name": "Ohjelmistoprojektien johtaminen ja ryhmadynamiikka",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14105",
-    "visible": true
-  },
-  {
-    "code": "CSM14106",
-    "name": "Software Factory Experience",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT20006",
-      "TKT20007"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14106",
-    "visible": true
-  },
-  {
-    "code": "CSM14107",
-    "name": "Seminar in Empirical Software Engineering",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14107",
-    "visible": false
-  },
-  {
-    "code": "CSM14201",
-    "name": "Ohjelmistojen testaus",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003",
-      "TKT20002"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14201",
-    "visible": true
-  },
-  {
-    "code": "CSM14203",
-    "name": "Ohjelmointikielten periaatteet",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003",
-      "TKT20002",
-      "TKT20006",
-      "TKT20001"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14203",
-    "visible": true
-  },
-  {
-    "code": "CSM14204",
-    "name": "Compilers",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14204",
-    "visible": true
-  },
-  {
-    "code": "CSM14205",
-    "name": "Code Generation",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "CSM14204"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14205",
-    "visible": true
-  },
-  {
-    "code": "CSM14208",
-    "name": "Seminaari: Ohjelmistotuotanto ja tietokonepelit",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14208",
-    "visible": false
-  },
-  {
-    "code": "CSM14209",
-    "name": "Seminar in Novel Software Architecture Design",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14209",
-    "visible": false
-  },
-  {
-    "code": "CSM14303",
-    "name": "Seminar on Big Data Management",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10004"
-    ],
-    "studytrack": [
-      "ss"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14303",
-    "visible": false
-  },
-  {
-    "code": "DATA11001",
-    "name": "Introduction to Data Science",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003"
-    ],
-    "studytrack": [
-      "ds"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/data11001/",
-    "visible": true
-  },
-  {
-    "code": "DATA11002",
-    "name": "Introduction to Machine Learning",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "TKT10003",
-      "MAT11002",
-      "MAT12001"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA11002",
-    "visible": true
-  },
-  {
-    "code": "DATA12001",
-    "name": "Advanced Course in Machine Learning",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "DATA11002"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA12001",
-    "visible": true
-  },
-  {
-    "code": "DATA14002",
-    "name": "Introduction to Big Data Management",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002",
-      "MAT11001"
-    ],
-    "studytrack": [
-      "ds"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA14002",
-    "visible": true
-  },
-  {
-    "code": "DATA15003",
-    "name": "Interactive Data Visualization",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "TKT10002"
-    ],
-    "studytrack": [
-      "ds"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA15003",
-    "visible": true
-  },
-  {
-    "code": "DATA20002",
-    "name": "Seminar: Deep Learning for Natural Language Processing",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "DATA11002"
-    ],
-    "studytrack": [
-      "adm"
-    ],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA20002",
-    "visible": false
-  },
-  {
-    "code": "LSI31003",
-    "name": "Machine Learning in Molecular Biology",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/LSI31003",
-    "visible": true
-  },
-  {
-    "code": "LSI31004",
-    "name": "Seminar in machine learning methods for fossil data analysis",
-    "level": "Syventävät",
-    "compulsory": false,
-    "prereqs": [
-      "DATA11002"
-    ],
-    "studytrack": [],
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/LSI31004",
-    "visible": false
-  },
-  {
-    "code": "MAT11001",
-    "name": "Johdatus yliopistomatematiikkaan",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "math",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11001",
-    "visible": true
-  },
-  {
-    "code": "MAT11002",
-    "name": "Lineaarialgebra ja matriisilaskenta I",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "math",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11002",
-    "visible": true
-  },
-  {
-    "code": "MAT11003",
-    "name": "Raja-arvot",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "math",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11003",
-    "visible": true
-  },
-  {
-    "code": "MAT11004",
-    "name": "Differentiaalilaskenta",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "MAT11003"
-    ],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "math",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11004",
-    "visible": true
-  },
-  {
-    "code": "MAT11005",
-    "name": "Integraalilaskenta",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "MAT11003",
-      "MAT11004"
-    ],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "math",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11005",
-    "visible": true
-  },
-  {
-    "code": "MAT11010",
-    "name": "Matemaattinen analyysi I",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "math",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11010",
-    "visible": true
-  },
-  {
-    "code": "MAT11011",
-    "name": "Matemaattinen analyysi II",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "MAT11010",
-      "MAT11002"
-    ],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "math",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11011",
-    "visible": true
-  },
-  {
-    "code": "MAT11012",
-    "name": "Matemaattinen analyysi III",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "MAT11010",
-      "MAT11011",
-      "MAT11002"
-    ],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "math",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11012",
-    "visible": true
-  },
-  {
-    "code": "MAT11013",
-    "name": "Matemaattinen analyysi IV",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [
-      "MAT11010",
-      "MAT11011",
-      "MAT11012",
-      "MAT11002"
-    ],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "math",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT11013",
-    "visible": true
-  },
-  {
-    "code": "MAT12001",
-    "name": "Tilastotiede ja R tutuksi I",
-    "level": "Perusopinnot",
-    "compulsory": false,
-    "prereqs": [],
-    "studytrack": [
-      "math"
-    ],
-    "faculty": "stats",
-    "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/MAT12001",
-    "visible": true
-  }
+    {
+        "code": "TKT10001",
+        "name": "Johdatus tietojenkäsittelytieteeseen",
+        "level": "Perusopinnot",
+        "compulsory": true,
+        "prereqs": [],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT10001",
+        "visible": true
+    },
+    {
+        "code": "TKT10002",
+        "name": "Ohjelmoinnin perusteet",
+        "level": "Perusopinnot",
+        "compulsory": true,
+        "prereqs": [],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT10002",
+        "visible": true
+    },
+    {
+        "code": "TKT10003",
+        "name": "Ohjelmoinnin jatkokurssi",
+        "level": "Perusopinnot",
+        "compulsory": true,
+        "prereqs": [
+            "TKT10002"
+        ],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT10003",
+        "visible": true
+    },
+    {
+        "code": "TKT10004",
+        "name": "Tietokantojen perusteet",
+        "level": "Perusopinnot",
+        "compulsory": true,
+        "prereqs": [
+            "TKT10002"
+        ],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT10004",
+        "visible": true
+    },
+    {
+        "code": "TKT10005",
+        "name": "Tietokoneen toiminta",
+        "level": "Perusopinnot",
+        "compulsory": true,
+        "prereqs": [
+            "TKT10002"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT10005",
+        "visible": true
+    },
+    {
+        "code": "TKT20001",
+        "name": "Tietorakenteet ja algoritmit",
+        "level": "Aineopinnot",
+        "compulsory": true,
+        "prereqs": [
+            "TKT10003",
+            "MAT11001"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "10",
+        "url": "https://courses.helsinki.fi/fi/TKT20001",
+        "visible": true
+    },
+    {
+        "code": "TKT20002",
+        "name": "Ohjelmistotekniikan menetelmät",
+        "level": "Aineopinnot",
+        "compulsory": true,
+        "prereqs": [
+            "TKT10003",
+            "TKT10004"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT20002",
+        "visible": true
+    },
+    {
+        "code": "TKT20003",
+        "name": "Käyttöjärjestelmät",
+        "level": "Aineopinnot",
+        "compulsory": true,
+        "prereqs": [
+            "TKT10005"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT20003",
+        "visible": true
+    },
+    {
+        "code": "TKT20004",
+        "name": "Tietoliikenteen perusteet",
+        "level": "Aineopinnot",
+        "compulsory": true,
+        "prereqs": [],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT20004",
+        "visible": true
+    },
+    {
+        "code": "TKT20005",
+        "name": "Laskennan mallit",
+        "level": "Aineopinnot",
+        "compulsory": true,
+        "prereqs": [
+            "TKT20001"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT20005",
+        "visible": true
+    },
+    {
+        "code": "TKT20006",
+        "name": "Ohjelmistotuotanto",
+        "level": "Aineopinnot",
+        "compulsory": true,
+        "prereqs": [
+            "TKT20002"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "6",
+        "url": "https://courses.helsinki.fi/fi/TKT20006",
+        "visible": true
+    },
+    {
+        "code": "TKT20007",
+        "name": "Ohjelmistotuotantoprojekti",
+        "level": "Aineopinnot",
+        "compulsory": true,
+        "prereqs": [
+            "TKT20006",
+            "TKT20010",
+            "TKT20011",
+            "TKT20012"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "10",
+        "url": "https://courses.helsinki.fi/fi/TKT20007",
+        "visible": true
+    },
+    {
+        "code": "TKT20008",
+        "name": "Johdatus tekoälyyn",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20001"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT20008",
+        "visible": true
+    },
+    {
+        "code": "TKT20009",
+        "name": "Tietoturvan perusteet",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT20009",
+        "visible": true
+    },
+    {
+        "code": "TKT20010",
+        "name": "Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20001"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "4",
+        "url": "https://courses.helsinki.fi/fi/TKT20010",
+        "visible": true
+    },
+    {
+        "code": "TKT20011",
+        "name": "Aineopintojen harjoitustyö: Tietokantasovellus",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10003",
+            "TKT10004"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "4",
+        "url": "https://courses.helsinki.fi/fi/TKT20011",
+        "visible": true
+    },
+    {
+        "code": "TKT20012",
+        "name": "Aineopintojen harjoitustyö: Tietoliikenne",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20004"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "4",
+        "url": "https://courses.helsinki.fi/fi/TKT20012",
+        "visible": true
+    },
+    {
+        "code": "TKT21001",
+        "name": "Tietokannan suunnittelu",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10004"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT21001",
+        "visible": true
+    },
+    {
+        "code": "TKT21002",
+        "name": "Introduction to Game Programming",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT21002",
+        "visible": true
+    },
+    {
+        "code": "TKT21003",
+        "name": "Web-palvelinohjelmointi Ruby on Rails",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003",
+            "TKT10004"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT21003",
+        "visible": true
+    },
+    {
+        "code": "TKT21004",
+        "name": "Computer Organization II",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10005"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT21004",
+        "visible": true
+    },
+    {
+        "code": "TKT21005",
+        "name": "Ohjelmointitekniikka (JavaScript)",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10003"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT21005",
+        "visible": true
+    },
+    {
+        "code": "TKT21007",
+        "name": "Web-palvelinohjelmointi Java",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003",
+            "TKT10004"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT21007",
+        "visible": true
+    },
+    {
+        "code": "TKT21008",
+        "name": "Programming in C",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003",
+            "TKT20001",
+            "TKT10005"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT21008",
+        "visible": true
+    },
+    {
+        "code": "TKT21009",
+        "name": "Full Stack -websovelluskehitys",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003",
+            "TKT10004"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT21009",
+        "visible": true
+    },
+    {
+        "code": "TKT21010",
+        "name": "Full Stack -websovelluskehitys harjoitustyö",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT21009"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "1-10",
+        "url": "https://courses.helsinki.fi/fi/TKT21010",
+        "visible": true
+    },
+    {
+        "code": "TKT21012",
+        "name": "Algoritmit ongelmanratkaisussa",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20001"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "10",
+        "url": "https://courses.helsinki.fi/fi/TKT21012",
+        "visible": true
+    },
+    {
+        "code": "TKT21013",
+        "name": "Robottiohjelmoinnin harjoitustyö",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [],
+        "ects": "4",
+        "url": "https://courses.helsinki.fi/fi/TKT21013",
+        "visible": true
+    },
+    {
+        "code": "TKT21014",
+        "name": "Johdatus funktionaaliseen ohjelmointiin (Haskell)",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/TKT21014",
+        "visible": true
+    },
+    {
+        "code": "TKT21015",
+        "name": "Versionhallinta",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "1",
+        "url": "https://courses.helsinki.fi/fi/TKT21015",
+        "visible": true
+    },
+    {
+        "code": "TKT21016",
+        "name": "Web-palvelinohjelmointi Ruby on Rails, harjoitustyö",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT21003"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "1-10",
+        "url": "https://courses.helsinki.fi/fi/TKT21016",
+        "visible": true
+    },
+    {
+        "code": "TKT21017",
+        "name": "Kilpaohjelmointi",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "1-3",
+        "url": "https://courses.helsinki.fi/fi/TKT21017",
+        "visible": true
+    },
+    {
+        "code": "TKT21018",
+        "name": "The Elements of AI",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "2",
+        "url": "https://courses.helsinki.fi/fi/TKT21018",
+        "visible": true
+    },
+    {
+        "code": "TKT21019",
+        "name": "Introduction to Lambda Calculus",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT11001"
+        ],
+        "studytrack": [],
+        "ects": "2-5",
+        "url": "https://courses.helsinki.fi/fi/TKT21019",
+        "visible": true
+    },
+    {
+        "code": "CSM13501",
+        "name": "Shell Scripting",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "2-4",
+        "url": "https://courses.helsinki.fi/fi/CSM13501",
+        "visible": true
+    },
+    {
+        "code": "CSM11002",
+        "name": "Computer Science Colloquium",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM11002",
+        "visible": false
+    },
+    {
+        "code": "CSM12101",
+        "name": "Design and Analysis of Algorithms",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20001"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM12101",
+        "visible": true
+    },
+    {
+        "code": "CSM12103",
+        "name": "Data Compression Techniques",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20001"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM12103",
+        "visible": true
+    },
+    {
+        "code": "CSM12104",
+        "name": "Randomized Algorithms I",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM12101"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM12104",
+        "visible": true
+    },
+    {
+        "code": "CSM12105",
+        "name": "Randomized Algorithms II",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM12104"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM12105",
+        "visible": true
+    },
+    {
+        "code": "CSM12108",
+        "name": "Biological Sequence Analysis",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20001"
+        ],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM12108",
+        "visible": true
+    },
+    {
+        "code": "CSM12110",
+        "name": "Seminar in Experimental Algorithmics",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM12110",
+        "visible": false
+    },
+    {
+        "code": "CSM12111",
+        "name": "Seminar on Parameterized Algorithms",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM12101"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM12111",
+        "visible": false
+    },
+    {
+        "code": "CSM12112",
+        "name": "Seminar on Applied Discrete Algorithms A",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM12112",
+        "visible": false
+    },
+    {
+        "code": "CSM13001",
+        "name": "Distributed Systems",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003",
+            "TKT10005",
+            "TKT20003",
+            "TKT20004"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13001",
+        "visible": true
+    },
+    {
+        "code": "CSM13101",
+        "name": "Networked Systems and Services",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20004"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13101",
+        "visible": true
+    },
+    {
+        "code": "CSM13102",
+        "name": "Internet Protocols",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20004"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13102",
+        "visible": true
+    },
+    {
+        "code": "CSM13103",
+        "name": "Cloud and Edge Computing",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM13101",
+            "CSM13001"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13103",
+        "visible": true
+    },
+    {
+        "code": "CSM13104",
+        "name": "Scalable Overlay Networks",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13104",
+        "visible": true
+    },
+    {
+        "code": "CSM13181",
+        "name": "Seminar on Cloud-based Mobile Networking",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13181",
+        "visible": false
+    },
+    {
+        "code": "CSM13202",
+        "name": "Cryptography in Networking",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13202",
+        "visible": true
+    },
+    {
+        "code": "CSM13204",
+        "name": "Cyber Security II",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13204",
+        "visible": true
+    },
+    {
+        "code": "CSM13281",
+        "name": "Seminar on Communication Security",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13281",
+        "visible": false
+    },
+    {
+        "code": "CSM13301",
+        "name": "Service Ecosystems",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM13101",
+            "CSM13001",
+            "CSM14101"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13301",
+        "visible": true
+    },
+    {
+        "code": "CSM13302",
+        "name": "Services Engineering with Models",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM14101",
+            "CSM13101"
+        ],
+        "studytrack": [
+            "ns"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13302",
+        "visible": true
+    },
+    {
+        "code": "CSM13304",
+        "name": "Seminar on Collaborative and Interoperable Computing",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13304",
+        "visible": false
+    },
+    {
+        "code": "CSM13401",
+        "name": "Human Computer Interaction",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13401",
+        "visible": true
+    },
+    {
+        "code": "CSM13402",
+        "name": "Designing Interactive Systems",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM13401"
+        ],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13402",
+        "visible": true
+    },
+    {
+        "code": "CSM13403",
+        "name": "Seminar on Advanced Topics in Human Computer Interaction",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM13401"
+        ],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM13403",
+        "visible": false
+    },
+    {
+        "code": "CSM14101",
+        "name": "Ohjelmistoarkkitehtuurit",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20006",
+            "TKT20002"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14101",
+        "visible": true
+    },
+    {
+        "code": "CSM14102",
+        "name": "Methods for Software Engineering Research",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14102",
+        "visible": true
+    },
+    {
+        "code": "CSM14103",
+        "name": "Ohjelmistoarkkitehtuurien harjoitustyö",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM14101"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14103",
+        "visible": true
+    },
+    {
+        "code": "CSM14104",
+        "name": "Software Product Management",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14104",
+        "visible": true
+    },
+    {
+        "code": "CSM14105",
+        "name": "Ohjelmistoprojektien johtaminen ja ryhmadynamiikka",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14105",
+        "visible": true
+    },
+    {
+        "code": "CSM14106",
+        "name": "Software Factory Experience",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT20006",
+            "TKT20007"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14106",
+        "visible": true
+    },
+    {
+        "code": "CSM14107",
+        "name": "Seminar in Empirical Software Engineering",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14107",
+        "visible": false
+    },
+    {
+        "code": "CSM14201",
+        "name": "Ohjelmistojen testaus",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003",
+            "TKT20002"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14201",
+        "visible": true
+    },
+    {
+        "code": "CSM14203",
+        "name": "Ohjelmointikielten periaatteet",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003",
+            "TKT20002",
+            "TKT20006",
+            "TKT20001"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14203",
+        "visible": true
+    },
+    {
+        "code": "CSM14204",
+        "name": "Compilers",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14204",
+        "visible": true
+    },
+    {
+        "code": "CSM14205",
+        "name": "Code Generation",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "CSM14204"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14205",
+        "visible": true
+    },
+    {
+        "code": "CSM14208",
+        "name": "Seminaari: Ohjelmistotuotanto ja tietokonepelit",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14208",
+        "visible": false
+    },
+    {
+        "code": "CSM14209",
+        "name": "Seminar in Novel Software Architecture Design",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14209",
+        "visible": false
+    },
+    {
+        "code": "CSM14303",
+        "name": "Seminar on Big Data Management",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10004"
+        ],
+        "studytrack": [
+            "ss"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/CSM14303",
+        "visible": false
+    },
+    {
+        "code": "DATA11001",
+        "name": "Introduction to Data Science",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003"
+        ],
+        "studytrack": [
+            "ds"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/data11001/",
+        "visible": true
+    },
+    {
+        "code": "DATA11002",
+        "name": "Introduction to Machine Learning",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "TKT10003",
+            "MAT11002",
+            "MAT12001"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/DATA11002",
+        "visible": true
+    },
+    {
+        "code": "DATA12001",
+        "name": "Advanced Course in Machine Learning",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "DATA11002"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/DATA12001",
+        "visible": true
+    },
+    {
+        "code": "DATA14002",
+        "name": "Introduction to Big Data Management",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002",
+            "MAT11001"
+        ],
+        "studytrack": [
+            "ds"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/DATA14002",
+        "visible": true
+    },
+    {
+        "code": "DATA15003",
+        "name": "Interactive Data Visualization",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "TKT10002"
+        ],
+        "studytrack": [
+            "ds"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/DATA15003",
+        "visible": true
+    },
+    {
+        "code": "DATA20002",
+        "name": "Seminar: Deep Learning for Natural Language Processing",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "DATA11002"
+        ],
+        "studytrack": [
+            "adm"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/DATA20002",
+        "visible": false
+    },
+    {
+        "code": "LSI31003",
+        "name": "Machine Learning in Molecular Biology",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/LSI31003",
+        "visible": true
+    },
+    {
+        "code": "LSI31004",
+        "name": "Seminar in machine learning methods for fossil data analysis",
+        "level": "Syventävät",
+        "compulsory": false,
+        "prereqs": [
+            "DATA11002"
+        ],
+        "studytrack": [],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/LSI31004",
+        "visible": false
+    },
+    {
+        "code": "MAT11001",
+        "name": "Johdatus yliopistomatematiikkaan",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT11001",
+        "visible": true,
+        "faculty": "math"
+    },
+    {
+        "code": "MAT11002",
+        "name": "Lineaarialgebra ja matriisilaskenta I",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT11002",
+        "visible": true,
+        "faculty": "math"
+    },
+    {
+        "code": "MAT11003",
+        "name": "Raja-arvot",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT11003",
+        "visible": true,
+        "faculty": "math"
+    },
+    {
+        "code": "MAT11004",
+        "name": "Differentiaalilaskenta",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT11003"
+        ],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT11004",
+        "visible": true,
+        "faculty": "math"
+    },
+    {
+        "code": "MAT11005",
+        "name": "Integraalilaskenta",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT11003",
+            "MAT11004"
+        ],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT11005",
+        "visible": true,
+        "faculty": "math"
+    },
+    {
+        "code": "MAT11010",
+        "name": "Matemaattinen analyysi I",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT11010",
+        "visible": true,
+        "faculty": "math"
+    },
+    {
+        "code": "MAT11011",
+        "name": "Matemaattinen analyysi II",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT11010",
+            "MAT11002"
+        ],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT11011",
+        "visible": true,
+        "faculty": "math"
+    },
+    {
+        "code": "MAT11012",
+        "name": "Matemaattinen analyysi III",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT11010",
+            "MAT11011",
+            "MAT11002"
+        ],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT11012",
+        "visible": true,
+        "faculty": "math"
+    },
+    {
+        "code": "MAT11013",
+        "name": "Matemaattinen analyysi IV",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT11010",
+            "MAT11011",
+            "MAT11012",
+            "MAT11002"
+        ],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT11013",
+        "visible": true,
+        "faculty": "math"
+    },
+    {
+        "code": "MAT12001",
+        "name": "Tilastotiede ja R tutuksi I",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [],
+        "studytrack": [
+            "math"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT12001",
+        "visible": true,
+        "faculty": "stats"
+    }
 ]
