@@ -7,13 +7,14 @@ const fileLocation = 'resources/kaikkikurssit.json'
 const axios = require('axios');
 const courseInfo = require('./weboodi/courseInfo')
 require('dotenv').config()
+const matrixRouter = require('./routers/matrixRouter')
 const courseUpdate = require('./utils/courseUpdate')
-
 const loginRouter = require('./routers/loginRouter')
+
 app.use(cors())
 app.use(bodyParser.json())
-
 app.use('/', loginRouter)
+app.use(matrixRouter)
 
 app.get('/', (req, res) => {
   res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For a single course /courses/:id </br> For database update /update </p>')
