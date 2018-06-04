@@ -20,13 +20,18 @@
   "homepage": "https://github.com/kurssikartta-ohtuprojekti/kurssikartta-back#readme",
   "devDependencies": {
     "jest": "^22.4.4",
-    "nodemon": "^1.17.4",
+    "nodemon": "^1.17.5",
     "supertest": "^3.1.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "bcrypt": "^2.0.1",
     "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
-    "jsonfile": "^4.0.0"
+    "install": "^0.11.0",
+    "jsonfile": "^4.0.0",
+    "jsonwebtoken": "^8.2.2",
+    "npm": "^6.1.0"
   }
 }
