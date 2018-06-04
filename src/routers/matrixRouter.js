@@ -7,4 +7,19 @@ matrixRouter.get('/matrix', async (req, res) => {
         res.json(obj)
     })
 })
+
+matrixRouter.post('matrix', async (req, res) => {
+    const data = req.data
+
+    jsonfile.writeFile('resources/map.json', data, (err, obj) => {
+        if (err) {
+            res.status(400).end
+
+        } else {
+            res.status(200).end
+        }
+
+    })
+})
+
 module.exports = matrixRouter
