@@ -5,10 +5,11 @@ const jsonfile = require('jsonfile')
 const {TKT10001} = require('./data/data.js')
 
 test('courses are returned as json', async () => {
-    await api
+   response = await api
         .get('/courses')
         .expect(200)
         .expect('Content-Type', /application\/json/)
+        console.log(response.body)
 })
 
 test('with course id correct course is returned', async () => {
