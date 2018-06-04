@@ -8,15 +8,20 @@ matrixRouter.get('/matrix', async (req, res) => {
     })
 })
 
-matrixRouter.post('matrix', async (req, res) => {
-    const data = req.data
-
+matrixRouter.post('/matrix', (req, res) => {
+    const data = req.body
+   // console.log('body', req.body)
+   // console.log('data', data)
     jsonfile.writeFile('resources/map.json', data, (err, obj) => {
-        if (err) {
-            res.status(400).end
+        console.log('err:', err)
+        console.log('obj: ', obj)
+        if (err !== null) {
+            console.log('err', err)
+          return  res.status(400).send({"error": error})
 
         } else {
-            res.status(200).end
+            console.log('here')
+          return  res.status(200).send({"msg": "Ok, updated"})
         }
 
     })
