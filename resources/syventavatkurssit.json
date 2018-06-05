@@ -7,63 +7,75 @@
     "prereqs": [],
     "studytrack": [],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM11002",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM11002"
   },
   {
     "code": "CSM12101",
     "name": "Design and Analysis of Algorithms",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT20001"
+    ],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12101",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM12101"
   },
   {
     "code": "CSM12103",
     "name": "Data Compression Techniques",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT20001"
+    ],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12103",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM12103"
   },
   {
     "code": "CSM12104",
     "name": "Randomized Algorithms I",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "CSM12101"
+    ],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12104",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM12104"
   },
   {
     "code": "CSM12105",
     "name": "Randomized Algorithms II",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "CSM12104"
+    ],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12105",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM12105"
   },
   {
     "code": "CSM12108",
     "name": "Biological Sequence Analysis",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
+    "prereqs": [
+      "TKT20001"
+    ],
     "studytrack": [],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12108",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM12108"
   },
   {
     "code": "CSM12110",
@@ -71,21 +83,25 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12110",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM12110"
   },
   {
     "code": "CSM12111",
     "name": "Seminar on Parameterized Algorithms",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "CSM12101"
+    ],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12111",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM12111"
   },
   {
     "code": "CSM12112",
@@ -93,54 +109,72 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM12112",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM12112"
   },
   {
     "code": "CSM13001",
     "name": "Distributed Systems",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT10002",
+      "TKT10003",
+      "TKT10005",
+      "TKT20003",
+      "TKT20004"
+    ],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13001",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13001"
   },
   {
     "code": "CSM13101",
     "name": "Networked Systems and Services",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT20004"
+    ],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13101",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13101"
   },
   {
     "code": "CSM13102",
     "name": "Internet Protocols",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT20004"
+    ],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13102",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13102"
   },
   {
     "code": "CSM13103",
     "name": "Cloud and Edge Computing",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "CSM13101",
+      "CSM13001"
+    ],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13103",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13103"
   },
   {
     "code": "CSM13104",
@@ -148,10 +182,11 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13104",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13104"
   },
   {
     "code": "CSM13181",
@@ -159,10 +194,11 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13181",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM13181"
   },
   {
     "code": "CSM13202",
@@ -170,10 +206,11 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13202",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13202"
   },
   {
     "code": "CSM13204",
@@ -181,10 +218,11 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13204",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13204"
   },
   {
     "code": "CSM13281",
@@ -192,32 +230,42 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13281",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM13281"
   },
   {
     "code": "CSM13301",
     "name": "Service Ecosystems",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "CSM13101",
+      "CSM13001",
+      "CSM14101"
+    ],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13301",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13301"
   },
   {
     "code": "CSM13302",
     "name": "Services Engineering with Models",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "CSM14101",
+      "CSM13101"
+    ],
+    "studytrack": [
+      "ns"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13302",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13302"
   },
   {
     "code": "CSM13304",
@@ -227,8 +275,7 @@
     "prereqs": [],
     "studytrack": [],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13304",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM13304"
   },
   {
     "code": "CSM13401",
@@ -238,41 +285,46 @@
     "prereqs": [],
     "studytrack": [],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13401",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13401"
   },
   {
     "code": "CSM13402",
     "name": "Designing Interactive Systems",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
+    "prereqs": [
+      "CSM13401"
+    ],
     "studytrack": [],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13402",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM13402"
   },
   {
     "code": "CSM13403",
     "name": "Seminar on Advanced Topics in Human Computer Interaction",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
+    "prereqs": [
+      "CSM13401"
+    ],
     "studytrack": [],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM13403",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM13403"
   },
   {
     "code": "CSM14101",
     "name": "Ohjelmistoarkkitehtuurit",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT20006",
+      "TKT20002"
+    ],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14101",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14101"
   },
   {
     "code": "CSM14102",
@@ -280,21 +332,25 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14102",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14102"
   },
   {
     "code": "CSM14103",
     "name": "Ohjelmistoarkkitehtuurien harjoitustyö",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "CSM14101"
+    ],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14103",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14103"
   },
   {
     "code": "CSM14104",
@@ -302,10 +358,11 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14104",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14104"
   },
   {
     "code": "CSM14105",
@@ -313,21 +370,26 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14105",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14105"
   },
   {
     "code": "CSM14106",
     "name": "Software Factory Experience",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT20006",
+      "TKT20007"
+    ],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14106",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14106"
   },
   {
     "code": "CSM14107",
@@ -335,32 +397,45 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14107",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM14107"
   },
   {
     "code": "CSM14201",
     "name": "Ohjelmistojen testaus",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT10002",
+      "TKT10003",
+      "TKT20002"
+    ],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14201",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14201"
   },
   {
     "code": "CSM14203",
     "name": "Ohjelmointikielten periaatteet",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT10002",
+      "TKT10003",
+      "TKT20002",
+      "TKT20006",
+      "TKT20001"
+    ],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14203",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14203"
   },
   {
     "code": "CSM14204",
@@ -368,21 +443,25 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14204",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14204"
   },
   {
     "code": "CSM14205",
     "name": "Code Generation",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "CSM14204"
+    ],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14205",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/CSM14205"
   },
   {
     "code": "CSM14208",
@@ -390,10 +469,11 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14208",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM14208"
   },
   {
     "code": "CSM14209",
@@ -401,87 +481,114 @@
     "level": "Syventävät",
     "compulsory": false,
     "prereqs": [],
-    "studytrack": [],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14209",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM14209"
   },
   {
     "code": "CSM14303",
     "name": "Seminar on Big Data Management",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT10004"
+    ],
+    "studytrack": [
+      "ss"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/CSM14303",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/CSM14303"
   },
   {
     "code": "DATA11001",
     "name": "Introduction to Data Science",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT10002",
+      "TKT10003"
+    ],
+    "studytrack": [
+      "ds"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1101",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/data11001/"
   },
   {
     "code": "DATA11002",
     "name": "Introduction to Machine Learning",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT10002",
+      "TKT10003",
+      "MAT11002",
+      "MAT12001"
+    ],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1102",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/DATA11002"
   },
   {
     "code": "DATA12001",
     "name": "Advanced Course in Machine Learning",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "DATA11002"
+    ],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1200",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/DATA12001"
   },
   {
     "code": "DATA14002",
     "name": "Introduction to Big Data Management",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT10002",
+      "MAT11001"
+    ],
+    "studytrack": [
+      "ds"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1400",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/DATA14002"
   },
   {
     "code": "DATA15003",
     "name": "Interactive Data Visualization",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "TKT10002"
+    ],
+    "studytrack": [
+      "ds"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA1500",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/DATA15003"
   },
   {
     "code": "DATA20002",
     "name": "Seminar: Deep Learning for Natural Language Processing",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
-    "studytrack": [],
+    "prereqs": [
+      "DATA11002"
+    ],
+    "studytrack": [
+      "adm"
+    ],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/DATA2000",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/DATA20002"
   },
   {
     "code": "LSI31003",
@@ -491,18 +598,18 @@
     "prereqs": [],
     "studytrack": [],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/LSI31003",
-    "visible": true
+    "url": "https://courses.helsinki.fi/fi/LSI31003"
   },
   {
     "code": "LSI31004",
     "name": "Seminar in machine learning methods for fossil data analysis",
     "level": "Syventävät",
     "compulsory": false,
-    "prereqs": [],
+    "prereqs": [
+      "DATA11002"
+    ],
     "studytrack": [],
     "ects": "5",
-    "url": "https://courses.helsinki.fi/fi/LSI31004",
-    "visible": false
+    "url": "https://courses.helsinki.fi/fi/LSI31004"
   }
 ]
