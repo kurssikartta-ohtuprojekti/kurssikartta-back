@@ -7,8 +7,8 @@
         "prereqs": [],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT10001",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT10001"
+
     },
     {
         "code": "TKT10002",
@@ -18,8 +18,8 @@
         "prereqs": [],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT10002",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT10002"
+
     },
     {
         "code": "TKT10003",
@@ -31,8 +31,8 @@
         ],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT10003",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT10003"
+
     },
     {
         "code": "TKT10004",
@@ -44,8 +44,8 @@
         ],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT10004",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT10004"
+
     },
     {
         "code": "TKT10005",
@@ -59,8 +59,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT10005",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT10005"
+
     },
     {
         "code": "TKT20001",
@@ -75,8 +75,8 @@
             "adm"
         ],
         "ects": "10",
-        "url": "https://courses.helsinki.fi/fi/TKT20001",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20001"
+
     },
     {
         "code": "TKT20002",
@@ -91,8 +91,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT20002",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20002"
+
     },
     {
         "code": "TKT20003",
@@ -106,8 +106,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT20003",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20003"
+
     },
     {
         "code": "TKT20004",
@@ -119,8 +119,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT20004",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20004"
+
     },
     {
         "code": "TKT20005",
@@ -134,8 +134,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT20005",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20005"
+
     },
     {
         "code": "TKT20006",
@@ -149,8 +149,8 @@
             "ss"
         ],
         "ects": "6",
-        "url": "https://courses.helsinki.fi/fi/TKT20006",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20006"
+
     },
     {
         "code": "TKT20007",
@@ -167,8 +167,8 @@
             "ss"
         ],
         "ects": "10",
-        "url": "https://courses.helsinki.fi/fi/TKT20007",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20007"
+
     },
     {
         "code": "TKT20008",
@@ -182,8 +182,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT20008",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20008"
+
     },
     {
         "code": "TKT20009",
@@ -195,8 +195,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT20009",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20009"
+
     },
     {
         "code": "TKT20010",
@@ -210,8 +210,8 @@
             "adm"
         ],
         "ects": "4",
-        "url": "https://courses.helsinki.fi/fi/TKT20010",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20010"
+
     },
     {
         "code": "TKT20011",
@@ -226,8 +226,8 @@
             "ss"
         ],
         "ects": "4",
-        "url": "https://courses.helsinki.fi/fi/TKT20011",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20011"
+
     },
     {
         "code": "TKT20012",
@@ -241,8 +241,8 @@
             "ns"
         ],
         "ects": "4",
-        "url": "https://courses.helsinki.fi/fi/TKT20012",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT20012"
+
     },
     {
         "code": "TKT21001",
@@ -256,8 +256,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT21001",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21001"
+
     },
     {
         "code": "TKT21002",
@@ -271,8 +271,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT21002",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21002"
+
     },
     {
         "code": "TKT21003",
@@ -288,8 +288,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT21003",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21003"
+
     },
     {
         "code": "TKT21004",
@@ -303,8 +303,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT21004",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21004"
+
     },
     {
         "code": "TKT21005",
@@ -318,8 +318,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT21005",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21005"
+
     },
     {
         "code": "TKT21007",
@@ -335,8 +335,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT21007",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21007"
+
     },
     {
         "code": "TKT21008",
@@ -353,8 +353,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT21008",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21008"
+
     },
     {
         "code": "TKT21009",
@@ -370,8 +370,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT21009",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21009"
+
     },
     {
         "code": "TKT21010",
@@ -385,8 +385,8 @@
             "ss"
         ],
         "ects": "1-10",
-        "url": "https://courses.helsinki.fi/fi/TKT21010",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21010"
+
     },
     {
         "code": "TKT21012",
@@ -400,8 +400,8 @@
             "adm"
         ],
         "ects": "10",
-        "url": "https://courses.helsinki.fi/fi/TKT21012",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21012"
+
     },
     {
         "code": "TKT21013",
@@ -411,8 +411,8 @@
         "prereqs": [],
         "studytrack": [],
         "ects": "4",
-        "url": "https://courses.helsinki.fi/fi/TKT21013",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21013"
+
     },
     {
         "code": "TKT21014",
@@ -427,8 +427,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT21014",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21014"
+
     },
     {
         "code": "TKT21015",
@@ -440,8 +440,8 @@
             "ss"
         ],
         "ects": "1",
-        "url": "https://courses.helsinki.fi/fi/TKT21015",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21015"
+
     },
     {
         "code": "TKT21016",
@@ -455,8 +455,8 @@
             "ss"
         ],
         "ects": "1-10",
-        "url": "https://courses.helsinki.fi/fi/TKT21016",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21016"
+
     },
     {
         "code": "TKT21017",
@@ -471,8 +471,8 @@
             "ss"
         ],
         "ects": "1-3",
-        "url": "https://courses.helsinki.fi/fi/TKT21017",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21017"
+
     },
     {
         "code": "TKT21018",
@@ -484,8 +484,8 @@
             "adm"
         ],
         "ects": "2",
-        "url": "https://courses.helsinki.fi/fi/TKT21018",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21018"
+
     },
     {
         "code": "TKT21019",
@@ -497,8 +497,8 @@
         ],
         "studytrack": [],
         "ects": "2-5",
-        "url": "https://courses.helsinki.fi/fi/TKT21019",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/TKT21019"
+
     },
     {
         "code": "CSM13501",
@@ -510,8 +510,8 @@
             "ns"
         ],
         "ects": "2-4",
-        "url": "https://courses.helsinki.fi/fi/CSM13501",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13501"
+
     },
     {
         "code": "CSM11002",
@@ -521,8 +521,8 @@
         "prereqs": [],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM11002",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM11002"
+
     },
     {
         "code": "CSM12101",
@@ -536,8 +536,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM12101",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM12101"
+
     },
     {
         "code": "CSM12103",
@@ -551,8 +551,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM12103",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM12103"
+
     },
     {
         "code": "CSM12104",
@@ -566,8 +566,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM12104",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM12104"
+
     },
     {
         "code": "CSM12105",
@@ -581,8 +581,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM12105",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM12105"
+
     },
     {
         "code": "CSM12108",
@@ -594,8 +594,8 @@
         ],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM12108",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM12108"
+
     },
     {
         "code": "CSM12110",
@@ -607,8 +607,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM12110",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM12110"
+
     },
     {
         "code": "CSM12111",
@@ -622,8 +622,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM12111",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM12111"
+
     },
     {
         "code": "CSM12112",
@@ -635,8 +635,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM12112",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM12112"
+
     },
     {
         "code": "CSM13001",
@@ -654,8 +654,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13001",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13001"
+
     },
     {
         "code": "CSM13101",
@@ -669,8 +669,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13101",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13101"
+
     },
     {
         "code": "CSM13102",
@@ -684,8 +684,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13102",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13102"
+
     },
     {
         "code": "CSM13103",
@@ -700,8 +700,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13103",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13103"
+
     },
     {
         "code": "CSM13104",
@@ -713,8 +713,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13104",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13104"
+
     },
     {
         "code": "CSM13181",
@@ -726,8 +726,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13181",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM13181"
+
     },
     {
         "code": "CSM13202",
@@ -739,8 +739,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13202",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13202"
+
     },
     {
         "code": "CSM13204",
@@ -752,8 +752,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13204",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13204"
+
     },
     {
         "code": "CSM13281",
@@ -765,8 +765,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13281",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM13281"
+
     },
     {
         "code": "CSM13301",
@@ -782,8 +782,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13301",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13301"
+
     },
     {
         "code": "CSM13302",
@@ -798,8 +798,8 @@
             "ns"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13302",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13302"
+
     },
     {
         "code": "CSM13304",
@@ -809,8 +809,8 @@
         "prereqs": [],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13304",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM13304"
+
     },
     {
         "code": "CSM13401",
@@ -820,8 +820,8 @@
         "prereqs": [],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13401",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13401"
+
     },
     {
         "code": "CSM13402",
@@ -833,8 +833,8 @@
         ],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13402",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM13402"
+
     },
     {
         "code": "CSM13403",
@@ -846,8 +846,8 @@
         ],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM13403",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM13403"
+
     },
     {
         "code": "CSM14101",
@@ -862,8 +862,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14101",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14101"
+
     },
     {
         "code": "CSM14102",
@@ -875,8 +875,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14102",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14102"
+
     },
     {
         "code": "CSM14103",
@@ -890,8 +890,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14103",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14103"
+
     },
     {
         "code": "CSM14104",
@@ -903,8 +903,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14104",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14104"
+
     },
     {
         "code": "CSM14105",
@@ -916,8 +916,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14105",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14105"
+
     },
     {
         "code": "CSM14106",
@@ -932,8 +932,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14106",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14106"
+
     },
     {
         "code": "CSM14107",
@@ -945,8 +945,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14107",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM14107"
+
     },
     {
         "code": "CSM14201",
@@ -962,8 +962,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14201",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14201"
+
     },
     {
         "code": "CSM14203",
@@ -981,8 +981,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14203",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14203"
+
     },
     {
         "code": "CSM14204",
@@ -994,8 +994,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14204",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14204"
+
     },
     {
         "code": "CSM14205",
@@ -1009,8 +1009,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14205",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/CSM14205"
+
     },
     {
         "code": "CSM14208",
@@ -1022,8 +1022,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14208",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM14208"
+
     },
     {
         "code": "CSM14209",
@@ -1035,8 +1035,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14209",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM14209"
+
     },
     {
         "code": "CSM14303",
@@ -1050,8 +1050,8 @@
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14303",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/CSM14303"
+
     },
     {
         "code": "DATA11001",
@@ -1066,8 +1066,8 @@
             "ds"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/data11001/",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/data11001/"
+
     },
     {
         "code": "DATA11002",
@@ -1084,8 +1084,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/DATA11002",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/DATA11002"
+
     },
     {
         "code": "DATA12001",
@@ -1099,8 +1099,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/DATA12001",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/DATA12001"
+
     },
     {
         "code": "DATA14002",
@@ -1115,8 +1115,8 @@
             "ds"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/DATA14002",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/DATA14002"
+
     },
     {
         "code": "DATA15003",
@@ -1130,8 +1130,8 @@
             "ds"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/DATA15003",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/DATA15003"
+
     },
     {
         "code": "DATA20002",
@@ -1145,8 +1145,8 @@
             "adm"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/DATA20002",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/DATA20002"
+
     },
     {
         "code": "LSI31003",
@@ -1156,8 +1156,8 @@
         "prereqs": [],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/LSI31003",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/LSI31003"
+
     },
     {
         "code": "LSI31004",
@@ -1169,8 +1169,8 @@
         ],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/LSI31004",
-        "visible": false
+        "url": "https://courses.helsinki.fi/fi/LSI31004"
+
     },
     {
         "code": "MAT11001",
@@ -1183,7 +1183,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT11001",
-        "visible": true,
+
         "faculty": "math"
     },
     {
@@ -1197,7 +1197,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT11002",
-        "visible": true,
+
         "faculty": "math"
     },
     {
@@ -1211,7 +1211,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT11003",
-        "visible": true,
+
         "faculty": "math"
     },
     {
@@ -1227,7 +1227,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT11004",
-        "visible": true,
+
         "faculty": "math"
     },
     {
@@ -1244,7 +1244,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT11005",
-        "visible": true,
+
         "faculty": "math"
     },
     {
@@ -1258,7 +1258,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT11010",
-        "visible": true,
+
         "faculty": "math"
     },
     {
@@ -1275,7 +1275,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT11011",
-        "visible": true,
+
         "faculty": "math"
     },
     {
@@ -1293,7 +1293,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT11012",
-        "visible": true,
+
         "faculty": "math"
     },
     {
@@ -1312,7 +1312,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT11013",
-        "visible": true,
+
         "faculty": "math"
     },
     {
@@ -1326,7 +1326,7 @@
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT12001",
-        "visible": true,
+         
         "faculty": "stats"
     }
 ]

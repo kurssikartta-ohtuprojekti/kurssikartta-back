@@ -8,8 +8,7 @@
         "studytrack": [],
         "faculty": "math",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11001",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11001"
     },
     {
         "code": "MAT11002",
@@ -20,8 +19,7 @@
         "studytrack": [],
         "faculty": "math",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11002",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11002"
     },
     {
         "code": "MAT11003",
@@ -32,8 +30,7 @@
         "studytrack": [],
         "faculty": "math",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11003",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11003"
     },
     {
         "code": "MAT11004",
@@ -46,8 +43,7 @@
         "studytrack": [],
         "faculty": "math",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11004",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11004"
     },
     {
         "code": "MAT11005",
@@ -61,8 +57,7 @@
         "studytrack": [],
         "faculty": "math",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11005",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11005"
     },
     {
         "code": "MAT11010",
@@ -73,8 +68,7 @@
         "studytrack": [],
         "faculty": "math",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11010",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11010"
     },
     {
         "code": "MAT11011",
@@ -88,8 +82,7 @@
         "studytrack": [],
         "faculty": "math",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11011",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11011"
     },
     {
         "code": "MAT11012",
@@ -104,8 +97,7 @@
         "studytrack": [],
         "faculty": "math",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11012",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11012"
     },
     {
         "code": "MAT11013",
@@ -121,8 +113,7 @@
         "studytrack": [],
         "faculty": "math",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11013",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11013"
     },
     {
         "code": "MAT12001",
@@ -133,7 +124,6 @@
         "studytrack": [],
         "faculty": "stats",
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/MAT11013",
-        "visible": true
+        "url": "https://courses.helsinki.fi/fi/MAT11013"
     }
 ]
