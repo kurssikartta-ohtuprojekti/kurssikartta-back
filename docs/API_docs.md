@@ -179,16 +179,19 @@ POST /login
 
 Response:
 200 OK
+```
 {
     "token": "eyJhb4ciOiJIUI1rNiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIi4w234giaWhdsF0IjoxNTI4MjAzODE1fQ.3WhiprK9z2b5J-QeySwg5E4m-rtXkbsu4rVf7LdXCOug",
     "username": "myUsernameHere"
 }
+```
 OR
-401 Unauthorized:
+401 Unauthorized
+```
 {
     "error": "invalid username or password"
 }
-
+```
 ### GET /matrix - Returns the current course map matrix
 
 Response format:
@@ -215,6 +218,7 @@ Example response:
 <details><summary>Click to show</summary>
 
 <p>
+```
 {
     "id": 0,
     "name": "Default",
@@ -1741,5 +1745,6 @@ Example response:
         ]
     ]
 }
+```
 </p>
 <details>
