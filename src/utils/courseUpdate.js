@@ -40,6 +40,30 @@ module.exports = function (req, res, next) {
                 value = splitter;
               }
               newRow[name] = value;
+
+              if (name === "periodyear") {
+
+                var splitter = value.split(',');
+                var monta = value.split(',').length;
+                console.log(monta);
+
+
+                var vuosi = "2018";
+                var periodit = [false, false, false, false, false, false];
+                console.log(splitter);
+
+                periodCheck(monta, splitter, vuosi, periodit);
+
+                var periodyear = {
+                  "2018": periodit,
+                }
+
+                console.log(periodyear);
+
+                console.log(periodit);
+                newRow[name] = periodyear;
+              }
+
             } else {
               if (name !== "faculty") {
                 value = [];
@@ -59,3 +83,26 @@ module.exports = function (req, res, next) {
     }
   });
 };
+
+function periodCheck(monta, splitter, vuosi, periodit) {
+  for (var y = 0; y < monta; y++) {
+    if (splitter[y] === "k1/" + vuosi) {
+      periodit[0] = true;
+    }
+    if (splitter[y] === "k2/" + vuosi) {
+      periodit[1] = true;
+    }
+    if (splitter[y] === "kesä/" + vuosi) {
+      periodit[2] = true;
+    }
+    if (splitter[y] === "s1/" + vuosi) {
+      periodit[3] = true;
+    }
+    if (splitter[y] === "s2/" + vuosi) {
+      periodit[4] = true;
+    }
+    if (splitter[y] === "joulu/" + vuosi) {
+      periodit[5] = true;
+    }
+  }
+}
