@@ -44,41 +44,15 @@ module.exports = function (req, res, next) {
               if (name === "periodyear") {
                 var splitter = value.split(',');
                 var monta = value.split(',').length;
-                console.log(monta);
-
-                var periodyear = new Array();
+                var periodyear = new Object();
 
                 var vuosi = "2018";
                 var periodit = [false, false, false, false, false, false];
-                console.log(splitter);
-                periodCheck(monta, splitter, vuosi, periodit);
-                var v2018 = periodit;
-                // if (periodit.includes(true)) {
-                //   var year = {
-                //     "2018": periodit,
-                //   }
-                //   periodyear.push(year);
-                // }
 
-                periodit = [false, false, false, false, false, false];
-                vuosi = "2019";
-                periodCheck(monta, splitter, vuosi, periodit);
-                var v2019 = periodit;
-
-                periodit = [false, false, false, false, false, false];
-                vuosi = "2020";
-                periodCheck(monta, splitter, vuosi, periodit);
-                var v2020 = periodit;
-
-                var periodyear = {
-                  "2018": v2018,
-                  "2019": v2019,
-                  "2020": v2020,
+                for (var k = 2017; k < 2030; k++) {
+                  vuosi = k;
+                  yearCheck(monta, splitter, vuosi, periodyear);
                 }
-
-                console.log(periodyear);
-
-                console.log(periodit);
                 newRow[name] = periodyear;
               }
 
@@ -101,6 +75,15 @@ module.exports = function (req, res, next) {
     }
   });
 };
+
+function yearCheck(monta, splitter, vuosi, periodyear) {
+  var periodit = [false, false, false, false, false, false];
+  periodCheck(monta, splitter, vuosi, periodit);
+  if (periodit.includes(true)) {
+    periodyear[vuosi] = periodit;
+    console.log(periodyear);
+  }
+}
 
 function periodCheck(monta, splitter, vuosi, periodit) {
   for (var y = 0; y < monta; y++) {
