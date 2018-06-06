@@ -4,11 +4,16 @@ const jsonfile = require('jsonfile')
 const courseInfo = require('./../weboodi/courseInfo')
 
 
-const fileLocation = 'resources/kaikkikurssit.json'
+const prodPath = 'resources/kaikkikurssit.json'
+const devPath = 'resources/kaikkikurssit.json'
+const testPath = 'resources/kaikkikurssitDummy.json'
 
+const choosePath = () => {
+    return (process.env.NODE_ENV === 'production') ? prodPath : (process.env.NODE_ENV === 'development' ? devPath : testPath)
+}
 
 courseRouter.get('/courses', (req, res) => {
-    jsonfile.readFile(fileLocation, (err, obj) => {
+    jsonfile.readFile(choosePath(), (err, obj) => {
         if (err) {
             console.log('error:', err)
             return
@@ -19,7 +24,7 @@ courseRouter.get('/courses', (req, res) => {
 })
 
 courseRouter.get('/courses/:id', (req, res) => {
-    jsonfile.readFile(fileLocation, (err, obj) => {
+    jsonfile.readFile(choosePath(), (err, obj) => {
         if (err) {
             console.log('error:', err)
             return
