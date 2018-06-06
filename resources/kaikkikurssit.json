@@ -11,7 +11,23 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
                 true,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
                 false,
                 false,
                 false,
@@ -32,7 +48,23 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
                 true,
+                false,
+                false
+            ],
+            "2019": [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
                 false,
                 false,
                 false,
@@ -56,7 +88,23 @@
         "periodyear": {
             "2018": [
                 false,
+                false,
+                false,
+                false,
                 true,
+                false
+            ],
+            "2019": [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
                 false,
                 false,
                 false,
@@ -78,7 +126,23 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
                 true,
+                false,
+                false
+            ],
+            "2019": [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
                 false,
                 false,
                 false,
@@ -104,7 +168,23 @@
         "periodyear": {
             "2018": [
                 false,
+                false,
+                false,
+                false,
                 true,
+                false
+            ],
+            "2019": [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
                 false,
                 false,
                 false,
@@ -129,7 +209,23 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
                 true,
+                false,
+                false
+            ],
+            "2019": [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
                 false,
                 false,
                 false,
@@ -161,6 +257,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -186,6 +298,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -203,6 +331,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -234,6 +378,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -253,6 +413,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -287,6 +463,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -306,6 +498,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -335,6 +543,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -354,6 +578,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -386,6 +626,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -405,6 +661,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -436,6 +708,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -455,6 +743,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -504,6 +808,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -541,6 +861,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -593,6 +929,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -612,6 +964,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -643,6 +1011,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -658,6 +1042,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -684,6 +1084,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -788,6 +1204,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -825,6 +1257,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -844,6 +1292,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -875,6 +1339,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -900,6 +1380,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -917,6 +1413,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -996,6 +1508,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1021,6 +1549,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1040,6 +1584,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1072,6 +1632,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1089,6 +1665,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1132,6 +1724,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1149,6 +1757,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1196,6 +1820,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1216,6 +1856,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1255,6 +1911,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1272,6 +1944,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1318,6 +2006,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1335,6 +2039,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1366,6 +2086,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1383,6 +2119,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1412,6 +2164,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1432,6 +2200,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1479,6 +2263,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1508,6 +2308,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1525,6 +2341,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1550,6 +2382,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1626,6 +2474,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1654,6 +2518,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1673,6 +2553,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1705,6 +2601,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1724,6 +2636,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1761,6 +2689,22 @@
         "visible": true,
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1805,6 +2749,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1823,6 +2783,22 @@
         "faculty": "math",
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1853,6 +2829,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1873,6 +2865,22 @@
         "faculty": "math",
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1906,6 +2914,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1924,6 +2948,22 @@
         "faculty": "math",
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -1957,6 +2997,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -1979,6 +3035,22 @@
         "faculty": "math",
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,
@@ -2014,6 +3086,22 @@
                 false,
                 false,
                 false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
             ]
         }
     },
@@ -2032,6 +3120,22 @@
         "faculty": "stats",
         "periodyear": {
             "2018": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
                 false,
                 false,
                 false,

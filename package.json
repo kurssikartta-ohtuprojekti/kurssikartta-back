@@ -4,7 +4,7 @@
   "description": "Ohjelmistotuotantoprojekti kesä 2018",
   "main": "src/index.js",
   "scripts": {
-    "start": "set NODE_ENV=production && node src/index.js",
+    "start": "NODE_ENV=production node src/index.js",
     "test": "NODE_ENV=test jest --verbose",
     "watch": "NODE_ENV=development nodemon src/index.js"
   },

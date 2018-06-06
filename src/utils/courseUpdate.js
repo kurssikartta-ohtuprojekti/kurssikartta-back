@@ -42,20 +42,38 @@ module.exports = function (req, res, next) {
               newRow[name] = value;
 
               if (name === "periodyear") {
-
                 var splitter = value.split(',');
                 var monta = value.split(',').length;
                 console.log(monta);
 
+                var periodyear = new Array();
 
                 var vuosi = "2018";
                 var periodit = [false, false, false, false, false, false];
                 console.log(splitter);
-
                 periodCheck(monta, splitter, vuosi, periodit);
+                var v2018 = periodit;
+                // if (periodit.includes(true)) {
+                //   var year = {
+                //     "2018": periodit,
+                //   }
+                //   periodyear.push(year);
+                // }
+
+                periodit = [false, false, false, false, false, false];
+                vuosi = "2019";
+                periodCheck(monta, splitter, vuosi, periodit);
+                var v2019 = periodit;
+
+                periodit = [false, false, false, false, false, false];
+                vuosi = "2020";
+                periodCheck(monta, splitter, vuosi, periodit);
+                var v2020 = periodit;
 
                 var periodyear = {
-                  "2018": periodit,
+                  "2018": v2018,
+                  "2019": v2019,
+                  "2020": v2020,
                 }
 
                 console.log(periodyear);
@@ -86,22 +104,22 @@ module.exports = function (req, res, next) {
 
 function periodCheck(monta, splitter, vuosi, periodit) {
   for (var y = 0; y < monta; y++) {
-    if (splitter[y] === "k1/" + vuosi) {
+    if (splitter[y] === ("k1/" + vuosi)) {
       periodit[0] = true;
     }
-    if (splitter[y] === "k2/" + vuosi) {
+    if (splitter[y] === ("k2/" + vuosi)) {
       periodit[1] = true;
     }
-    if (splitter[y] === "kesä/" + vuosi) {
+    if (splitter[y] === ("kesä/" + vuosi)) {
       periodit[2] = true;
     }
-    if (splitter[y] === "s1/" + vuosi) {
+    if (splitter[y] === ("s1/" + vuosi)) {
       periodit[3] = true;
     }
-    if (splitter[y] === "s2/" + vuosi) {
+    if (splitter[y] === ("s2/" + vuosi)) {
       periodit[4] = true;
     }
-    if (splitter[y] === "joulu/" + vuosi) {
+    if (splitter[y] === ("joulu/" + vuosi)) {
       periodit[5] = true;
     }
   }
