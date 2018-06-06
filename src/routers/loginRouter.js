@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken')
 const prodPath = './../../resources/accounts'
 const devPath = './../../resources/accounts'
 const testPath = './../../tests/data/testAccounts'
+const cors = require('cors')
 
 const choosePath = () => {
     return (process.env.NODE_ENV === 'production') ? prodPath : (process.env.NODE_ENV === 'development' ? devPath : testPath)
@@ -17,7 +18,7 @@ const validateLogin = async (username, password) => {
     return (account !== undefined && await bcrypt.compare(password, account.passwordHash))
 }
 
-loginRouter.post('/login', async (req, res) => {
+loginRouter.post('/login', cors(), async (req, res) => {
     if (req.body.username == undefined || req.body.password == undefined) {
 
         return res.status(401).send({ error: 'username or password missing' })
@@ -28,7 +29,7 @@ loginRouter.post('/login', async (req, res) => {
         const token = jwt.sign({ username: req.body.username, }, process.env.SECRET)
 
         res.status(200).send({ token, username: req.body.username })
-        
+
     } else {
 
         return res.status(401).send({ error: 'invalid username or password' })
