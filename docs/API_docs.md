@@ -217,7 +217,7 @@ Response format:
 Example response:
 <details><summary>Click to show</summary>
 
-<p>
+
 ```
 {
     "id": 0,
@@ -1746,5 +1746,15 @@ Example response:
     ]
 }
 ```
-</p>
+
 <details>
+
+### GET /reset - Resets the course map matrix to the original
+
+Response format:
+200 OK
+```
+{
+    "msg": "Ok, map has been reset"
+}
+```
