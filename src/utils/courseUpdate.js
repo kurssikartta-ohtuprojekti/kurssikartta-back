@@ -46,11 +46,8 @@ module.exports = function (req, res, next) {
                 var monta = value.split(',').length;
                 var periodyear = new Object();
 
-                var vuosi = "2018";
-                var periodit = [false, false, false, false, false, false];
-
                 for (var k = 2017; k < 2030; k++) {
-                  vuosi = k;
+                  var vuosi = k;
                   yearCheck(monta, splitter, vuosi, periodyear);
                 }
                 newRow[name] = periodyear;
