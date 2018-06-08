@@ -33,14 +33,5 @@ loginRouter.post('/login', cors(), async (req, res) => {
 
 })
 
-loginRouter.post('/account/reset', async (req, res) => {
-    /* const dbUserAccount = await validateLogin(req.body.username, req.body.password)
-     if (dbUserAccount) {
- 
-     } else {
-         return res.status(401).send({ error: 'invalid username or password' })
-     }
- */
-})
 
 module.exports = loginRouter
