@@ -60,6 +60,18 @@ test('if username is not defined an error is returned', async () => {
     expect(JSON.parse(res.text).error).toBe('username or password missing')
 })
 
+test('if password is not defined an error is returned', async () => {
+    const res = await api
+        .post('/login', )
+        .send({
+            'username': 'testAdmin'
+        })
+        .expect(401)
+        .expect('Content-Type', /application\/json/)
+
+    expect(JSON.parse(res.text).error).toBe('username or password missing')
+})
+
 afterAll(() => {
     server.close()
 })
