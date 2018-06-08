@@ -2,18 +2,14 @@ const express = require('express')
 const loginRouter = express.Router()
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const prodPath = './../../resources/accounts'
-const devPath = './../../resources/accounts'
-const testPath = './../../tests/data/testAccounts'
+const {getAccount} = require('./../utils/accountHandler')
 const cors = require('cors')
 
-const choosePath = () => {
-    return (process.env.NODE_ENV === 'production') ? prodPath : (process.env.NODE_ENV === 'development' ? devPath : testPath)
-}
+
 
 const validateLogin = async (username, password) => {
 
-    const account = require(choosePath()).accounts.find(account => account.username === username)
+    const account = getAccount(username)
 
     return (account !== undefined && await bcrypt.compare(password, account.passwordHash))
 }
