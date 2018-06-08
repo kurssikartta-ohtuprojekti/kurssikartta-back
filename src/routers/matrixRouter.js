@@ -17,7 +17,7 @@ const validateToken = (token) => {
     try {
 
     
-    const username = jwt.verify(token, process.env.SECRET).username
+    var username = jwt.verify(token, process.env.SECRET).username
     } catch (e) {
         return { error: 'malformed token' }
     }
