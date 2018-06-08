@@ -3,15 +3,18 @@ const { app, server } = require('./../index.js')
 const api = supertest(app)
 const jsonfile = require('jsonfile')
 const { TKT10001, CSM14209 } = require('./../../tests/data/dummyCourseData.js')
-
+/*
 test('courses are returned as json', async () => {
+
+    
+
     const response = await api
         .get('/courses')
         .expect(200)
         .expect('Content-Type', /application\/json/)
   //  console.log('Data: ', response.data)
 })
-
+*/
 test('with course id correct course is returned', async () => {
     var response = await api
         .get('/courses/TKT10001')
