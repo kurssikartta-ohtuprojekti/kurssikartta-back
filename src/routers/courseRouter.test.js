@@ -1,8 +1,8 @@
 const supertest = require('supertest')
-const { app, server } = require('../src/index.js')
+const { app, server } = require('./../index.js')
 const api = supertest(app)
 const jsonfile = require('jsonfile')
-const { TKT10001, CSM14209 } = require('./data/dummyCourseData.js')
+const { TKT10001, CSM14209 } = require('./../../tests/data/dummyCourseData.js')
 
 test('courses are returned as json', async () => {
     const response = await api
