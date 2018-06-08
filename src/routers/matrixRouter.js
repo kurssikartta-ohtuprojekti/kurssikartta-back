@@ -16,14 +16,14 @@ const validateToken = (token) => {
 
     try {
 
-    
-    var username = jwt.verify(token, process.env.SECRET).username
+        const username = jwt.verify(token, process.env.SECRET).username
+
+        if (!username) return { error: 'user token invalid' }
+        if (!getAccount(username)) return { error: 'account not found' }
+
     } catch (e) {
         return { error: 'malformed token' }
     }
-    if (!username) return { error: 'user token invalid' }
-
-    if (!getAccount(username)) return { error: 'account not found' }
 
     return { msg: 'token ok' }
 }
