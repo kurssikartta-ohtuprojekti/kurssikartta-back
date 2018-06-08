@@ -14,7 +14,7 @@ const validateLogin = async (username, password) => {
     return (account !== undefined && await bcrypt.compare(password, account.passwordHash))
 }
 
-loginRouter.post('/login', cors(), async (req, res) => {
+loginRouter.post('/login', async (req, res) => {
     if (req.body.username == undefined || req.body.password == undefined) {
 
         return res.status(401).send({ error: 'username or password missing' })
