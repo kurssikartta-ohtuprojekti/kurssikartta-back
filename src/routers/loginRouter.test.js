@@ -13,9 +13,8 @@ test('login with correct username and password is succesful and token and correc
         .expect(200)
         .expect('Content-Type', /application\/json/)
 
-    expect((res) => {
-        res.username === 'testAdmin'
-    })
+    expect(JSON.parse(res.text).username).toBe('testAdmin')
+
 
 })
 
@@ -29,9 +28,8 @@ test('login with correct username and incorrect password is not succesful', asyn
         .expect(401)
         .expect('Content-Type', /application\/json/)
 
-    expect((res) => {
-        res.error === 'invalid username or password'
-    })
+    expect(JSON.parse(res.text).error).toBe('invalid username or password')
+
 
 })
 
@@ -45,10 +43,33 @@ test('login with incorrect username and correct password is not succesful', asyn
         .expect(401)
         .expect('Content-Type', /application\/json/)
 
-    expect((res) => {
-        res.error === 'invalid username or password'
-    })
+    expect(JSON.parse(res.text).error).toBe('invalid username or password')
 
+
+})
+
+test('if username is not defined an error is returned', async () => {
+    const res = await api
+        .post('/login', )
+        .send({
+            'password': 'hevonen'
+        })
+        .expect(401)
+        .expect('Content-Type', /application\/json/)
+
+    expect(JSON.parse(res.text).error).toBe('username or password missing')
+})
+
+test('if password is not defined an error is returned', async () => {
+    const res = await api
+        .post('/login', )
+        .send({
+            'username': 'testAdmin'
+        })
+        .expect(401)
+        .expect('Content-Type', /application\/json/)
+
+    expect(JSON.parse(res.text).error).toBe('username or password missing')
 })
 
 afterAll(() => {
