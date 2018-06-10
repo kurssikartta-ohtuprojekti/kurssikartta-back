@@ -26,13 +26,23 @@ app.get('/update', courseUpdate);
 const server = require('http').createServer(app);
 
 var PORT = process.env.PORT || 3001
-console.log('PORT: ',)
+console.log('PORT: ', PORT)
+
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
-server.once('error', ()=> {
-  PORT += 1
-  server.listen(PORT)
+
+server.on('error', (e) => {
+
+  if (e.code === 'EADDRINUSE') {
+    console.log('EADDRINUSE')
+    PORT += 1
+    server.listen(PORT)
+
+  } else {
+    console.log('error: ', e.code)
+  }
+
 })
 
 module.exports = {

@@ -3,6 +3,7 @@ const matrixRouter = express.Router()
 const jsonfile = require('jsonfile')
 const jwt = require('jsonwebtoken')
 const { getAccount } = require('./../utils/accountHandler')
+const { chooseCourseMatrixPath } = require('./../other/paths')
 
 matrixRouter.get('/matrix', async (req, res) => {
     jsonfile.readFile('resources/map.json', (err, obj) => {
@@ -12,13 +13,13 @@ matrixRouter.get('/matrix', async (req, res) => {
 
 
 const validateToken = (token) => {
-    if (!token) return { error: 'user token missing' }
+    if (!token) return { error: 'token missing' }
 
     try {
 
         const username = jwt.verify(token, process.env.SECRET).username
 
-        if (!username) return { error: 'user token invalid' }
+        if (!username) return { error: 'token invalid' }
         if (!getAccount(username)) return { error: 'account not found' }
 
     } catch (e) {
@@ -30,26 +31,22 @@ const validateToken = (token) => {
 
 matrixRouter.post('/matrix', (req, res) => {
 
-    const validationResult = validateToken(req.get('authorization'))
-    if (validationResult.error) {
-        return res.status(401).json({ error: validationResult.error })
+    const validation = validateToken(req.get('authorization'))
+    if (validation.error) {
+        return res.status(401).json({ error: validation.error })
     } else {
-        console.log('validation', validationResult.msg)
+        console.log('validation', validation.msg)
     }
 
     const data = req.body
-    // console.log('body', req.body)
-    // console.log('data', data)
-    jsonfile.writeFile('resources/map.json', data, (err, obj) => {
-        console.log('err:', err)
-        console.log('obj: ', obj)
+
+    jsonfile.writeFile(chooseCourseMatrixPath(), data, (err, obj) => {
         if (err !== null) {
-            console.log('err', err)
+            console.log('err: ', err)
             return res.status(400).json({ error: error })
 
         } else {
-            //   console.log('here')
-            return res.status(200).send({ "msg": "Ok, updated" })
+            return res.status(200).json({ msg: "Ok, updated" })
         }
 
     })

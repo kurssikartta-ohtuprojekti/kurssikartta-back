@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const {weboodiApiBase} = require('../urls')
+const {weboodiApiBase} = require('../other/urls')
 
 const opetustapahtumaMapper = (item, index = 1) => {
    // console.log('item: ', item)
