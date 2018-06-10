@@ -3,7 +3,7 @@ const matrixRouter = express.Router()
 const jsonfile = require('jsonfile')
 const jwt = require('jsonwebtoken')
 const { getAccount } = require('./../utils/accountHandler')
-const { chooseCourseMatrixPath } = require('./../other/paths')
+const { getCourseMatrixPath } = require('./../other/paths')
 
 matrixRouter.get('/matrix', async (req, res) => {
     jsonfile.readFile('resources/map.json', (err, obj) => {
@@ -40,9 +40,8 @@ matrixRouter.post('/matrix', (req, res) => {
 
     const data = req.body
 
-    jsonfile.writeFile(chooseCourseMatrixPath(), data, (err, obj) => {
+    jsonfile.writeFile(getCourseMatrixPath(), data, (err, obj) => {
         if (err !== null) {
-            console.log('err: ', err)
             return res.status(400).json({ error: error })
 
         } else {

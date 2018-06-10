@@ -26,7 +26,6 @@ app.get('/update', courseUpdate);
 const server = require('http').createServer(app);
 
 var PORT = process.env.PORT || 3001
-console.log('PORT: ', PORT)
 
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
@@ -35,7 +34,6 @@ server.listen(PORT, () => {
 server.on('error', (e) => {
 
   if (e.code === 'EADDRINUSE') {
-    console.log('EADDRINUSE')
     PORT += 1
     server.listen(PORT)
 

@@ -2,6 +2,7 @@ const supertest = require('supertest')
 const { app, server } = require('./../index.js')
 const api = supertest(app)
 
+
 test('after HTTP POST is sent to /matrix with a valid token, status 200 is returned', async () => {
     var res = await api
         .post('/login', )
@@ -13,8 +14,6 @@ test('after HTTP POST is sent to /matrix with a valid token, status 200 is retur
 
     const token = JSON.parse(res.text).token
 
-
-    console.log('token', token)
 
     res = await api
         .post('/matrix')

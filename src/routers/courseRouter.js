@@ -2,13 +2,13 @@ const express = require('express')
 const courseRouter = express.Router()
 const jsonfile = require('jsonfile')
 const courseInfo = require('./../weboodi/courseInfo')
-const {chooseCourseJsonPath} = require('./../other/paths')
+const {getCourseJsonPath} = require('./../other/paths')
 
 
 courseRouter.get('/courses', (req, res) => {
-    jsonfile.readFile(chooseCourseJsonPath(), (err, obj) => {
+    jsonfile.readFile(getCourseJsonPath(), (err, obj) => {
         if (err) {
-            console.log('error:', err)
+            console.log('error: ', err)
             return
         }
      //   console.log('/courses, obj', obj)
@@ -17,9 +17,9 @@ courseRouter.get('/courses', (req, res) => {
 })
 
 courseRouter.get('/courses/:id', (req, res) => {
-    jsonfile.readFile(chooseCourseJsonPath(), (err, obj) => {
+    jsonfile.readFile(getCourseJsonPath(), (err, obj) => {
         if (err) {
-            console.log('error:', err)
+            console.log('error: ', err)
             return
         }
 
