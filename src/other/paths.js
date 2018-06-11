@@ -15,8 +15,12 @@ const getCourseJsonPath = () => {
     return (process.env.NODE_ENV === 'production') ? productionCourseJsonPath : (process.env.NODE_ENV === 'development' ? developmentCourseJsonPath : testCourseJsonPath)
 }
 
+const MAP_DEFAULT_LOC = 'resources/map.json'
+const MAP_BACKUP_LOC = 'resources/map-original.json'
 
 module.exports = { 
     getCourseMatrixPath,
-     getCourseJsonPath
+     getCourseJsonPath,
+     MAP_DEFAULT_LOC,
+     MAP_BACKUP_LOC
 }

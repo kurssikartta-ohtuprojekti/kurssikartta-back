@@ -192,11 +192,11 @@ OR
     "error": "invalid username or password"
 }
 ```
-### GET /matrix - Returns the current course map matrix
+### GET /matrix - Returns a list containing all current course matrice
 
 Response format:
 ```
-{
+[{
     "id": int,
     "name": String",
     "matrice": [
@@ -212,6 +212,10 @@ Response format:
        ]
     
 }
+, {...}
+, {...}
+]
+
 ```
 
 Example response:
@@ -219,7 +223,7 @@ Example response:
 
 
 ```
-{
+[{
     "id": 0,
     "name": "Default",
     "matrice": [
@@ -1744,10 +1748,41 @@ Example response:
             "."
         ]
     ]
-}
+}]
 ```
 
 <details>
+
+### GET /matrix/:id - returns a single course map matrix entry specified by :id
+
+Response format:
+200 OK
+```
+{
+    "id": int,
+    "name": String",
+    "matrice": [
+        [
+          String, String, String, String, String...
+        ],
+        [ 
+          String, String, String, String, String...
+         ]
+        .
+        .
+        .
+       ]
+    
+}
+```
+OR 
+404 NOT FOUND
+
+```
+{
+   "error": "Resource not found"
+}
+```
 
 ### GET /reset - Resets the course map matrix to the original
 
@@ -1755,6 +1790,6 @@ Response format:
 200 OK
 ```
 {
-    "msg": "Ok, map has been reset"
+    "msg": "Ok, updated"
 }
 ```

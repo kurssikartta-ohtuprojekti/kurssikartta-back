@@ -34,14 +34,12 @@ test('after HTTP POST is sent to /matrix with a valid token, status 200 is retur
         })
 
 
-    expect(JSON.parse(res.text).msg).toBe('Ok, updated')
-
-
+    expect(JSON.parse(res.text).msg).toBe('ok, updated')
 
 
 })
 
-test('after HTTP POST is sent to /matrix with no token, status 401 is returned', async () => {
+test('after HTTP POST is sent to /matrix with no token, status 403 is returned', async () => {
 
     const res = await api
         .post('/matrix')
@@ -58,7 +56,7 @@ test('after HTTP POST is sent to /matrix with no token, status 401 is returned',
                     "."
                 ]
             ]
-        })
+        }).expect(403)
 
 
     expect(JSON.parse(res.text).error).toBe('token missing')
