@@ -6,6 +6,15 @@ const { getAccount } = require('./../utils/accountHandler')
 const paths = require('./../other/paths')
 const messages = require('./../other/messages')
 
+const parse = (string) => {
+    const int = parseInt(string, 10)
+
+    if (int === undefined || isNaN(int)) {
+        return -1
+    } else
+        return int
+}
+
 matrixRouter.get('/matrix', async (req, res) => {
     jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
         if (err) {
@@ -16,14 +25,18 @@ matrixRouter.get('/matrix', async (req, res) => {
 })
 
 matrixRouter.get('/matrix/:id', async (req, res) => {
+    const id = parse(req.params.id)
+
+    if (id === -1) return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
+
+
     jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
         if (err) {
             return res.status(500).json({ error: messages.FILE_ERROR })
         }
-        const id = req.params.id
         try {
-            const map = obj.find(map => {
-                return map.id.toString() === id
+            const map = obj.find(item => {
+                return item.id === id
             })
             if (map === undefined) {
                 return res.status(404).json({ error: messages.NOT_FOUND })
@@ -83,12 +96,13 @@ matrixRouter.post('/matrix/:id', (req, res) => {
     if (validation.error) {
         return res.status(403).json({ error: validation.error })
     }
+    const id = parse(req.params.id)
 
-    if (req.body.id === undefined || req.body.name == undefined || req.body.matrice === undefined) {
+    if (req.body.id === undefined || req.body.name == undefined || req.body.matrice === undefined || id === -1) {
         return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
     }
 
-    const id = req.params.id
+
 
     jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
         if (err) return res.status(500).json({ error: messages.FILE_ERROR })
@@ -96,7 +110,7 @@ matrixRouter.post('/matrix/:id', (req, res) => {
 
         try {
             var index = obj.findIndex(item => {
-                return (item.id !== undefined && item.id.toString() === id)
+                return (item.id !== undefined && item.id === id)
             })
 
         } catch (e) {
@@ -133,7 +147,7 @@ matrixRouter.get('/reset', (req, res) => {
     jsonfile.readFile(paths.MAP_BACKUP_LOC, (err, obj) => {
         console.log('2')
 
-        jsonfile.writeFile(paths.MAP_DEFAULT_LOC, obj, () => {
+        jsonfile.writeFile(paths.getCourseMatrixPath(), obj, () => {
 
             if (err === null) {
 

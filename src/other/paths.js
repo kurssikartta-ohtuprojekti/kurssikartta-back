@@ -18,9 +18,14 @@ const getCourseJsonPath = () => {
 const MAP_DEFAULT_LOC = 'resources/map.json'
 const MAP_BACKUP_LOC = 'resources/map-original.json'
 
+const MAP_TEST_BACKUP_LOC = 'tests/data/dummyMap-original.json'
+const MAP_TEST_LOC = 'tests/data/dummyMap.json'
+
 module.exports = { 
     getCourseMatrixPath,
      getCourseJsonPath,
      MAP_DEFAULT_LOC,
-     MAP_BACKUP_LOC
+     MAP_BACKUP_LOC,
+     MAP_TEST_BACKUP_LOC,
+     MAP_TEST_LOC
 }
