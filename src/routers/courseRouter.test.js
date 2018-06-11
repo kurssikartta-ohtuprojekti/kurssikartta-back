@@ -10,11 +10,11 @@ test('courses are returned as json', async () => {
         .get('/courses')
         .expect(200)
         .expect('Content-Type', /application\/json/)
-  //  console.log('Data: ', response.data)
+    //  console.log('Data: ', response.data)
 })
 
 test('with course id correct course is returned', async () => {
-    var response = await api
+    let response = await api
         .get('/courses/TKT10001')
         .expect(200)
         .expect('Content-Type', /application\/json/)
@@ -28,10 +28,11 @@ test('with course id correct course is returned', async () => {
 
 })
 
-test('with incorrect id status 404 error message is returned', async () => {
-    response = await api
+test('with incorrect id status 404 and resource not found error message is returned', async () => {
+    const response = await api
         .get('/courses/TKT1001')
         .expect(404)
+        expect(response.body).toEqual({'error': 'resource not found'})
 })
 
 afterAll(() => {

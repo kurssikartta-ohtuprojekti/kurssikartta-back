@@ -7,7 +7,7 @@ const paths = require('./../other/paths')
 const messages = require('./../other/messages')
 
 matrixRouter.get('/matrix', async (req, res) => {
-    jsonfile.readFile(paths.MAP_DEFAULT_LOC, (err, obj) => {
+    jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
         if (err) {
             return res.status(500).json({ error: messages.FILE_ERROR })
         }
@@ -16,7 +16,7 @@ matrixRouter.get('/matrix', async (req, res) => {
 })
 
 matrixRouter.get('/matrix/:id', async (req, res) => {
-    jsonfile.readFile(paths.MAP_DEFAULT_LOC, (err, obj) => {
+    jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
         if (err) {
             return res.status(500).json({ error: messages.FILE_ERROR })
         }
@@ -60,8 +60,6 @@ matrixRouter.post('/matrix', (req, res) => {
     const validation = validateToken(req.get('authorization'))
     if (validation.error) {
         return res.status(403).json({ error: validation.error })
-    } else {
-        console.log('** validation ** ', validation.msg)
     }
 
     const data = req.body
@@ -77,6 +75,53 @@ matrixRouter.post('/matrix', (req, res) => {
     })
 
 })
+
+matrixRouter.post('/matrix/:id', (req, res) => {
+
+    const validation = validateToken(req.get('authorization'))
+
+    if (validation.error) {
+        return res.status(403).json({ error: validation.error })
+    }
+
+
+    const id = req.params.id.toString()
+
+    jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
+        if (err) return res.status(500).json({ error: messages.FILE_ERROR })
+
+
+        try {
+
+            const index = obj.findIndex(item => {
+                item.id === id
+            })
+
+            if (index === -1) {
+                obj.push(req.body)
+            } else {
+                obj[index] = req.body
+            }
+
+
+        } catch (e) {
+            return res.status(500).json({ error: messages.FILE_INCORRECT_FORMAT })
+        }
+
+        jsonfile.writeFile(paths.MAP_DEFAULT_LOC, obj, (err) => {
+            if (err) return res.status(500).json({ error: messages.FILE_ERROR })
+            else {
+                return res.status(200).json({ msg: messages.UPDATE_DONE })
+            }
+
+
+        }
+
+
+        )
+    })
+})
+
 
 matrixRouter.get('/reset', (req, res) => {
 
