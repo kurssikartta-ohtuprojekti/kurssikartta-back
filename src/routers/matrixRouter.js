@@ -64,7 +64,7 @@ matrixRouter.post('/matrix', (req, res) => {
 
     const data = req.body
 
-    jsonfile.writeFile(paths.getCourseMatrixPath(), data, (err, obj) => {
+    jsonfile.writeFile(paths.getCourseMatrixPath(), data, (err) => {
         if (err) {
             return res.status(500).json({ error: messages.FILE_ERROR })
 
@@ -84,40 +84,37 @@ matrixRouter.post('/matrix/:id', (req, res) => {
         return res.status(403).json({ error: validation.error })
     }
 
+    if (req.body.id === undefined || req.body.name == undefined || req.body.matrice === undefined) {
+        return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
+    }
 
-    const id = req.params.id.toString()
+    const id = req.params.id
 
     jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
         if (err) return res.status(500).json({ error: messages.FILE_ERROR })
 
 
         try {
-
-            const index = obj.findIndex(item => {
-                item.id === id
+            var index = obj.findIndex(item => {
+                return (item.id !== undefined && item.id.toString() === id)
             })
-
-            if (index === -1) {
-                obj.push(req.body)
-            } else {
-                obj[index] = req.body
-            }
-
 
         } catch (e) {
             return res.status(500).json({ error: messages.FILE_INCORRECT_FORMAT })
         }
 
-        jsonfile.writeFile(paths.MAP_DEFAULT_LOC, obj, (err) => {
+        if (index === -1) {
+            obj.push(req.body)
+        } else {
+            obj[index] = req.body
+        }
+
+        jsonfile.writeFile(paths.getCourseMatrixPath(), obj, (err) => {
             if (err) return res.status(500).json({ error: messages.FILE_ERROR })
             else {
                 return res.status(200).json({ msg: messages.UPDATE_DONE })
             }
-
-
         }
-
-
         )
     })
 })
@@ -125,9 +122,9 @@ matrixRouter.post('/matrix/:id', (req, res) => {
 
 matrixRouter.get('/reset', (req, res) => {
 
-    const validationResult = validateToken(req.get('authorization'))
-    if (validationResult.error) {
-        return res.status(403).json({ error: validationResult.error })
+    const validation = validateToken(req.get('authorization'))
+    if (validation.error) {
+        return res.status(403).json({ error: validation.error })
     } else {
         console.log('** validation ** ', validation.msg)
     }

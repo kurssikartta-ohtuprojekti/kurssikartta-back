@@ -1,7 +1,8 @@
 // file errors
 const FILE_ERROR = 'file not found or could not be opened'
-const FILE_INCORRECT_FORMAT = 'specified data has incorrect format'
+const FILE_INCORRECT_FORMAT = 'data in file has incorrect format'
 
+const DATA_INCORRECT_FORMAT = 'data in incorrect format'
 // authentication related errors
 const NO_TOKEN = 'token missing'
 const INVALID_TOKEN = 'token is invalid'
@@ -26,5 +27,6 @@ module.exports = {
     VALID_TOKEN,
     UPDATE_DONE,
     INVALID_USERNAME_OR_PASSWORD,
-    NO_USERNAME_OR_PASSWORD
+    NO_USERNAME_OR_PASSWORD,
+    DATA_INCORRECT_FORMAT
 }
