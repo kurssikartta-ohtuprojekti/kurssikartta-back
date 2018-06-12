@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken')
 const { getAccount } = require('./../utils/accountHandler')
 const paths = require('./../other/paths')
 const messages = require('./../other/messages')
+const {dataIsValid} = require('./../utils/courseMapMarixValidator')
 
 const parse = (string) => {
     const int = parseInt(string, 10)
@@ -68,6 +69,7 @@ const validateToken = (token) => {
     return { msg: messages.VALID_TOKEN }
 }
 
+/*
 matrixRouter.post('/matrix', (req, res) => {
 
     const validation = validateToken(req.get('authorization'))
@@ -88,7 +90,7 @@ matrixRouter.post('/matrix', (req, res) => {
     })
 
 })
-
+*/
 matrixRouter.post('/matrix/:id', (req, res) => {
 
     const validation = validateToken(req.get('authorization'))
@@ -98,7 +100,7 @@ matrixRouter.post('/matrix/:id', (req, res) => {
     }
     const id = parse(req.params.id)
 
-    if (req.body.id === undefined || req.body.name == undefined || req.body.matrice === undefined || id === -1) {
+    if (!dataIsValid(req.body) || id === -1) {
         return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
     }
 
