@@ -17,7 +17,7 @@ const parse = (string) => {
 }
 
 matrixRouter.get('/matrix', async (req, res) => {
-    jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
+    jsonfile.readFile(paths.getCourseMatrixJsonPath(), (err, obj) => {
         if (err) {
             return res.status(500).json({ error: messages.FILE_ERROR })
         }
@@ -31,7 +31,7 @@ matrixRouter.get('/matrix/:id', async (req, res) => {
     if (id === -1) return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
 
 
-    jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
+    jsonfile.readFile(paths.getCourseMatrixJsonPath(), (err, obj) => {
         if (err) {
             return res.status(500).json({ error: messages.FILE_ERROR })
         }
@@ -106,7 +106,7 @@ matrixRouter.post('/matrix/:id', (req, res) => {
 
 
 
-    jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
+    jsonfile.readFile(paths.getCourseMatrixJsonPath(), (err, obj) => {
         if (err) return res.status(500).json({ error: messages.FILE_ERROR })
 
 
@@ -125,7 +125,7 @@ matrixRouter.post('/matrix/:id', (req, res) => {
             obj[index] = req.body
         }
 
-        jsonfile.writeFile(paths.getCourseMatrixPath(), obj, (err) => {
+        jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, (err) => {
             if (err) return res.status(500).json({ error: messages.FILE_ERROR })
             else {
                 return res.status(200).json({ msg: messages.UPDATE_DONE })
@@ -149,11 +149,11 @@ matrixRouter.get('/reset', (req, res) => {
     jsonfile.readFile(paths.MAP_BACKUP_LOC, (err, obj) => {
         console.log('2')
 
-        jsonfile.writeFile(paths.getCourseMatrixPath(), obj, () => {
+        jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, () => {
 
             if (err === null) {
 
-                return res.status(200).send({ "msg": messages.UPDATE_DONE })
+                return res.status(200).send({ msg: messages.UPDATE_DONE })
 
             }
         })

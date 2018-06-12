@@ -5,8 +5,8 @@ const paths = require('./../other/paths')
 const jsonfile = require('jsonfile')
 
 const resetTestMap = () => {
-    const obj = jsonfile.readFileSync(paths.MAP_TEST_BACKUP_LOC)
-    jsonfile.writeFileSync(paths.MAP_TEST_LOC, obj)
+    const obj = jsonfile.readFileSync(paths.MAP_TEST_BACKUP_PATH)
+    jsonfile.writeFileSync(paths.MAP_TEST_PATH, obj)
 }
 const loginAndRetrieveToken = async () => {
     var res = await api

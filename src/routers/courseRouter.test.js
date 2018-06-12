@@ -2,7 +2,8 @@ const supertest = require('supertest')
 const { app, server } = require('./../index.js')
 const api = supertest(app)
 const jsonfile = require('jsonfile')
-const { TKT10001, CSM14209 } = require('./../../tests/data/dummyCourseData.js')
+const paths = require('./../other/paths')
+const { TKT10001, CSM14209 } = require(paths.COURSE_TEST_PATH)
 
 test('courses are returned as json', async () => {
 
