@@ -12,6 +12,7 @@ Response format:
         "studytrack": studytrack(s): List of strings. May be empty,
         "ects": ECTS: String,
         "url": URL: String
+		"periodyear": Period and year: Object including list(s) of booleans. May be empty,
     },
     .
     .
@@ -35,7 +36,17 @@ Response:
         "prereqs": [],
         "studytrack": [],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/TKT10001"
+        "url": "https://courses.helsinki.fi/fi/TKT10001",
+        "periodyear": {
+            "2018": [
+                false,
+                false,
+                false,
+                true,
+                false,
+                false
+            ]
+        }
     },
     {
         "code": "CSM14106",
@@ -50,7 +61,17 @@ Response:
             "ss"
         ],
         "ects": "5",
-        "url": "https://courses.helsinki.fi/fi/CSM14106"
+        "url": "https://courses.helsinki.fi/fi/CSM14106",
+        "periodyear": {
+            "2018": [
+                false,
+                false,
+                true,
+                false,
+                false,
+                false
+            ]
+        }
     }
 ]
 ```
@@ -67,6 +88,7 @@ Response format:
     "studytrack": studytrack(s): List of strings. May be empty,
     "ects": ECTS: String,
     "url": URL: String
+	"periodyear": Period and year: Object including list(s) of booleans. May be empty,
 }
 ```
 
@@ -86,6 +108,16 @@ Response:
     "studytrack": [],
     "ects": "5",
     "url": "https://courses.helsinki.fi/fi/TKT10001"
+	"periodyear": {
+            "2018": [
+                false,
+                false,
+                false,
+                true,
+                false,
+                false
+            ]
+        }
 }
 ```
 
@@ -1793,3 +1825,30 @@ Response format:
     "msg": "Ok, updated"
 }
 ```
+
+<details>
+
+### GET /update - Updates course list of all courses from Google Spreadsheet
+
+Response format:
+200 OK
+```
+Response format:
+```
+[
+    {
+        "code": Course code: String,
+        "name": Course name: String,
+        "level": Level: string,
+        "compulsory": compulsory: boolean,
+        "prereqs": prerequirements: List of strings. May be empty,
+        "studytrack": studytrack(s): List of strings. May be empty,
+        "ects": ECTS: String,
+        "url": URL: String
+		"periodyear": Period and year: Object including list(s) of booleans. May be empty,
+    },
+    .
+    .
+    .
+]
+ ```
