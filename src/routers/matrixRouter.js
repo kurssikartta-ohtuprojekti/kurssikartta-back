@@ -3,75 +3,157 @@ const matrixRouter = express.Router()
 const jsonfile = require('jsonfile')
 const jwt = require('jsonwebtoken')
 const { getAccount } = require('./../utils/accountHandler')
-const { getCourseMatrixPath } = require('./../other/paths')
+const paths = require('./../other/paths')
+const messages = require('./../other/messages')
+const {dataIsValid} = require('./../utils/courseMapMarixValidator')
+
+const parse = (string) => {
+    const int = parseInt(string, 10)
+
+    if (int === undefined || isNaN(int)) {
+        return -1
+    } else
+        return int
+}
 
 matrixRouter.get('/matrix', async (req, res) => {
-    jsonfile.readFile('resources/map.json', (err, obj) => {
-        res.json(obj)
+    jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
+        if (err) {
+            return res.status(500).json({ error: messages.FILE_ERROR })
+        }
+        return res.status(200).json(obj)
     })
 })
 
+matrixRouter.get('/matrix/:id', async (req, res) => {
+    const id = parse(req.params.id)
+
+    if (id === -1) return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
+
+
+    jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
+        if (err) {
+            return res.status(500).json({ error: messages.FILE_ERROR })
+        }
+        try {
+            const map = obj.find(item => {
+                return item.id === id
+            })
+            if (map === undefined) {
+                return res.status(404).json({ error: messages.NOT_FOUND })
+            }
+
+            return res.status(200).json(map)
+
+
+        } catch (e) {
+            return res.status(500).json({ error: messages.FILE_INCORRECT_FORMAT })
+        }
+    })
+})
 
 const validateToken = (token) => {
-    if (!token) return { error: 'token missing' }
+    if (!token) return { error: messages.NO_TOKEN }
 
     try {
 
         const username = jwt.verify(token, process.env.SECRET).username
 
-        if (!username) return { error: 'token invalid' }
-        if (!getAccount(username)) return { error: 'account not found' }
+        if (!username) return { error: messages.INVALID_TOKEN }
+        if (!getAccount(username)) return { error: messages.ACCOUNT_NOT_FOUND }
 
     } catch (e) {
-        return { error: 'malformed token' }
+        return { error: messages.INVALID_TOKEN }
     }
 
-    return { msg: 'token ok' }
+    return { msg: messages.VALID_TOKEN }
 }
 
+/*
 matrixRouter.post('/matrix', (req, res) => {
 
     const validation = validateToken(req.get('authorization'))
     if (validation.error) {
-        return res.status(401).json({ error: validation.error })
-    } else {
-        console.log('validation', validation.msg)
+        return res.status(403).json({ error: validation.error })
     }
 
     const data = req.body
 
-    jsonfile.writeFile(getCourseMatrixPath(), data, (err, obj) => {
-        if (err !== null) {
-            return res.status(400).json({ error: error })
+    jsonfile.writeFile(paths.getCourseMatrixPath(), data, (err) => {
+        if (err) {
+            return res.status(500).json({ error: messages.FILE_ERROR })
 
         } else {
-            return res.status(200).json({ msg: "Ok, updated" })
+            return res.status(200).json({ msg: messages.UPDATE_DONE })
         }
 
     })
 
 })
+*/
+matrixRouter.post('/matrix/:id', (req, res) => {
+
+    const validation = validateToken(req.get('authorization'))
+
+    if (validation.error) {
+        return res.status(403).json({ error: validation.error })
+    }
+    const id = parse(req.params.id)
+
+    if (!dataIsValid(req.body) || id === -1) {
+        return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
+    }
+
+
+
+    jsonfile.readFile(paths.getCourseMatrixPath(), (err, obj) => {
+        if (err) return res.status(500).json({ error: messages.FILE_ERROR })
+
+
+        try {
+            var index = obj.findIndex(item => {
+                return (item.id !== undefined && item.id === id)
+            })
+
+        } catch (e) {
+            return res.status(500).json({ error: messages.FILE_INCORRECT_FORMAT })
+        }
+
+        if (index === -1) {
+            obj.push(req.body)
+        } else {
+            obj[index] = req.body
+        }
+
+        jsonfile.writeFile(paths.getCourseMatrixPath(), obj, (err) => {
+            if (err) return res.status(500).json({ error: messages.FILE_ERROR })
+            else {
+                return res.status(200).json({ msg: messages.UPDATE_DONE })
+            }
+        }
+        )
+    })
+})
+
 
 matrixRouter.get('/reset', (req, res) => {
 
-    const validationResult = validateToken(req.get('authorization'))
-    if (validationResult.error) {
-        return res.status(401).json({ error: validationResult.error })
+    const validation = validateToken(req.get('authorization'))
+    if (validation.error) {
+        return res.status(403).json({ error: validation.error })
     } else {
-        console.log('validation', validationResult.msg)
+        console.log('** validation ** ', validation.msg)
     }
     console.log('1')
 
-    jsonfile.readFile('resources/map-original.json', (err, obj) => {
+    jsonfile.readFile(paths.MAP_BACKUP_LOC, (err, obj) => {
         console.log('2')
 
-        jsonfile.writeFile('resources/map.json', obj, () => {
-            console.log('3')
+        jsonfile.writeFile(paths.getCourseMatrixPath(), obj, () => {
 
             if (err === null) {
-                console.log('4')
 
-                return res.status(200).send({ "msg": "Ok, map has been reset" })
+                return res.status(200).send({ "msg": messages.UPDATE_DONE })
 
             }
         })

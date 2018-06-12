@@ -48,7 +48,7 @@ test('login with incorrect username and correct password is not succesful', asyn
 
 })
 
-test('if username is not defined an error is returned', async () => {
+test('if username is not defined error 401 is returned', async () => {
     const res = await api
         .post('/login', )
         .send({
@@ -60,7 +60,7 @@ test('if username is not defined an error is returned', async () => {
     expect(JSON.parse(res.text).error).toBe('username or password missing')
 })
 
-test('if password is not defined an error is returned', async () => {
+test('if password is not defined error 401 is returned', async () => {
     const res = await api
         .post('/login', )
         .send({
