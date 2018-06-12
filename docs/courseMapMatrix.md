@@ -32,8 +32,6 @@ Response format:
 ```
 
 Example response:
-<details><summary>Click to show</summary>
-
 
 ```
 [{
@@ -61,7 +59,6 @@ Example response:
 }]
 ```
 
-<details>
 
 ### GET /matrix/:id - returns a single course map matrix entry specified by :id
 
@@ -141,6 +138,7 @@ Request format:
 
 POST /matrix/id 
 
+Headers:
 authorization: token
 ```
     {   
@@ -159,3 +157,4 @@ authorization: token
     }
 
 ```
+id, name and matrice fields are all mandatory.
