@@ -32,8 +32,6 @@ Response format:
 ```
 
 Example response:
-<details><summary>Click to show</summary>
-
 
 ```
 [{
@@ -61,7 +59,6 @@ Example response:
 }]
 ```
 
-<details>
 
 ### GET /matrix/:id - returns a single course map matrix entry specified by :id
 
