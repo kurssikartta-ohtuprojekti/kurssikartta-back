@@ -138,6 +138,7 @@ Request format:
 
 POST /matrix/id 
 
+Headers:
 authorization: token
 ```
     {   
@@ -156,3 +157,4 @@ authorization: token
     }
 
 ```
+id, name and matrice fields are all mandatory.
