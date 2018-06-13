@@ -3,12 +3,12 @@ var path = require('path');
 var fs = require('fs');
 
 module.exports = function (req, res, next) {
-  // Annetaan spreadsheetin tiedot
+  // Give spreadsheet information
   var id = "1K0w4aGHVwqZJpB8wm9sa9eye3nsQXPn2KvacnZGmlh8",
     sheet = 1,
     url = 'https://spreadsheets.google.com/feeds/list/' + id + '/' + sheet + '/public/values?alt=json';
 
-  // Haetaan spreadsheetin tiedot ja käsitellään ne JSONiin sopivaan muotoon
+  // Get spreadsheet information and parse them to JSON
   request(url, function (error, response, body) {
     if (!error && response.statusCode === 200) {
       var data = JSON.parse(response.body);
@@ -43,12 +43,12 @@ module.exports = function (req, res, next) {
 
               if (name === "periodyear") {
                 var splitter = value.split(',');
-                var monta = value.split(',').length;
+                var howMany = value.split(',').length;
                 var periodyear = new Object();
 
                 for (var k = 2017; k < 2030; k++) {
-                  var vuosi = k;
-                  yearCheck(monta, splitter, vuosi, periodyear);
+                  var year = k;
+                  yearCheck(howMany, splitter, year, periodyear);
                 }
                 newRow[name] = periodyear;
               }
@@ -73,34 +73,34 @@ module.exports = function (req, res, next) {
   });
 };
 
-function yearCheck(monta, splitter, vuosi, periodyear) {
-  var periodit = [false, false, false, false, false, false];
-  periodCheck(monta, splitter, vuosi, periodit);
-  if (periodit.includes(true)) {
-    periodyear[vuosi] = periodit;
-    console.log(periodyear);
+function yearCheck(howMany, splitter, year, periodyear) {
+  var periods = [false, false, false, false, false, false];
+  periodCheck(howMany, splitter, year, periods);
+  if (periods.includes(true)) {
+    periodyear[year] = periods;
+    // console.log(periodyear);
   }
 }
 
-function periodCheck(monta, splitter, vuosi, periodit) {
-  for (var y = 0; y < monta; y++) {
-    if (splitter[y] === ("k1/" + vuosi)) {
-      periodit[0] = true;
+function periodCheck(howMany, splitter, year, periods) {
+  for (var y = 0; y < howMany; y++) {
+    if (splitter[y] === ("1/" + year)) {
+      periods[0] = true;
     }
-    if (splitter[y] === ("k2/" + vuosi)) {
-      periodit[1] = true;
+    if (splitter[y] === ("2/" + year)) {
+      periods[1] = true;
     }
-    if (splitter[y] === ("kesä/" + vuosi)) {
-      periodit[2] = true;
+    if (splitter[y] === ("christmas/" + year)) {
+      periods[2] = true;
     }
-    if (splitter[y] === ("s1/" + vuosi)) {
-      periodit[3] = true;
+    if (splitter[y] === ("3/" + year)) {
+      periods[3] = true;
     }
-    if (splitter[y] === ("s2/" + vuosi)) {
-      periodit[4] = true;
+    if (splitter[y] === ("4/" + year)) {
+      periods[4] = true;
     }
-    if (splitter[y] === ("joulu/" + vuosi)) {
-      periodit[5] = true;
+    if (splitter[y] === ("summer/" + year)) {
+      periods[5] = true;
     }
   }
 }
