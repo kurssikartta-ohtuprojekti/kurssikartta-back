@@ -1,31 +1,43 @@
+/* course map matrix json paths */
 const productionMapPath = 'resources/map.json'
 const developmentMapPath = 'resources/map.json'
-const testMapPath = 'tests/data/dummyMap.json'
-const productionCourseJsonPath = 'resources/kaikkikurssit.json'
-const developmentCourseJsonPath = 'resources/kaikkikurssit.json'
-const testCourseJsonPath = 'resources/kaikkikurssitDummy.json'
+const testMapPath = 'resources/test/dummyMap.json'
+/* course json paths*/
+const productionCourseJsonPath = 'resources/allCourses.json'
+const developmentCourseJsonPath = 'resources/allCourses.json'
+const testCourseJsonPath = 'resources/test/dummyAllCourses.json'
+/* account paths */
 
+const productionAccountsPath = 'resources/accounts'
+const developmentAccountsPath = 'resources/accounts'
+const testAccountsPath = './../../resources/test/dummyAccounts'
 
-const getCourseMatrixPath = () => {
+const getCourseMatrixJsonPath = () => {
     return (process.env.NODE_ENV === 'production') ? productionMapPath : (process.env.NODE_ENV === 'development' ? developmentMapPath : testMapPath)
 }
-
 
 const getCourseJsonPath = () => {
     return (process.env.NODE_ENV === 'production') ? productionCourseJsonPath : (process.env.NODE_ENV === 'development' ? developmentCourseJsonPath : testCourseJsonPath)
 }
 
-const MAP_DEFAULT_LOC = 'resources/map.json'
-const MAP_BACKUP_LOC = 'resources/map-original.json'
+const getAccountJsPath = () => {
+    return (process.env.NODE_ENV === 'production') ? productionAccountsPath : (process.env.NODE_ENV === 'development' ? developmentAccountsPath : testAccountsPath)
+}
 
-const MAP_TEST_BACKUP_LOC = 'tests/data/dummyMap-original.json'
-const MAP_TEST_LOC = 'tests/data/dummyMap.json'
+const MAP_DEFAULT_PATH = 'resources/map.json'
+const MAP_BACKUP_PATH = 'resources/map-original.json'
 
-module.exports = { 
-    getCourseMatrixPath,
-     getCourseJsonPath,
-     MAP_DEFAULT_LOC,
-     MAP_BACKUP_LOC,
-     MAP_TEST_BACKUP_LOC,
-     MAP_TEST_LOC
+const MAP_TEST_BACKUP_PATH = 'resources/test/dummyMap-original.json'
+const MAP_TEST_PATH = 'resources/test/dummyMap.json'
+
+const COURSE_TEST_PATH = './../../resources/test/dummyCourseData'
+module.exports = {
+    getCourseJsonPath,
+    getAccountJsPath,
+    getCourseMatrixJsonPath,
+    MAP_DEFAULT_PATH,
+    MAP_BACKUP_PATH,
+    MAP_TEST_BACKUP_PATH,
+    MAP_TEST_PATH,
+    COURSE_TEST_PATH
 }
