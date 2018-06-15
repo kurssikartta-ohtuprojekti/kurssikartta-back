@@ -8,8 +8,8 @@ const developmentCourseJsonPath = 'resources/allCourses.json'
 const testCourseJsonPath = 'resources/test/dummyAllCourses.json'
 /* account paths */
 
-const productionAccountsPath = 'resources/accounts'
-const developmentAccountsPath = 'resources/accounts'
+const productionAccountsPath = './../../resources/accounts'
+const developmentAccountsPath = './../../resources/accounts'
 const testAccountsPath = './../../resources/test/dummyAccounts'
 
 const getCourseMatrixJsonPath = () => {
