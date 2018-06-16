@@ -66,7 +66,7 @@ module.exports = function (req, res, next) {
       responseObj = rows;
 
       return res.status(200).json(responseObj) &&
-        fs.writeFileSync(path.resolve(__dirname, '../../resources/kaikkikurssit.json'), JSON.stringify(responseObj, null, 4));;
+        fs.writeFileSync(path.resolve(__dirname, '../../resources/allCourses.json'), JSON.stringify(responseObj, null, 4));;
     } else {
       return res.status(response.statusCode).json(error);
     }

@@ -10,10 +10,10 @@
         "url": "https://courses.helsinki.fi/fi/TKT10001",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -30,18 +30,10 @@
         "url": "https://courses.helsinki.fi/fi/TKT10002",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
-                true,
-                false,
-                false
-            ],
-            "2019": [
                 true,
                 false,
                 false,
-                false,
+                true,
                 false,
                 false
             ]
@@ -61,18 +53,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
-                true,
-                false
-            ],
-            "2019": [
-                false,
                 true,
                 false,
                 false,
-                false,
+                true,
                 false
             ]
         }
@@ -90,18 +74,10 @@
         "url": "https://courses.helsinki.fi/fi/TKT10004",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
-                true,
-                false,
-                false
-            ],
-            "2019": [
                 true,
                 false,
                 false,
-                false,
+                true,
                 false,
                 false
             ]
@@ -123,18 +99,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
-                true,
-                false
-            ],
-            "2019": [
-                false,
                 true,
                 false,
                 false,
-                false,
+                true,
                 false
             ]
         }
@@ -155,18 +123,10 @@
         "url": "https://courses.helsinki.fi/fi/TKT20001",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
-                true,
-                false,
-                false
-            ],
-            "2019": [
                 true,
                 false,
                 false,
-                false,
+                true,
                 false,
                 false
             ]
@@ -187,12 +147,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/TKT20002",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -211,11 +171,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/TKT20003",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -233,12 +193,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/TKT20004",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -258,10 +218,10 @@
         "url": "https://courses.helsinki.fi/fi/TKT20005",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -283,10 +243,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -308,19 +268,19 @@
         "ects": "10",
         "url": "https://courses.helsinki.fi/fi/TKT20007",
         "periodyear": {
-            "2018": [
+            "2017": [
                 false,
                 false,
-                true,
-                true,
                 false,
-                false
+                false,
+                false,
+                true
             ],
-            "2019": [
+            "2018": [
                 true,
                 false,
                 false,
-                false,
+                true,
                 false,
                 false
             ]
@@ -341,10 +301,10 @@
         "url": "https://courses.helsinki.fi/fi/DATA15001",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -364,10 +324,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -386,6 +346,14 @@
         "ects": "4",
         "url": "https://courses.helsinki.fi/fi/TKT20010",
         "periodyear": {
+            "2017": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
             "2018": [
                 true,
                 true,
@@ -396,11 +364,11 @@
             ],
             "2019": [
                 true,
+                false,
                 true,
-                true,
-                true,
-                true,
-                true
+                false,
+                false,
+                false
             ]
         }
     },
@@ -419,6 +387,14 @@
         "ects": "4",
         "url": "https://courses.helsinki.fi/fi/TKT20011",
         "periodyear": {
+            "2017": [
+                false,
+                false,
+                false,
+                true,
+                true,
+                true
+            ],
             "2018": [
                 true,
                 true,
@@ -429,11 +405,11 @@
             ],
             "2019": [
                 true,
+                false,
                 true,
-                true,
-                true,
-                true,
-                true
+                false,
+                false,
+                false
             ]
         }
     },
@@ -451,13 +427,13 @@
         "ects": "4",
         "url": "https://courses.helsinki.fi/fi/TKT20012",
         "periodyear": {
-            "2019": [
+            "2018": [
                 false,
                 false,
-                true,
                 false,
                 false,
-                false
+                false,
+                true
             ]
         }
     },
@@ -477,10 +453,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -501,10 +477,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -540,12 +516,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/TKT21004",
         "periodyear": {
-            "2018": [
+            "2017": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -581,12 +557,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/TKT21007",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -625,11 +601,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/TKT21009",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -649,13 +625,13 @@
         "ects": "1-10",
         "url": "https://courses.helsinki.fi/fi/TKT21010",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                true,
-                false,
-                false,
-                false
+                true
             ]
         }
     },
@@ -673,11 +649,11 @@
         "ects": "10",
         "url": "https://courses.helsinki.fi/fi/TKT21012",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -696,10 +672,10 @@
             "2018": [
                 false,
                 false,
+                true,
                 false,
                 false,
-                false,
-                true
+                false
             ]
         }
     },
@@ -718,11 +694,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/TKT21014",
         "periodyear": {
-            "2018": [
+            "2017": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -812,10 +788,10 @@
         "periodyear": {
             "2017": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -846,10 +822,10 @@
         "url": "https://courses.helsinki.fi/fi/CSM12101",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -870,11 +846,11 @@
         "url": "https://courses.helsinki.fi/fi/CSM12103",
         "periodyear": {
             "2019": [
-                false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -893,11 +869,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM12104",
         "periodyear": {
-            "2020": [
+            "2019": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -917,12 +893,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM12105",
         "periodyear": {
-            "2020": [
+            "2019": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -942,10 +918,10 @@
             "2018": [
                 false,
                 false,
+                true,
                 false,
                 false,
-                false,
-                true
+                false
             ]
         }
     },
@@ -1010,10 +986,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -1033,10 +1009,10 @@
         "url": "https://courses.helsinki.fi/fi/CSM13101",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -1057,10 +1033,10 @@
         "url": "https://courses.helsinki.fi/fi/CSM13102",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -1081,11 +1057,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM13103",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -1103,12 +1079,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM13104",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -1139,10 +1115,10 @@
         "url": "https://courses.helsinki.fi/fi/CSM13202",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -1160,11 +1136,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM13204",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -1201,10 +1177,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -1224,11 +1200,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM13302",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -1257,10 +1233,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -1277,11 +1253,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM13402",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -1316,10 +1292,10 @@
         "url": "https://courses.helsinki.fi/fi/CSM14101",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -1339,10 +1315,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -1361,11 +1337,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM14103",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -1385,10 +1361,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -1405,11 +1381,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM14105",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -1430,13 +1406,13 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM14106",
         "periodyear": {
-            "2018": [
+            "2017": [
                 false,
                 false,
-                true,
                 false,
                 false,
-                false
+                false,
+                true
             ]
         }
     },
@@ -1469,12 +1445,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM14201",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -1499,10 +1475,10 @@
         "periodyear": {
             "2017": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -1519,11 +1495,11 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM14204",
         "periodyear": {
-            "2018": [
+            "2017": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -1543,12 +1519,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/CSM14205",
         "periodyear": {
-            "2018": [
+            "2017": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -1610,10 +1586,10 @@
         "url": "https://courses.helsinki.fi/fi/data11001/",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -1638,10 +1614,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -1660,12 +1636,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/DATA12001",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -1686,10 +1662,10 @@
         "url": "https://courses.helsinki.fi/fi/DATA14002",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -1709,12 +1685,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/DATA15003",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -1744,12 +1720,12 @@
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/LSI31003",
         "periodyear": {
-            "2020": [
+            "2019": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -1781,18 +1757,10 @@
         "faculty": "math",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
-                true,
-                false,
-                false
-            ],
-            "2019": [
                 true,
                 false,
                 false,
-                false,
+                true,
                 false,
                 false
             ]
@@ -1812,10 +1780,10 @@
         "faculty": "math",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -1836,10 +1804,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -1859,11 +1827,11 @@
         "url": "https://courses.helsinki.fi/fi/MAT11004",
         "faculty": "math",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -1885,12 +1853,12 @@
         "url": "https://courses.helsinki.fi/fi/MAT11005",
         "faculty": "math",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -1909,10 +1877,10 @@
         "faculty": "math",
         "periodyear": {
             "2018": [
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false,
                 false
             ]
@@ -1936,10 +1904,10 @@
         "periodyear": {
             "2018": [
                 false,
-                false,
-                false,
-                false,
                 true,
+                false,
+                false,
+                false,
                 false
             ]
         }
@@ -1961,11 +1929,11 @@
         "url": "https://courses.helsinki.fi/fi/MAT11012",
         "faculty": "math",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 true,
-                false,
-                false,
-                false,
                 false,
                 false
             ]
@@ -1989,12 +1957,12 @@
         "url": "https://courses.helsinki.fi/fi/MAT11013",
         "faculty": "math",
         "periodyear": {
-            "2019": [
+            "2018": [
+                false,
+                false,
+                false,
                 false,
                 true,
-                false,
-                false,
-                false,
                 false
             ]
         }
@@ -2006,13 +1974,267 @@
         "compulsory": false,
         "prereqs": [],
         "studytrack": [
-            "math"
+            "stats"
         ],
         "ects": "5",
         "url": "https://courses.helsinki.fi/fi/MAT12001",
         "faculty": "stats",
         "periodyear": {
             "2018": [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2021": [
+                true,
+                false,
+                false,
+                false,
+                false,
+                false
+            ]
+        }
+    },
+    {
+        "code": "MAT12002",
+        "name": "Tilastotiede ja R tutuksi II",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT12001"
+        ],
+        "studytrack": [
+            "stats"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT12002",
+        "faculty": "stats",
+        "periodyear": {
+            "2018": [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2019": [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2020": [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false
+            ],
+            "2021": [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false
+            ]
+        }
+    },
+    {
+        "code": "MAT12003",
+        "name": "Todennäköisyyslaskenta I",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT12001",
+            "MAT12002"
+        ],
+        "studytrack": [
+            "stats"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT12003",
+        "faculty": "stats",
+        "periodyear": {
+            "2018": [
+                false,
+                false,
+                false,
+                true,
+                false,
+                false
+            ]
+        }
+    },
+    {
+        "code": "MAT12004",
+        "name": "Tilastollinen päättely I",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT12001",
+            "MAT12002",
+            "MAT12003"
+        ],
+        "studytrack": [
+            "stats"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT12004",
+        "faculty": "stats",
+        "periodyear": {
+            "2018": [
+                false,
+                false,
+                false,
+                false,
+                true,
+                false
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                true,
+                false
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                true,
+                false
+            ],
+            "2021": [
+                false,
+                false,
+                false,
+                false,
+                true,
+                false
+            ]
+        }
+    },
+    {
+        "code": "MAT12005",
+        "name": "Data-analyysin harjoitustyö",
+        "level": "Perusopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT12001",
+            "MAT12002",
+            "MAT12003",
+            "MAT12004"
+        ],
+        "studytrack": [
+            "stats"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT12005",
+        "faculty": "stats",
+        "periodyear": {
+            "2018": [
+                false,
+                false,
+                false,
+                false,
+                true,
+                true
+            ],
+            "2019": [
+                false,
+                false,
+                false,
+                false,
+                true,
+                true
+            ],
+            "2020": [
+                false,
+                false,
+                false,
+                false,
+                true,
+                true
+            ],
+            "2021": [
+                false,
+                false,
+                false,
+                false,
+                true,
+                true
+            ]
+        }
+    },
+    {
+        "code": "MAT22005 ",
+        "name": "Bayesian inference",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT120",
+            "MAT110"
+        ],
+        "studytrack": [
+            "stats"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT22005",
+        "faculty": "stats",
+        "periodyear": {
+            "2017": [
+                false,
+                true,
+                false,
+                false,
+                false,
+                false
+            ]
+        }
+    },
+    {
+        "code": "MAT22006",
+        "name": "Generalized linear models",
+        "level": "Aineopinnot",
+        "compulsory": false,
+        "prereqs": [
+            "MAT120",
+            "MAT110"
+        ],
+        "studytrack": [
+            "stats"
+        ],
+        "ects": "5",
+        "url": "https://courses.helsinki.fi/fi/MAT22006",
+        "faculty": "stats",
+        "periodyear": {
+            "2017": [
                 false,
                 false,
                 false,
