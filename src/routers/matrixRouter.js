@@ -135,6 +135,46 @@ matrixRouter.post('/matrix/:id', (req, res) => {
     })
 })
 
+matrixRouter.delete('/matrix/:id', (req, res) => {
+
+    const validation = validateToken(req.get('authorization'))
+
+    if (validation.error) {
+        return res.status(403).json({ error: validation.error })
+    }
+    const id = parse(req.params.id)
+
+    // if (!dataIsValid(req.body) || id === -1) {
+    //     return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
+    // }
+
+
+
+    jsonfile.readFile(paths.getCourseMatrixJsonPath(), (err, obj) => {
+        if (err) return res.status(500).json({ error: messages.FILE_ERROR })
+
+
+        try {
+            var index = obj.findIndex(item => {
+                return (item.id !== undefined && item.id === id)
+            })
+
+        } catch (e) {
+            return res.status(500).json({ error: messages.FILE_INCORRECT_FORMAT })
+        }
+
+        obj.splice(id, 1)
+
+        jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, (err) => {
+            if (err) return res.status(500).json({ error: messages.FILE_ERROR })
+            else {
+                return res.status(200).json({ msg: messages.UPDATE_DONE })
+            }
+        }
+        )
+    })
+})
+
 
 matrixRouter.get('/reset', (req, res) => {
 
