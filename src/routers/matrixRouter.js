@@ -194,7 +194,7 @@ matrixRouter.get('/reset', (req, res) => {
     }
     console.log('1')
 
-    jsonfile.readFile(paths.MAP_BACKUP_LOC, (err, obj) => {
+    jsonfile.readFile(paths.MAP_BACKUP_PATH, (err, obj) => {
         console.log('2')
 
         jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, () => {
