@@ -91,6 +91,56 @@ matrixRouter.post('/matrix', (req, res) => {
 
 })
 */
+
+matrixRouter.post('/matrix', (req, res) => {
+    if (validation.error) {
+        return res.status(403).json({ error: validation.error })
+    }
+
+    if (!dataIsValid(req.body)) {
+        return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
+    }
+
+    jsonfile.readFile(paths.getCourseMatrixJsonPath(), (err, obj) => {
+
+
+        if (err) return res.status(500).json({ error: messages.FILE_ERROR })
+
+
+        /* toteutus tasoa tyhmä. keksi jotain fiksumpaa kun kerkeät*/
+        var id = 0;
+
+        while (true) {
+
+            try {
+                var index = obj.findIndex(item => {
+                    return (item.id !== undefined && item.id === id)
+                })
+
+            } catch (e) {
+                return res.status(500).json({ error: messages.FILE_INCORRECT_FORMAT })
+            }
+
+            if (index === -1) {
+                obj.push(req.body)
+
+                jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, (err) => {
+
+                    if (err) return res.status(500).json({ error: messages.FILE_ERROR })
+
+                    else {
+                        return res.status(200).json({ msg: messages.UPDATE_DONE })
+                    }
+                })
+            } else {
+                id++
+            }
+
+        }
+    })
+
+})
+
 matrixRouter.post('/matrix/:id', (req, res) => {
 
     const validation = validateToken(req.get('authorization'))
