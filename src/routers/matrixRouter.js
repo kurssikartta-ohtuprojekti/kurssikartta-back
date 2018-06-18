@@ -122,7 +122,9 @@ matrixRouter.post('/matrix', (req, res) => {
             }
 
             if (index === -1) {
-                obj.push(req.body)
+                const item = req.body
+                item.id = id
+                obj.push(item)
 
                 jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, (err) => {
 
