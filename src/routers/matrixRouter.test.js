@@ -65,7 +65,7 @@ test('after a HTTP DELETE is sent to /matrix/:id with no token, an error message
     expect(res.body).toEqual({
         "error": "token missing"
     })
-    dataEqualsOriginal()
+    await dataEqualsOriginal()
 
 })
 
@@ -79,7 +79,7 @@ test('after a HTTP DELETE is sent to /matrix/:id with invalid token, an error me
     expect(res.body).toEqual({
         "error": "token is invalid"
     })
-    dataEqualsOriginal()
+    await dataEqualsOriginal()
 })
 
 test('after a HTTP DELETE is sent to /matrix/:id with a valid token but with invalid id, an error and status 400 are returned and no data is change', async () => {
@@ -94,7 +94,7 @@ test('after a HTTP DELETE is sent to /matrix/:id with a valid token but with inv
     expect(res.body).toEqual({
         "error": "given id is not an integer"
     })
-    dataEqualsOriginal()
+    await dataEqualsOriginal()
 })
 
 test('after a HTTP DELETE is sent to /matrix/:id with a valid token but with a non-existing id, an error and status 4004 are returned and no data is change', async () => {
@@ -109,7 +109,7 @@ test('after a HTTP DELETE is sent to /matrix/:id with a valid token but with a n
     expect(res.body).toEqual({
         "error": "resource not found"
     })
-    dataEqualsOriginal()
+    await dataEqualsOriginal()
 })
 
 test('after a HTTP DELETE is sent to /matrix/:id with a valid token and a valid id, the specified entry is deleted but the map is not altered in any other ways', async () => {
@@ -129,7 +129,7 @@ test('after a HTTP DELETE is sent to /matrix/:id with a valid token and a valid 
 
     expect(res.body).toEqual(
         [
-            { "id": 0, "name": "Dummy", "matrice": [[".", "."], [".", "."]]}
+            { "id": 0, "name": "Dummy", "matrice": [[".", "."], [".", "."]] }
         ]
 
     )
@@ -193,7 +193,7 @@ test('after a HTTP GET is sent to /matrix, a list of possible matrices and statu
     resetTestMap()
 
 
-    dataEqualsOriginal()
+    await dataEqualsOriginal()
 })
 
 /* HTTP GET /matrix/:id */
@@ -273,7 +273,7 @@ test('after a HTTP POST is sent to /matrix/:id with an invalid valid token, an e
 
     expect(res.body).toEqual({ "error": "token is invalid" })
 
-    dataEqualsOriginal()
+    await dataEqualsOriginal()
 
 
 })
@@ -301,7 +301,7 @@ test('after a HTTP POST is sent to /matrix/:id with NO token, an error message a
 
     expect(res.body).toEqual({ "error": "token missing" })
 
-    dataEqualsOriginal()
+    await dataEqualsOriginal()
 
 
 })
@@ -330,7 +330,7 @@ test('after a HTTP POST is sent to /matrix/:id with a valid token but with malfo
 
     expect(res.body).toEqual({ "error": "data in incorrect format" })
 
-    dataEqualsOriginal()
+    await dataEqualsOriginal()
 
 
 })
