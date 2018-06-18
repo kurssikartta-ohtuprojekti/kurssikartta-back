@@ -14,7 +14,7 @@ const CSM14209 = {
     "code": "CSM14209",
     "name": "Seminar in Novel Software Architecture Design",
     "periodyear": [],
-    "level": "advanved",
+    "level": "advanced",
     "compulsory": false,
     "prereqs": [],
     "studytrack": [
