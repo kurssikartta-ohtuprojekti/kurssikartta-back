@@ -18,6 +18,124 @@ const loginAndRetrieveToken = async () => {
     return JSON.parse(res.text).token
 }
 
+const dataEqualsOriginal = async () => {
+
+    const res = await api
+        .get('/matrix')
+        .expect(200)
+
+    expect(res.body).toEqual([
+        {
+            "id": 0,
+            "name": "Dummy",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Dummy2",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+        }
+    ])
+}
+/* HTTP DEL matrix/:id */
+test('after a HTTP DELETE is sent to /matrix/:id with no token, an error message and status 403 are returned and no data is changed', async () => {
+    resetTestMap()
+    var res = await api
+        .delete('/matrix/2')
+        .expect(403)
+
+    expect(res.body).toEqual({
+        "error": "token missing"
+    })
+    dataEqualsOriginal()
+
+})
+
+test('after a HTTP DELETE is sent to /matrix/:id with invalid token, an error message and status 403 are returned and no data is changed', async () => {
+    resetTestMap()
+    var res = await api
+        .delete('/matrix/2')
+        .set({ authorization: 'not-a-token' })
+        .expect(403)
+
+    expect(res.body).toEqual({
+        "error": "token is invalid"
+    })
+    dataEqualsOriginal()
+})
+
+test('after a HTTP DELETE is sent to /matrix/:id with a valid token but with invalid id, an error and status 400 are returned and no data is change', async () => {
+    resetTestMap()
+    const token = await loginAndRetrieveToken()
+
+    const res = await api
+        .delete('/matrix/a')
+        .set({ authorization: token })
+        .expect(400)
+
+    expect(res.body).toEqual({
+        "error": "given id is not an integer"
+    })
+    dataEqualsOriginal()
+})
+
+test('after a HTTP DELETE is sent to /matrix/:id with a valid token but with a non-existing id, an error and status 4004 are returned and no data is change', async () => {
+    resetTestMap()
+    const token = await loginAndRetrieveToken()
+
+    const res = await api
+        .delete('/matrix/1')
+        .set({ authorization: token })
+        .expect(404)
+
+    expect(res.body).toEqual({
+        "error": "resource not found"
+    })
+    dataEqualsOriginal()
+})
+
+test('after a HTTP DELETE is sent to /matrix/:id with a valid token and a valid id, the specified entry is deleted but the map is not altered in any other ways', async () => {
+    resetTestMap()
+    const token = await loginAndRetrieveToken()
+
+    var res = await api
+        .delete('/matrix/2')
+        .set({ authorization: token })
+        .expect(200)
+
+    expect(res.body).toEqual({
+        "msg": "ok, updated"
+    })
+
+    res = await api
+        .get('/matrix')
+        .expect(200)
+
+    expect(res.body).toEqual(
+        [
+            { "id": 0, "name": "Dummy", "matrice": [[".", "."], [".", "."]]}
+        ]
+
+    )
+})
 /*
 test('after a HTTP POST is sent to /matrix with a valid token, status 200 is returned', async () => {
     const token = await loginAndRetrieveToken()
@@ -76,40 +194,8 @@ test('after a HTTP POST is sent to /matrix with no token, status 403 is returned
 test('after a HTTP GET is sent to /matrix, a list of possible matrices and status 200 are returned', async () => {
     resetTestMap()
 
-    const res = await api
-        .get('/matrix')
-        .expect(200)
 
-    expect(res.body).toEqual([
-        {
-            "id": 0,
-            "name": "Dummy",
-            "matrice": [
-                [
-                    ".",
-                    "."
-                ],
-                [
-                    ".",
-                    "."
-                ]
-            ]
-        },
-        {
-            "id": 2,
-            "name": "Dummy2",
-            "matrice": [
-                [
-                    ".",
-                    "."
-                ],
-                [
-                    ".",
-                    "."
-                ]
-            ]
-        }
-    ])
+    dataEqualsOriginal()
 })
 
 /* HTTP GET /matrix/:id */
@@ -189,26 +275,8 @@ test('after a HTTP POST is sent to /matrix/:id with an invalid valid token, an e
 
     expect(res.body).toEqual({ "error": "token is invalid" })
 
-    res = await api
-        .get('/matrix/2')
-        .expect(200)
+    dataEqualsOriginal()
 
-    expect(res.body).toEqual(
-        {
-            "id": 2,
-            "name": "Dummy2",
-            "matrice": [
-                [
-                    ".",
-                    "."
-                ],
-                [
-                    ".",
-                    "."
-                ]
-            ]
-        }
-    )
 
 })
 
@@ -235,26 +303,8 @@ test('after a HTTP POST is sent to /matrix/:id with NO token, an error message a
 
     expect(res.body).toEqual({ "error": "token missing" })
 
-    res = await api
-        .get('/matrix/2')
-        .expect(200)
+    dataEqualsOriginal()
 
-    expect(res.body).toEqual(
-        {
-            "id": 2,
-            "name": "Dummy2",
-            "matrice": [
-                [
-                    ".",
-                    "."
-                ],
-                [
-                    ".",
-                    "."
-                ]
-            ]
-        }
-    )
 
 })
 
@@ -264,7 +314,7 @@ test('after a HTTP POST is sent to /matrix/:id with a valid token but with malfo
 
     let res = await api
         .post('/matrix/2')
-        .set({authorization: token})
+        .set({ authorization: token })
         .send({
             "id": 2,
             "matrice": [
@@ -282,26 +332,8 @@ test('after a HTTP POST is sent to /matrix/:id with a valid token but with malfo
 
     expect(res.body).toEqual({ "error": "data in incorrect format" })
 
-    res = await api
-        .get('/matrix/2')
-        .expect(200)
+    dataEqualsOriginal()
 
-    expect(res.body).toEqual(
-        {
-            "id": 2,
-            "name": "Dummy2",
-            "matrice": [
-                [
-                    ".",
-                    "."
-                ],
-                [
-                    ".",
-                    "."
-                ]
-            ]
-        }
-    )
 
 })
 

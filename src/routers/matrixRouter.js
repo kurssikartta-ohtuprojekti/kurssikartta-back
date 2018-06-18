@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 const { getAccount } = require('./../utils/accountHandler')
 const paths = require('./../other/paths')
 const messages = require('./../other/messages')
-const {dataIsValid} = require('./../utils/courseMapMarixValidator')
+const { dataIsValid } = require('./../utils/courseMapMarixValidator')
 
 const parse = (string) => {
     const int = parseInt(string, 10)
@@ -100,9 +100,13 @@ matrixRouter.post('/matrix/:id', (req, res) => {
     }
     const id = parse(req.params.id)
 
-    if (!dataIsValid(req.body) || id === -1) {
+    if (!dataIsValid(req.body)) {
         return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
     }
+    if (id === -1) {
+        return res.status(400).json({ error: messages.ID_MISSING_OR_INCORRECT })
+    }
+
 
 
 
@@ -143,10 +147,10 @@ matrixRouter.delete('/matrix/:id', (req, res) => {
         return res.status(403).json({ error: validation.error })
     }
     const id = parse(req.params.id)
-
-    // if (!dataIsValid(req.body) || id === -1) {
-    //     return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
-    // }
+    if (id === -1) {
+        
+        return res.status(400).json({ error: messages.ID_MISSING_OR_INCORRECT })
+    }
 
 
 
@@ -163,7 +167,11 @@ matrixRouter.delete('/matrix/:id', (req, res) => {
             return res.status(500).json({ error: messages.FILE_INCORRECT_FORMAT })
         }
 
-        obj.splice(id, 1)
+        if (index === -1) {
+            return res.status(404).json({ error: messages.NOT_FOUND })
+
+        }
+        obj.splice(index, 1)
 
         jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, (err) => {
             if (err) return res.status(500).json({ error: messages.FILE_ERROR })
