@@ -115,7 +115,7 @@ Response format:
 }
 ```
 
-### POST /matrix/:id - updates a single entry. Send with authorization header containing jwt token.
+### POST /matrix/:id - updates a single entry specified by the id. Send with authorization header containing jwt token.
 
 Possible responses
 
@@ -126,6 +126,8 @@ Possible responses
 403 token is invalid
 
 403 account not found
+
+400 given id is not an integer
 
 400 data in incorrect format
 
@@ -158,3 +160,22 @@ authorization: token
 
 ```
 id, name and matrice fields are all mandatory.
+
+
+### DELETE /matrix/:id - deletes a single entry specified by the id. Send request with authorization header containing jwt token.
+
+Possible responses
+
+204 *no content*
+
+403 token missing
+
+403 token is invalid
+
+403 account not found
+
+400 given id is not an integer
+
+500 file not found or could not be opened
+
+500 data in file has incorrect format

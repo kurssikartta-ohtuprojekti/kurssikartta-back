@@ -28,7 +28,7 @@ matrixRouter.get('/matrix', async (req, res) => {
 matrixRouter.get('/matrix/:id', async (req, res) => {
     const id = parse(req.params.id)
 
-    if (id === -1) return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
+    if (id === -1) return res.status(400).json({ error: messages.ID_MISSING_OR_INCORRECT })
 
 
     jsonfile.readFile(paths.getCourseMatrixJsonPath(), (err, obj) => {
@@ -147,8 +147,8 @@ matrixRouter.delete('/matrix/:id', (req, res) => {
         return res.status(403).json({ error: validation.error })
     }
     const id = parse(req.params.id)
+
     if (id === -1) {
-        
         return res.status(400).json({ error: messages.ID_MISSING_OR_INCORRECT })
     }
 
@@ -176,7 +176,7 @@ matrixRouter.delete('/matrix/:id', (req, res) => {
         jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, (err) => {
             if (err) return res.status(500).json({ error: messages.FILE_ERROR })
             else {
-                return res.status(200).json({ msg: messages.UPDATE_DONE })
+                return res.status(204).send()
             }
         }
         )

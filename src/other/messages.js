@@ -15,7 +15,8 @@ const NOT_FOUND = 'resource not found'
 
 // ok messages
 const VALID_TOKEN = 'token is valid'
-const UPDATE_DONE = 'ok, updated'
+const UPDATE_DONE = 'resource updated'
+// const DELETED = 'resource deleted'
 
 module.exports = {
     FILE_ERROR,
@@ -29,5 +30,5 @@ module.exports = {
     INVALID_USERNAME_OR_PASSWORD,
     NO_USERNAME_OR_PASSWORD,
     DATA_INCORRECT_FORMAT,
-    ID_MISSING_OR_INCORRECT
+    ID_MISSING_OR_INCORRECT,
 }
