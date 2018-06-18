@@ -1,71 +1,8 @@
 [
   {
-      "code": "TKT10001",
-      "name": "Johdatus tietojenkäsittelytieteeseen",
-      "level": "Perusopinnot",
-      "compulsory": true,
-      "prereqs": [],
-      "studytrack": [],
-      "ects": "5",
-      "url": "https://courses.helsinki.fi/fi/TKT10001"
-
-  },
-  {
-      "code": "TKT10002",
-      "name": "Ohjelmoinnin perusteet",
-      "level": "Perusopinnot",
-      "compulsory": true,
-      "prereqs": [],
-      "studytrack": [],
-      "ects": "5",
-      "url": "https://courses.helsinki.fi/fi/TKT10002"
-
-  },
-  {
-      "code": "TKT10003",
-      "name": "Ohjelmoinnin jatkokurssi",
-      "level": "Perusopinnot",
-      "compulsory": true,
-      "prereqs": [
-          "TKT10002"
-      ],
-      "studytrack": [],
-      "ects": "5",
-      "url": "https://courses.helsinki.fi/fi/TKT10003"
-
-  },
-  {
-      "code": "TKT10004",
-      "name": "Tietokantojen perusteet",
-      "level": "Perusopinnot",
-      "compulsory": true,
-      "prereqs": [
-          "TKT10002"
-      ],
-      "studytrack": [],
-      "ects": "5",
-      "url": "https://courses.helsinki.fi/fi/TKT10004"
-
-  },
-  {
-      "code": "TKT10005",
-      "name": "Tietokoneen toiminta",
-      "level": "Perusopinnot",
-      "compulsory": true,
-      "prereqs": [
-          "TKT10002"
-      ],
-      "studytrack": [
-          "ns"
-      ],
-      "ects": "5",
-      "url": "https://courses.helsinki.fi/fi/TKT10005"
-
-  },
-  {
       "code": "TKT20001",
       "name": "Tietorakenteet ja algoritmit",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": true,
       "prereqs": [
           "TKT10003",
@@ -81,7 +18,7 @@
   {
       "code": "TKT20002",
       "name": "Ohjelmistotekniikan menetelmät",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": true,
       "prereqs": [
           "TKT10003",
@@ -97,7 +34,7 @@
   {
       "code": "TKT20003",
       "name": "Käyttöjärjestelmät",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": true,
       "prereqs": [
           "TKT10005"
@@ -112,7 +49,7 @@
   {
       "code": "TKT20004",
       "name": "Tietoliikenteen perusteet",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": true,
       "prereqs": [],
       "studytrack": [
@@ -125,7 +62,7 @@
   {
       "code": "TKT20005",
       "name": "Laskennan mallit",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": true,
       "prereqs": [
           "TKT20001"
@@ -140,7 +77,7 @@
   {
       "code": "TKT20006",
       "name": "Ohjelmistotuotanto",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": true,
       "prereqs": [
           "TKT20002"
@@ -155,7 +92,7 @@
   {
       "code": "TKT20007",
       "name": "Ohjelmistotuotantoprojekti",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": true,
       "prereqs": [
           "TKT20006",
@@ -173,7 +110,7 @@
   {
       "code": "TKT20008",
       "name": "Johdatus tekoälyyn",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT20001"
@@ -188,7 +125,7 @@
   {
       "code": "TKT20009",
       "name": "Tietoturvan perusteet",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [],
       "studytrack": [
@@ -201,7 +138,7 @@
   {
       "code": "TKT20010",
       "name": "Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT20001"
@@ -216,7 +153,7 @@
   {
       "code": "TKT20011",
       "name": "Aineopintojen harjoitustyö: Tietokantasovellus",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10003",
@@ -232,7 +169,7 @@
   {
       "code": "TKT20012",
       "name": "Aineopintojen harjoitustyö: Tietoliikenne",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT20004"
@@ -247,7 +184,7 @@
   {
       "code": "TKT21001",
       "name": "Tietokannan suunnittelu",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10004"
@@ -262,7 +199,7 @@
   {
       "code": "TKT21002",
       "name": "Introduction to Game Programming",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10002"
@@ -277,7 +214,7 @@
   {
       "code": "TKT21003",
       "name": "Web-palvelinohjelmointi Ruby on Rails",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10002",
@@ -294,7 +231,7 @@
   {
       "code": "TKT21004",
       "name": "Computer Organization II",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10005"
@@ -309,7 +246,7 @@
   {
       "code": "TKT21005",
       "name": "Ohjelmointitekniikka (JavaScript)",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10003"
@@ -324,7 +261,7 @@
   {
       "code": "TKT21007",
       "name": "Web-palvelinohjelmointi Java",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10002",
@@ -341,7 +278,7 @@
   {
       "code": "TKT21008",
       "name": "Programming in C",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10002",
@@ -359,7 +296,7 @@
   {
       "code": "TKT21009",
       "name": "Full Stack -websovelluskehitys",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10002",
@@ -376,7 +313,7 @@
   {
       "code": "TKT21010",
       "name": "Full Stack -websovelluskehitys harjoitustyö",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT21009"
@@ -391,7 +328,7 @@
   {
       "code": "TKT21012",
       "name": "Algoritmit ongelmanratkaisussa",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT20001"
@@ -406,7 +343,7 @@
   {
       "code": "TKT21013",
       "name": "Robottiohjelmoinnin harjoitustyö",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [],
       "studytrack": [],
@@ -417,7 +354,7 @@
   {
       "code": "TKT21014",
       "name": "Johdatus funktionaaliseen ohjelmointiin (Haskell)",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10002",
@@ -433,7 +370,7 @@
   {
       "code": "TKT21015",
       "name": "Versionhallinta",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [],
       "studytrack": [
@@ -446,7 +383,7 @@
   {
       "code": "TKT21016",
       "name": "Web-palvelinohjelmointi Ruby on Rails, harjoitustyö",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT21003"
@@ -461,7 +398,7 @@
   {
       "code": "TKT21017",
       "name": "Kilpaohjelmointi",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "TKT10002",
@@ -477,7 +414,7 @@
   {
       "code": "TKT21018",
       "name": "The Elements of AI",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [],
       "studytrack": [
@@ -490,7 +427,7 @@
   {
       "code": "TKT21019",
       "name": "Introduction to Lambda Calculus",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [
           "MAT11001"
@@ -503,7 +440,7 @@
   {
       "code": "CSM13501",
       "name": "Shell Scripting",
-      "level": "Aineopinnot",
+      "level": "intermediate",
       "compulsory": false,
       "prereqs": [],
       "studytrack": [

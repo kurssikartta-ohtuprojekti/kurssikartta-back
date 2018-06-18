@@ -2,7 +2,7 @@ const TKT10001 = {
     "code": "TKT10001",
     "name": "Johdatus tietojenkäsittelytieteeseen",
     "periodyear": { "2018": [false, false, false, true, false, false] },
-    "level": "Perusopinnot",
+    "level": "basic",
     "compulsory": true,
     "prereqs": [],
     "studytrack": [],
@@ -14,7 +14,7 @@ const CSM14209 = {
     "code": "CSM14209",
     "name": "Seminar in Novel Software Architecture Design",
     "periodyear": [],
-    "level": "Syventävät",
+    "level": "advanved",
     "compulsory": false,
     "prereqs": [],
     "studytrack": [
