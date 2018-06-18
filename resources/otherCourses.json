@@ -2,7 +2,7 @@
     {
         "code": "MAT11001",
         "name": "Johdatus yliopistomatematiikkaan",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [],
         "studytrack": [],
@@ -13,7 +13,7 @@
     {
         "code": "MAT11002",
         "name": "Lineaarialgebra ja matriisilaskenta I",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [],
         "studytrack": [],
@@ -24,7 +24,7 @@
     {
         "code": "MAT11003",
         "name": "Raja-arvot",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [],
         "studytrack": [],
@@ -35,7 +35,7 @@
     {
         "code": "MAT11004",
         "name": "Differentiaalilaskenta",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [
             "MAT11003"
@@ -48,7 +48,7 @@
     {
         "code": "MAT11005",
         "name": "Integraalilaskenta",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [
             "MAT11003",
@@ -62,7 +62,7 @@
     {
         "code": "MAT11010",
         "name": "Matemaattinen analyysi I",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [],
         "studytrack": [],
@@ -73,7 +73,7 @@
     {
         "code": "MAT11011",
         "name": "Matemaattinen analyysi II",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [
             "MAT11010",
@@ -87,7 +87,7 @@
     {
         "code": "MAT11012",
         "name": "Matemaattinen analyysi III",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [
             "MAT11010",
@@ -102,7 +102,7 @@
     {
         "code": "MAT11013",
         "name": "Matemaattinen analyysi IV",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [
             "MAT11010",
@@ -118,7 +118,7 @@
     {
         "code": "MAT12001",
         "name": "Tilastotiede ja R tutuksi I",
-        "level": "Perusopinnot",
+        "level": "basic",
         "compulsory": false,
         "prereqs": [],
         "studytrack": [],

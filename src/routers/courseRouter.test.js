@@ -12,7 +12,6 @@ test('courses are returned as json', async () => {
         .get('/courses')
         .expect(200)
         .expect('Content-Type', /application\/json/)
-    //  console.log('Data: ', response.data)
 })
 
 test('with course id correct course is returned', async () => {

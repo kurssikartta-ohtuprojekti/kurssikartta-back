@@ -11,7 +11,6 @@ courseRouter.get('/courses', (req, res) => {
             console.log('error: ', err)
             return res.status(500).json({error: messages.FILE_INCORRECT_FORMAT})
         }
-        //   console.log('/courses, obj', obj)
         res.json(obj)
     })
 })
@@ -19,10 +18,8 @@ courseRouter.get('/courses', (req, res) => {
 courseRouter.get('/courses/:id', (req, res) => {
     jsonfile.readFile(getCourseJsonPath(), (err, obj) => {
         if (err) {
-            console.log('error: ', err)
             return status(500).json({error : messages.FILE_INCORRECT_FORMAT})
         }
-
         const id = req.params.id
         const course = obj.find(item => item.code === id)
         if (course) {
@@ -39,7 +36,6 @@ courseRouter.get('/courses/info/:id', (req, res) => {
     const info = courseInfo.getCourseInfo(req.params.id)
 
     info.then((result) => {
-        console.log('info', info)
         res.json(result)
     }).catch(() => {
         res.status(404).end()
