@@ -119,11 +119,9 @@ test('after a HTTP DELETE is sent to /matrix/:id with a valid token and a valid 
     var res = await api
         .delete('/matrix/2')
         .set({ authorization: token })
-        .expect(200)
+        .expect(204)
 
-    expect(res.body).toEqual({
-        "msg": "ok, updated"
-    })
+
 
     res = await api
         .get('/matrix')
@@ -231,7 +229,7 @@ test('after a HTTP GET is sent to /matrix/:Not-an-integer-id, an explanatory err
         .expect(400)
 
     expect(res.body).toEqual({
-        "error": "data in incorrect format"
+        "error": "given id is not an integer"
     })
 
 })
@@ -361,7 +359,7 @@ test('after a HTTP POST is sent to /matrix/:id with a valid token, the correct m
             ]
         })
 
-    expect(res.body).toEqual({ "msg": "ok, updated" })
+    expect(res.body).toEqual({ "msg": "resource updated" })
 
     res = await api
         .get('/matrix')
