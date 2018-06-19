@@ -134,59 +134,7 @@ test('after a HTTP DELETE is sent to /matrix/:id with a valid token and a valid 
 
     )
 })
-/*
-test('after a HTTP POST is sent to /matrix with a valid token, status 200 is returned', async () => {
-    const token = await loginAndRetrieveToken()
 
-
-    res = await api
-        .post('/matrix')
-        .set({ authorization: token })
-        .send({
-            "id": 0,
-            "name": "Dummy",
-            "matrice": [
-                [
-                    ".",
-                    "."
-                ],
-                [
-                    ".",
-                    "."
-                ]
-            ]
-        })
-
-
-    expect(JSON.parse(res.text).msg).toBe('ok, updated')
-
-
-})
-
-test('after a HTTP POST is sent to /matrix with no token, status 403 is returned', async () => {
-
-    const res = await api
-        .post('/matrix')
-        .send({
-            "id": 0,
-            "name": "Dummy",
-            "matrice": [
-                [
-                    ".",
-                    "."
-                ],
-                [
-                    ".",
-                    "."
-                ]
-            ]
-        }).expect(403)
-
-
-    expect(JSON.parse(res.text).error).toBe('token missing')
-
-})
-*/
 /* HTTP GET /matrix */
 
 test('after a HTTP GET is sent to /matrix, a list of possible matrices and status 200 are returned', async () => {
@@ -334,6 +282,70 @@ test('after a HTTP POST is sent to /matrix/:id with a valid token but with malfo
 
 
 })
+test('after a HTTP POST is sent to /matrix/:id with valid token, but /:id and and id in the object do not match an error is returned and data is not changed', async () => {
+    resetTestMap()
+
+    const token = await loginAndRetrieveToken()
+
+
+    const res = await api
+        .post('/matrix/0')
+        .set({ authorization: token })
+        .send({
+            "id": 2,
+            "name": "DummyREPLACED",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+        })
+        .expect(400)
+
+
+    expect(res.body).toEqual({ "error": "data in incorrect format" })
+    await dataEqualsOriginal()
+
+
+})
+
+test('after a HTTP POST is sent to /matrix/:id with valid token and valid data, but the entry did not previously exist, an error is returned and data is not changed', async () => {
+    resetTestMap()
+
+    const token = await loginAndRetrieveToken()
+
+
+    const res = await api
+        .post('/matrix/1')
+        .set({ authorization: token })
+        .send({
+            "id": 1,
+            "name": "DummyREPLACED",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+        })
+        .expect(404)
+
+    expect(res.body).toEqual({ "error": "resource not found" })
+
+    await dataEqualsOriginal()
+
+
+})
+
 
 test('after a HTTP POST is sent to /matrix/:id with a valid token, the correct map matrix entry is replaced', async () => {
     resetTestMap()
@@ -398,7 +410,264 @@ test('after a HTTP POST is sent to /matrix/:id with a valid token, the correct m
 
 })
 
+/* HTTP POST /matrix */
 
+test('after a HTTP POST is sent to /matrix with no token, error 403 is returned and no data is changed', async () => {
+    resetTestMap()
+
+    const res = await api
+        .post('/matrix')
+        .send({
+            "name": "newENTRY",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+
+        })
+        .expect(403)
+
+    expect(res.body).toEqual({ "error": "token missing" })
+    await dataEqualsOriginal
+})
+
+test('after a HTTP POST is sent to /matrix with invalid token, error 403 is returned and no data is changed', async () => {
+    resetTestMap()
+
+    const token = '234odhgiodfhgieg'
+    const res = await api
+        .post('/matrix')
+        .set({ authorization: token })
+        .send({
+            "name": "newENTRY",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+
+        })
+        .expect(403)
+
+    expect(res.body).toEqual({ "error": "token is invalid" })
+    await dataEqualsOriginal
+})
+
+test('after a HTTP POST is sent to /matrix with a valid token, but an id is given, error 400 returned and no data is changed', async () => {
+    resetTestMap()
+
+
+
+    const token = await loginAndRetrieveToken()
+    const res = await api
+        .post('/matrix')
+        .set({ authorization: token })
+        .send({
+            "id": "2",
+            "name": "newENTRY",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+
+        })
+        .expect(400)
+
+    expect(res.body).toEqual({ "error": "data in incorrect format" })
+    await dataEqualsOriginal
+})
+
+test('after a HTTP POST is sent to /matrix with a valid token and valid data, a new entry is created and returned', async () => {
+
+
+    resetTestMap()
+
+    const token = await loginAndRetrieveToken()
+    var res = await api
+        .post('/matrix')
+        .set({ authorization: token })
+        .send({
+            "name": "newENTRY1",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+
+        })
+        .expect(201)
+
+    expect(res.body).toEqual({
+        "id": 1,
+        "name": "newENTRY1",
+        "matrice": [
+            [
+                ".",
+                "."
+            ],
+            [
+                ".",
+                "."
+            ]
+        ]
+
+    })
+
+    res = await api
+        .post('/matrix')
+        .set({ authorization: token })
+        .send({
+            "name": "newENTRY2",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+
+        })
+        .expect(201)
+
+    expect(res.body).toEqual({
+        "id": 3,
+        "name": "newENTRY2",
+        "matrice": [
+            [
+                ".",
+                "."
+            ],
+            [
+                ".",
+                "."
+            ]
+        ]
+
+    })
+
+    await api
+        .post('/matrix')
+        .set({ authorization: token })
+        .send({
+            "name": "newENTRY3",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+
+        })
+        .expect(201)
+    res = await api
+        .get('/matrix')
+        .expect(200)
+
+
+    expect(res.body).toEqual([
+        {
+            "id": 0,
+            "name": "Dummy",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+        },
+        {
+            "id": 1,
+            "name": "newENTRY1",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Dummy2",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+        },
+        {
+            "id": 3,
+            "name": "newENTRY2",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+        },
+        {
+            "id": 4,
+            "name": "newENTRY3",
+            "matrice": [
+                [
+                    ".",
+                    "."
+                ],
+                [
+                    ".",
+                    "."
+                ]
+            ]
+
+        }
+
+    ])
+})
 
 
 afterAll(() => {

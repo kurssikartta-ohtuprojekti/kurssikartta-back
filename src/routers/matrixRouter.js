@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 const { getAccount } = require('./../utils/accountHandler')
 const paths = require('./../other/paths')
 const messages = require('./../other/messages')
-const { dataIsValid } = require('./../utils/courseMapMarixValidator')
+const { inputDataForUpdateIsValid, inputDataForCreationIsValid } = require('./../utils/courseMapMarixValidator')
 
 const parse = (string) => {
     const int = parseInt(string, 10)
@@ -69,76 +69,43 @@ const validateToken = (token) => {
     return { msg: messages.VALID_TOKEN }
 }
 
-/*
+
 matrixRouter.post('/matrix', (req, res) => {
 
     const validation = validateToken(req.get('authorization'))
+
     if (validation.error) {
         return res.status(403).json({ error: validation.error })
     }
 
-    const data = req.body
-
-    jsonfile.writeFile(paths.getCourseMatrixPath(), data, (err) => {
-        if (err) {
-            return res.status(500).json({ error: messages.FILE_ERROR })
-
-        } else {
-            return res.status(200).json({ msg: messages.UPDATE_DONE })
-        }
-
-    })
-
-})
-*/
-
-matrixRouter.post('/matrix', (req, res) => {
-    if (validation.error) {
-        return res.status(403).json({ error: validation.error })
-    }
-
-    if (!dataIsValid(req.body)) {
+    if (!inputDataForCreationIsValid(req.body)) {
         return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
     }
 
+    var entry = req.body
+
     jsonfile.readFile(paths.getCourseMatrixJsonPath(), (err, obj) => {
-
-
         if (err) return res.status(500).json({ error: messages.FILE_ERROR })
 
-
         /* toteutus tasoa tyhmä. keksi jotain fiksumpaa kun kerkeät*/
-        var id = 0;
-
+        var index = 0
         while (true) {
-
-            try {
-                var index = obj.findIndex(item => {
-                    return (item.id !== undefined && item.id === id)
-                })
-
-            } catch (e) {
-                return res.status(500).json({ error: messages.FILE_INCORRECT_FORMAT })
-            }
-
-            if (index === -1) {
-                const item = req.body
-                item.id = id
-                obj.push(item)
-
-                jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, (err) => {
-
-                    if (err) return res.status(500).json({ error: messages.FILE_ERROR })
-
-                    else {
-                        return res.status(200).json({ msg: messages.UPDATE_DONE })
-                    }
-                })
-            } else {
-                id++
-            }
-
+            let id = (obj[index] !== undefined) ? obj[index].id : index
+            if (index < id || (obj[index] === undefined)) {
+                entry.id = index
+                obj.splice(index, 0, entry)
+                break
+            } else
+                index++
         }
+
+        jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, (err) => {
+            if (err) return res.status(500).json({ error: messages.FILE_ERROR })
+            else {
+                return res.status(201).json( entry )
+            }
+        })
+
     })
 
 })
@@ -152,13 +119,13 @@ matrixRouter.post('/matrix/:id', (req, res) => {
     }
     const id = parse(req.params.id)
 
-    if (!dataIsValid(req.body)) {
-        return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
-    }
+
     if (id === -1) {
         return res.status(400).json({ error: messages.ID_MISSING_OR_INCORRECT })
     }
-
+    if (!inputDataForUpdateIsValid(id, req.body)) {
+        return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
+    }
 
 
 
@@ -176,7 +143,7 @@ matrixRouter.post('/matrix/:id', (req, res) => {
         }
 
         if (index === -1) {
-            obj.push(req.body)
+            return res.status(404).json({ error: messages.NOT_FOUND })
         } else {
             obj[index] = req.body
         }
