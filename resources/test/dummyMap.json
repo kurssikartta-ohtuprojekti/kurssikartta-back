@@ -1,1 +1,1 @@
-[{"id":0,"name":"Dummy","matrice":[[".","."],[".","."]]},{"name":"newENTRY1","matrice":[[".","."],[".","."]],"id":1},{"id":2,"name":"Dummy2","matrice":[[".","."],[".","."]]},{"name":"newENTRY2","matrice":[[".","."],[".","."]],"id":3},{"name":"newENTRY3","matrice":[[".","."],[".","."]],"id":4}]
+[{"id":0,"name":"Dummy","matrice":[[".","."],[".","."]]},{"id":2,"name":"Dummy2","matrice":[[".","."],[".","."]]}]

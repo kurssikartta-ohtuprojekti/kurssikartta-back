@@ -12,7 +12,7 @@ const loginAndRetrieveToken = async () => {
     var res = await api
         .post('/login', )
         .send({
-            'username': 'testAdmin',
+            'username': 'admin',
             'password': 'hevonen'
         })
     return JSON.parse(res.text).token
@@ -76,9 +76,7 @@ test('after a HTTP DELETE is sent to /matrix/:id with invalid token, an error me
         .set({ authorization: 'not-a-token' })
         .expect(403)
 
-    expect(res.body).toEqual({
-        "error": "token is invalid"
-    })
+    expect(res.body).toEqual({ "error": { "message": "jwt malformed", "name": "JsonWebTokenError" } })
     await dataEqualsOriginal()
 })
 
@@ -219,7 +217,8 @@ test('after a HTTP POST is sent to /matrix/:id with an invalid valid token, an e
         })
         .expect(403)
 
-    expect(res.body).toEqual({ "error": "token is invalid" })
+    expect(res.body).toEqual({ "error": { "message": "jwt malformed", "name": "JsonWebTokenError" } }
+    )
 
     await dataEqualsOriginal()
 
@@ -460,7 +459,8 @@ test('after a HTTP POST is sent to /matrix with invalid token, error 403 is retu
         })
         .expect(403)
 
-    expect(res.body).toEqual({ "error": "token is invalid" })
+    expect(res.body).toEqual({ "error": { "message": "invalid token", "name": "JsonWebTokenError" } }
+    )
     await dataEqualsOriginal
 })
 

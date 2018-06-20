@@ -24,7 +24,7 @@ const validateUsername = (username) => {
         && accountCriteria.USERNAME_REQUIRED_REGEXES.every(regex => username.matches(regex)))
 }
 
-signupRouter.post('/signup', async (req, res) => {
+registerRouter.post('/register', async (req, res) => {
 
     if (req.password === undefined || req.username === undefined) return res.status(400).json({ error: messages.NO_USERNAME_OR_PASSWORD })
 
@@ -45,7 +45,7 @@ signupRouter.post('/signup', async (req, res) => {
             passwordHash: passwordHash
     }
 
-    //jsonfile.writeFile(paths.getAccountJsPath)
+    //jsonfile.writeFile(paths.getAccountJsPath) Tässä tallennus tietokantaan
 
     const token = jwt.sign({ username: req.body.username, }, process.env.SECRET)
     res.status(201).send({ token, username: req.body.username })
