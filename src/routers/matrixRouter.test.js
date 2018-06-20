@@ -217,8 +217,7 @@ test('after a HTTP POST is sent to /matrix/:id with an invalid valid token, an e
         })
         .expect(403)
 
-    expect(res.body).toEqual({ "error": { "message": "jwt malformed", "name": "JsonWebTokenError" } }
-    )
+    expect(res.body).toEqual({ "error": { "message": "invalid token", "name": "JsonWebTokenError" } })
 
     await dataEqualsOriginal()
 
@@ -436,7 +435,7 @@ test('after a HTTP POST is sent to /matrix with no token, error 403 is returned 
     await dataEqualsOriginal
 })
 
-test('after a HTTP POST is sent to /matrix with invalid token, error 403 is returned and no data is changed', async () => {
+test('after a HTTP POST is sent to /matrix with malformed token, error 403 is returned and no data is changed', async () => {
     resetTestMap()
 
     const token = '234odhgiodfhgieg'
@@ -459,9 +458,9 @@ test('after a HTTP POST is sent to /matrix with invalid token, error 403 is retu
         })
         .expect(403)
 
-    expect(res.body).toEqual({ "error": { "message": "invalid token", "name": "JsonWebTokenError" } }
-    )
-    await dataEqualsOriginal
+    expect(res.body).toEqual({ "error": { "message": "jwt malformed", "name": "JsonWebTokenError" } })
+    
+await dataEqualsOriginal
 })
 
 test('after a HTTP POST is sent to /matrix with a valid token, but an id is given, error 400 returned and no data is changed', async () => {

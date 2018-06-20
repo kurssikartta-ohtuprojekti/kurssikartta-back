@@ -55,26 +55,35 @@ matrixRouter.get('/matrix/:id', async (req, res) => {
 const validateToken = async (token, res) => {
 
     try {
+        console.log('2.1')
         const decoded = await jwt.verify(token, process.env.SECRET)
-        return decoded.account
+        console.log('decoded: ', decoded)
+        return decoded.username
 
     } catch (err) {
+        console.log('2.2')
+
         res.status(403).json({ error: err })
         return undefined
     }
+    console.log('2.3')
 
 }
 
 const handleAdminAuthentication = async (req, res) => {
+    console.log('1')
 
     if (req.get('authorization') === undefined) {
         res.status(403).json({ error: messages.NO_TOKEN })
         return false
     }
+
     const token = req.get('authorization')
+    console.log('2')
 
     const account = await validateToken(token, res)
-
+    console.log('3')
+    console.log('account: ', account)
     if (account !== undefined && account !== 'admin') {
         res.status(403).json({ error: messages.UNAUTHROZED_ACTION })
         return false
