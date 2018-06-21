@@ -5,6 +5,7 @@ const client = new Client({
 })
 client.connect()
 
+
 const getAccount = async (username) => {
     const query = {
         text: 'SELECT * FROM accounts WHERE username = $1',

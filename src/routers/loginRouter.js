@@ -4,7 +4,6 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 //const { getAccount } = require('./../utils/accountHandler')
 const { getAccount } = require('./../utils/psqlAccounts')
-
 const messages = require('./../other/messages')
 
 const validateLogin = async (username, password) => {
