@@ -17,6 +17,17 @@ const getAccount = async (username) => {
 
 }
 
+const saveAccount = async (account) => {
+    const query = {
+        text: 'INSERT INTO accounts VALUES ($1, $2, $3, $4)',
+        values: [account.id, account.username, account.passwordhash, account.role]
+    }
+
+   const result = await client.query(query)
+  // add error handling
+
+}
+
 module.exports = {
-    getAccount
+    getAccount, saveAccount
 }
