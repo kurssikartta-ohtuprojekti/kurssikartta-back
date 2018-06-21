@@ -1,0 +1,9 @@
+CREATE TABLE accounts (
+  id int,
+  username text,
+  passwordHash text,
+  role boolean
+);
+
+
+INSERT INTO accounts VALUES (0, 'admin', '$2b$10$HVRrOciJcxECI.D7Nkgd4Obnb8LY.0uWYNd8EhSvygDiAFWYzwlw6', true);

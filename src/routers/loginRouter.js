@@ -2,14 +2,17 @@ const express = require('express')
 const loginRouter = express.Router()
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const {getAccount} = require('./../utils/accountHandler')
+//const { getAccount } = require('./../utils/accountHandler')
+const { getAccount } = require('./../utils/psqlAccounts')
+
 const messages = require('./../other/messages')
 
 const validateLogin = async (username, password) => {
 
-    const account = getAccount(username)
+    const account =  await getAccount(username)
 
-    return (account !== undefined && await bcrypt.compare(password, account.passwordHash))
+    console.log('account', account)
+    return (account !== undefined && await bcrypt.compare(password, account.passwordhash))
 }
 
 loginRouter.post('/login', async (req, res) => {
@@ -31,5 +34,8 @@ loginRouter.post('/login', async (req, res) => {
 
 })
 
+loginRouter.post('/logout', async (req, res) => {
+    const token = req.get('authorization')
+})
 
 module.exports = loginRouter
