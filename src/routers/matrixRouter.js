@@ -52,31 +52,55 @@ matrixRouter.get('/matrix/:id', async (req, res) => {
     })
 })
 
-const validateToken = (token) => {
-    if (!token) return { error: messages.NO_TOKEN }
+const validateToken = async (token, res) => {
 
     try {
+        console.log('2.1')
+        const decoded = await jwt.verify(token, process.env.SECRET)
+        console.log('decoded: ', decoded)
+        return decoded.username
 
-        const username = jwt.verify(token, process.env.SECRET).username
+    } catch (err) {
+        console.log('2.2')
 
-        if (!username) return { error: messages.INVALID_TOKEN }
-        if (!getAccount(username)) return { error: messages.ACCOUNT_NOT_FOUND }
-
-    } catch (e) {
-        return { error: messages.INVALID_TOKEN }
+        res.status(403).json({ error: err })
+        return undefined
     }
+    console.log('2.3')
 
-    return { msg: messages.VALID_TOKEN }
 }
 
+const handleAdminAuthentication = async (req, res) => {
+    console.log('1')
 
-matrixRouter.post('/matrix', (req, res) => {
-
-    const validation = validateToken(req.get('authorization'))
-
-    if (validation.error) {
-        return res.status(403).json({ error: validation.error })
+    if (req.get('authorization') === undefined) {
+        res.status(403).json({ error: messages.NO_TOKEN })
+        return false
     }
+
+    const token = req.get('authorization')
+    console.log('2')
+
+    const account = await validateToken(token, res)
+    console.log('3')
+    console.log('account: ', account)
+    if (account !== undefined && account !== 'admin') {
+        res.status(403).json({ error: messages.UNAUTHROZED_ACTION })
+        return false
+    }
+    if (account === undefined) {
+        return false
+    }
+
+    return true
+}
+
+matrixRouter.post('/matrix', async (req, res) => {
+
+
+    const authedRequest = await handleAdminAuthentication(req, res)
+    if (!authedRequest) return
+
 
     if (!inputDataForCreationIsValid(req.body)) {
         return res.status(400).json({ error: messages.DATA_INCORRECT_FORMAT })
@@ -102,7 +126,7 @@ matrixRouter.post('/matrix', (req, res) => {
         jsonfile.writeFile(paths.getCourseMatrixJsonPath(), obj, (err) => {
             if (err) return res.status(500).json({ error: messages.FILE_ERROR })
             else {
-                return res.status(201).json( entry )
+                return res.status(201).json(entry)
             }
         })
 
@@ -110,13 +134,11 @@ matrixRouter.post('/matrix', (req, res) => {
 
 })
 
-matrixRouter.post('/matrix/:id', (req, res) => {
+matrixRouter.post('/matrix/:id', async (req, res) => {
 
-    const validation = validateToken(req.get('authorization'))
+    const authedRequest = await handleAdminAuthentication(req, res)
+    if (!authedRequest) return
 
-    if (validation.error) {
-        return res.status(403).json({ error: validation.error })
-    }
     const id = parse(req.params.id)
 
 
@@ -158,13 +180,12 @@ matrixRouter.post('/matrix/:id', (req, res) => {
     })
 })
 
-matrixRouter.delete('/matrix/:id', (req, res) => {
+matrixRouter.delete('/matrix/:id', async (req, res) => {
 
-    const validation = validateToken(req.get('authorization'))
+    const authedRequest = await handleAdminAuthentication(req, res)
+    if (!authedRequest) return
 
-    if (validation.error) {
-        return res.status(403).json({ error: validation.error })
-    }
+
     const id = parse(req.params.id)
 
     if (id === -1) {
@@ -203,15 +224,10 @@ matrixRouter.delete('/matrix/:id', (req, res) => {
 })
 
 
-matrixRouter.get('/reset', (req, res) => {
+matrixRouter.get('/reset', async (req, res) => {
 
-    const validation = validateToken(req.get('authorization'))
-    if (validation.error) {
-        return res.status(403).json({ error: validation.error })
-    } else {
-        console.log('** validation ** ', validation.msg)
-    }
-    console.log('1')
+    const authedRequest = await handleAdminAuth(req, res)
+    if (!authedRequest) return
 
     jsonfile.readFile(paths.MAP_BACKUP_PATH, (err, obj) => {
         console.log('2')

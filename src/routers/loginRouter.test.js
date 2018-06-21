@@ -7,13 +7,13 @@ test('login with correct username and password is succesful and token and correc
     const res = await api
         .post('/login', )
         .send({
-            'username': 'testAdmin',
+            'username': 'admin',
             'password': 'hevonen'
         })
         .expect(200)
         .expect('Content-Type', /application\/json/)
 
-    expect(JSON.parse(res.text).username).toBe('testAdmin')
+    expect(JSON.parse(res.text).username).toBe('admin')
 
 
 })
@@ -22,7 +22,7 @@ test('login with correct username and incorrect password is not succesful', asyn
     const res = await api
         .post('/login', )
         .send({
-            'username': 'testAdmin',
+            'username': 'admin',
             'password': 'eiHevonen'
         })
         .expect(401)
@@ -37,7 +37,7 @@ test('login with incorrect username and correct password is not succesful', asyn
     const res = await api
         .post('/login', )
         .send({
-            'username': 'eiTestAdmin',
+            'username': 'eiAdmin',
             'password': 'hevonen'
         })
         .expect(401)
@@ -64,7 +64,7 @@ test('if password is not defined error 401 is returned', async () => {
     const res = await api
         .post('/login', )
         .send({
-            'username': 'testAdmin'
+            'username': 'admin'
         })
         .expect(401)
         .expect('Content-Type', /application\/json/)

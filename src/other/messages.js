@@ -9,6 +9,7 @@ const INVALID_TOKEN = 'token is invalid'
 const ACCOUNT_NOT_FOUND = 'account not found'
 const INVALID_USERNAME_OR_PASSWORD = 'invalid username or password'
 const NO_USERNAME_OR_PASSWORD = 'username or password missing'
+const PW_MIN_CRITERIA_NOT_MET = 'supplied password does not meet the minimum criteria'
 // other
 
 const NOT_FOUND = 'resource not found'
@@ -31,4 +32,5 @@ module.exports = {
     NO_USERNAME_OR_PASSWORD,
     DATA_INCORRECT_FORMAT,
     ID_MISSING_OR_INCORRECT,
+    PW_MIN_CRITERIA_NOT_MET
 }
