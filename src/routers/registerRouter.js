@@ -6,7 +6,7 @@ const messages = require('./../other/messages')
 const accountCriteria = require('./other/passwordCriteria')
 const { getNextAccountId } = require('./../utils/accountHandler')
 const bcrypt = require('bcrypt')
-const {getAccount, saveAccount} = require('../utils/psqlAccountHandler')
+const {getAccountByName, saveAccount} = require('../utils/psqlAccountHandler')
 const { createToken } = require('./../utils/tokenHandler')
 
 
@@ -35,7 +35,7 @@ registerRouter.post('/register', async (req, res) => {
     if (!validateUsername(username)) return res.status(400).json({ error: messages.USERNAME_MIN_CRITERIA_NOT_MET })
 
     // HUOM lisää regexit usernamen validoimiseksi
-    if (getAccount(username)) return { error: messages.USERNAME_TAKEN }
+    if (getAccountByName(username)) return { error: messages.USERNAME_TAKEN }
 
     const passwordHash = await bcrypt.hash(password, accountCriteria.SALT_ROUNDS)
 

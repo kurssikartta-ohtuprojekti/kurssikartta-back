@@ -12,13 +12,15 @@ loginRouter.post('/login', async (req, res) => {
     if (req.body.username == undefined || req.body.password == undefined) {
         return res.status(401).send({ error: messages.NO_USERNAME_OR_PASSWORD })
     }
-    const account =  await getAccountByName(username)
 
-    if (account !== undefined && await bcrypt.compare(password, account.passwordhash)) {
+
+    const account = await getAccountByName(req.body.username)
+
+    if (account !== undefined && await bcrypt.compare(req.body.password, account.passwordhash)) {
 
         const token = createToken(account)
-       
-        res.status(200).send({ token, username: account.username, role: account.account})
+
+        res.status(200).send({ token, username: account.username, role: account.account })
 
     } else {
 

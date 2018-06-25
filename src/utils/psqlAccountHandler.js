@@ -1,7 +1,9 @@
 const { Client } = require('pg')
 
+
 const client = new Client({
-    database: 'kurssikartta'
+
+    database: (process.env.NODE_ENV === 'test') ? 'kurssikartta-test' : 'kurssikartta'
 })
 client.connect()
 

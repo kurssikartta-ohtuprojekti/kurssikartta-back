@@ -61,9 +61,9 @@ const handleAdminAuthentication = async (req, res) => {
         return false
     }
 
-    const account = await validateToken(req.get('authorization'))
-
-    if (account === undefined || account.role !== true) {
+    const decoded = await validateToken(req.get('authorization'))
+    
+    if (decoded === undefined || decoded.role !== true) {
         res.status(403).json({ error: messages.UNAUTHROZED_ACTION })
         return false
     }
@@ -110,8 +110,7 @@ matrixRouter.post('/matrix', async (req, res) => {
 
 matrixRouter.post('/matrix/:id', async (req, res) => {
 
-    const authedRequest = await handleAdminAuthentication(req, res)
-    if (!authedRequest) return
+    if (! await handleAdminAuthentication(req, res)) return
 
     const id = parse(req.params.id)
 
@@ -156,8 +155,7 @@ matrixRouter.post('/matrix/:id', async (req, res) => {
 
 matrixRouter.delete('/matrix/:id', async (req, res) => {
 
-    const authedRequest = await handleAdminAuthentication(req, res)
-    if (!authedRequest) return
+    if (! await handleAdminAuthentication(req, res)) return
 
 
     const id = parse(req.params.id)
