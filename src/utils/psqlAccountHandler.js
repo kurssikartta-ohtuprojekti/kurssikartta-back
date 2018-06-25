@@ -6,7 +6,7 @@ const client = new Client({
 client.connect()
 
 
-const getAccount = async (username) => {
+const getAccountByName = async (username) => {
     const query = {
         text: 'SELECT * FROM accounts WHERE username = $1',
         values: [username]
@@ -30,5 +30,5 @@ const saveAccount = async (account) => {
 }
 
 module.exports = {
-    getAccount, saveAccount
+    getAccountByName, saveAccount
 }

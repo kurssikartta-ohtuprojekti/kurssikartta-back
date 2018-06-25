@@ -1,14 +1,20 @@
 /* password */
 const PW_MIN_LENGTH = 10
 const PW_MAX_LENGTH = 20
-const PW_REQUIRED_REGEXES = [/\d/] // huom lisää validoinnit 
+const PW_REQUIRED_REGEXES = [/\d/, /^[a-z0-9_]+$/i] // huom tarkista validoinnit 
+/*
+/\d/ must contain a number
+/^[a-z0-9]+$/i must be alphanumeric, incasesensitive
+*/
 
 /* username */
-
 const USERNAME_MIN_LENGTH = 3
 const USERNAME_MAX_LENGTH = 10
-const USERNAME_REQUIRED_REGEXES = [] // huom lisää validoinnit 
-
+const USERNAME_REQUIRED_REGEXES = [/\d/, /^[a-z0-9_]+$/i] // huom tarkista validoinnit 
+/*
+/\d/ must contain a number
+/^[a-z0-9]+$/i must be alphanumeric, incasesensitive
+*/
 
 
 /* cryptography */

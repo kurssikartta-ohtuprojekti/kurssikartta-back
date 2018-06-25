@@ -3,29 +3,22 @@ const loginRouter = express.Router()
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 //const { getAccount } = require('./../utils/accountHandler')
-const { getAccount } = require('./../utils/psqlAccounts')
+const { getAccountByName } = require('../utils/psqlAccountHandler')
+const { createToken } = require('./../utils/tokenHandler')
 const messages = require('./../other/messages')
 
-const validateLogin = async (username, password) => {
-
-    const account =  await getAccount(username)
-
-    console.log('account', account)
-    return (account !== undefined && await bcrypt.compare(password, account.passwordhash))
-}
 
 loginRouter.post('/login', async (req, res) => {
     if (req.body.username == undefined || req.body.password == undefined) {
-
         return res.status(401).send({ error: messages.NO_USERNAME_OR_PASSWORD })
     }
+    const account =  await getAccountByName(username)
 
-    if (await validateLogin(req.body.username, req.body.password)) {
+    if (account !== undefined && await bcrypt.compare(password, account.passwordhash)) {
 
-        const token = jwt.sign({ username: req.body.username, }, process.env.SECRET)
-
-        var username = getAccount(req.body.username)
-        res.status(200).send({ token, username: req.body.username, role: username.role})
+        const token = createToken(account)
+       
+        res.status(200).send({ token, username: account.username, role: account.account})
 
     } else {
 

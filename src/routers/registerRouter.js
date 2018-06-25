@@ -1,13 +1,13 @@
 const express = require('express')
 const matrixRouter = express.Router()
 const jsonfile = require('jsonfile')
-const jwt = require('jsonwebtoken')
 const paths = require('./../other/paths')
 const messages = require('./../other/messages')
 const accountCriteria = require('./other/passwordCriteria')
 const { getNextAccountId } = require('./../utils/accountHandler')
 const bcrypt = require('bcrypt')
-const {getAccount, saveAccount} = require('./../utils/psqlAccounts')
+const {getAccount, saveAccount} = require('../utils/psqlAccountHandler')
+const { createToken } = require('./../utils/tokenHandler')
 
 
 const validatePassword = (password) => {
@@ -46,37 +46,7 @@ registerRouter.post('/register', async (req, res) => {
             role: false
     }
     saveAccount(newAccount)
-    //jsonfile.writeFile(paths.getAccountJsPath) Tässä tallennus tietokantaan
-    // jsonfile.readFile(paths.getAccountJsPath(), (err, obj) => {
-    //     if (err) return res.status(500).json({ error: messages.FILE_ERROR })
-
-
-    //     try {
-    //         var index = obj.findIndex(item => {
-    //             return (item.id !== undefined && item.id === id)
-    //         })
-
-    //     } catch (e) {
-    //         return res.status(500).json({ error: messages.FILE_INCORRECT_FORMAT })
-    //     }
-
-    //     if (index === -1) {
-    //         return res.status(404).json({ error: messages.NOT_FOUND })
-    //     } else {
-    //         obj[index] = req.body
-    //     }
-
-    //     jsonfile.writeFile(paths.getAccountJsPath(), obj, (err) => {
-    //         if (err) return res.status(500).json({ error: messages.FILE_ERROR })
-    //         else {
-    //             return res.status(200).json({ msg: messages.UPDATE_DONE })
-    //         }
-    //     }
-    //     )
-    // })
-
-
-    const token = jwt.sign({ username: req.body.username, }, process.env.SECRET)
+    const token = createToken(newAccount)
     res.status(201).send({ token, username: req.body.username })
 
 })
