@@ -5,4 +5,6 @@ node_js:
 services:
   - postgresql
 before_script:
-  - psql -c 'create database kurssikartta-test;' -U postgres
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - psql -c 'CREATE TABLE accounts (id int, username text, passwordHash text, role boolean);' -U postgres
+  - psql -c 'INSERT INTO accounts VALUES (1, 'admin', '$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae', true);' -U postgres
