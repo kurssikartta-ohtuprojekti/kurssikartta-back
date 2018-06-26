@@ -1,3 +1,8 @@
 
 2018-06-25 22:37:17.559 EEST [70878] FATAL:  database "mikkomo" does not exist
 2018-06-25 23:16:52.609 EEST [71371] FATAL:  database "kurssikartta-test" does not exist
+2018-06-26 14:13:11.046 EEST [81373] FATAL:  role "kurssikartta" does not exist
+2018-06-26 14:14:06.878 EEST [81387] ERROR:  relation "accounts" does not exist at character 15
+2018-06-26 14:14:06.878 EEST [81387] STATEMENT:  select * from accounts;
+2018-06-26 14:14:42.174 EEST [81387] ERROR:  invalid input syntax for integer: "admin" at character 30
+2018-06-26 14:14:42.174 EEST [81387] STATEMENT:  INSERT INTO accounts VALUES ('admin', '$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae', true);
