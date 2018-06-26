@@ -8,3 +8,43 @@
 2018-06-26 14:14:42.174 EEST [81387] STATEMENT:  INSERT INTO accounts VALUES ('admin', '$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae', true);
 2018-06-26 14:46:04.805 EEST [81938] ERROR:  syntax error at or near "*" at character 8
 2018-06-26 14:46:04.805 EEST [81938] STATEMENT:  delete * from accounts;
+2018-06-26 14:58:54.619 EEST [82127] FATAL:  role "postgres" does not exist
+2018-06-26 14:59:34.370 EEST [82135] FATAL:  database "mikkomo" does not exist
+2018-06-26 14:59:50.249 EEST [82139] FATAL:  database "mikkomo" does not exist
+2018-06-26 15:00:16.002 EEST [82145] FATAL:  role "postgres" does not exist
+2018-06-26 15:00:48.594 EEST [82154] FATAL:  role "postgres" does not exist
+2018-06-26 15:00:54.330 EEST [82157] FATAL:  database "mikkomo" does not exist
+2018-06-26 15:01:06.213 EEST [82161] FATAL:  database "mikkomo" does not exist
+2018-06-26 15:02:17.437 EEST [82185] FATAL:  role "postgres" does not exist
+2018-06-26 15:02:22.524 EEST [82188] ERROR:  column "admin" does not exist at character 39
+2018-06-26 15:02:22.524 EEST [82188] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, admin, b0tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae, true);
+2018-06-26 15:02:47.337 EEST [82194] ERROR:  column "admin" does not exist at character 39
+2018-06-26 15:02:47.337 EEST [82194] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, "admin", b0tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae, true);
+2018-06-26 15:03:49.936 EEST [82206] ERROR:  syntax error at or near ".0" at character 84
+2018-06-26 15:03:49.936 EEST [82206] STATEMENT:  INSERT INTO accounts(username, passwordhash, role) VALUES (admin, b0.D7Nkgd4Obnb8LY.0uWYNd8EhSvygDiAFWYzwlw6, true);
+	
+2018-06-26 15:04:21.225 EEST [82213] ERROR:  syntax error at or near ".0" at character 84
+2018-06-26 15:04:21.225 EEST [82213] STATEMENT:  INSERT INTO accounts(username, passwordhash, role) VALUES (admin, b0.D7Nkgd4Obnb8LY.0uWYNd8EhSvygDiAFWYzwlw6, true);
+2018-06-26 15:04:47.542 EEST [82221] ERROR:  column "admin" does not exist at character 60
+2018-06-26 15:04:47.542 EEST [82221] STATEMENT:  INSERT INTO accounts(username, passwordhash, role) VALUES (admin, "$2b$10$HVRrOciJcxECI.D7Nkgd4Obnb8LY.0uWYNd8EhSvygDiAFWYzwlw6", true);
+2018-06-26 15:06:33.997 EEST [82248] ERROR:  syntax error at or near "b$10$4tWSs8g8yKlEW0m0dJVnXe" at character 48
+2018-06-26 15:06:33.997 EEST [82248] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, admin, $2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae, true);
+2018-06-26 15:07:06.904 EEST [82255] ERROR:  zero-length delimited identifier at or near """" at character 39
+2018-06-26 15:07:06.904 EEST [82255] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, ""admin"", ""$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae"", true);
+2018-06-26 15:07:25.149 EEST [82262] ERROR:  zero-length delimited identifier at or near """" at character 48
+2018-06-26 15:07:25.149 EEST [82262] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, "admin", ""$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae"", true);
+2018-06-26 15:07:42.285 EEST [82266] ERROR:  column "admin" does not exist at character 39
+2018-06-26 15:07:42.285 EEST [82266] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, "admin", "$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae", true);
+2018-06-26 15:11:18.747 EEST [82305] ERROR:  relation "accounts" already exists
+2018-06-26 15:11:18.747 EEST [82305] STATEMENT:  CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNIQUE NOT NULL, passwordhash text NOT NULL, role boolean);
+2018-06-26 15:11:49.894 EEST [82317] ERROR:  column "admin" does not exist at character 39
+2018-06-26 15:11:49.894 EEST [82317] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, "admin", "$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae", true);
+2018-06-26 15:12:05.355 EEST [82322] ERROR:  syntax error at or near "b$10$4tWSs8g8yKlEW0m0dJVnXe" at character 48
+2018-06-26 15:12:05.355 EEST [82322] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, admin, $2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae, true);
+2018-06-26 15:14:30.835 EEST [82353] FATAL:  role "postgres" does not exist
+2018-06-26 15:14:45.967 EEST [82358] FATAL:  role "postgres" does not exist
+2018-06-26 15:14:49.778 EEST [82360] ERROR:  syntax error at or near "\" at character 39
+2018-06-26 15:14:49.778 EEST [82360] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, \admin\, \b0tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae\, true);
+2018-06-26 15:15:08.460 EEST [82365] ERROR:  syntax error at or near "\" at character 44
+2018-06-26 15:15:08.460 EEST [82365] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, admin\, \b0tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae\, true);
+2018-06-26 15:15:20.084 EEST [82369] FATAL:  database "'b0tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae\, true)" does not exist
