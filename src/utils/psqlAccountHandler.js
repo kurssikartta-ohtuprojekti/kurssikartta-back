@@ -22,8 +22,8 @@ const getAccountByName = async (username) => {
 
 const saveAccount = async (account) => {
     const query = {
-        text: 'INSERT INTO accounts VALUES ($1, $2, $3, $4)',
-        values: [account.id, account.username, account.passwordhash, account.role]
+        text: 'INSERT INTO accounts VALUES ($1, $2, $3)',
+        values: [account.username, account.passwordhash, account.role]
     }
 
    const result = await client.query(query)

@@ -40,7 +40,7 @@ registerRouter.post('/register', async (req, res) => {
     const passwordHash = await bcrypt.hash(password, accountCriteria.SALT_ROUNDS)
 
     const newAccount = {
-            id: getNextAccountId(),
+           // id: getNextAccountId(),
             username: username,
             passwordhash: passwordHash,
             role: false
