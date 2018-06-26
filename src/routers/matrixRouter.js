@@ -63,7 +63,7 @@ const handleAdminAuthentication = async (req, res) => {
 
     const decoded = await validateToken(req.get('authorization'))
     
-    if (decoded === undefined || decoded.role !== true) {
+    if (decoded === false || decoded.role !== true) {
         res.status(403).json({ error: messages.UNAUTHROZED_ACTION })
         return false
     }

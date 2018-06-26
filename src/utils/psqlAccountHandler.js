@@ -5,6 +5,7 @@ const client = new Client({
 
     database: (process.env.NODE_ENV === 'test') ? 'kurssikartta-test' : 'kurssikartta'
 })
+
 client.connect()
 
 
@@ -13,7 +14,6 @@ const getAccountByName = async (username) => {
         text: 'SELECT * FROM accounts WHERE username = $1',
         values: [username]
     }
-    console.log('executing the query')
     const result = await client.query(query)
 
     return result.rows[0]
