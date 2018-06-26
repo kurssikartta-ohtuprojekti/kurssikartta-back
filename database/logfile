@@ -6,3 +6,5 @@
 2018-06-26 14:14:06.878 EEST [81387] STATEMENT:  select * from accounts;
 2018-06-26 14:14:42.174 EEST [81387] ERROR:  invalid input syntax for integer: "admin" at character 30
 2018-06-26 14:14:42.174 EEST [81387] STATEMENT:  INSERT INTO accounts VALUES ('admin', '$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae', true);
+2018-06-26 14:46:04.805 EEST [81938] ERROR:  syntax error at or near "*" at character 8
+2018-06-26 14:46:04.805 EEST [81938] STATEMENT:  delete * from accounts;

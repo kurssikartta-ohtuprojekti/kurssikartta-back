@@ -9,6 +9,6 @@ CREATE TABLE accounts (
 INSERT INTO accounts(username, passwordhash, role) VALUES ('admin', '$2b$10$HVRrOciJcxECI.D7Nkgd4Obnb8LY.0uWYNd8EhSvygDiAFWYzwlw6', true);
 
 
-INSERT INTO accounts(username, passwordhash, role) VALUES ('admin', '$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae', true);
+INSERT INTO accounts VALUES (DEFAULT, 'admin', '$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae', true);
 // pass = hevonen, testiakko
 
