@@ -48,3 +48,44 @@
 2018-06-26 15:15:08.460 EEST [82365] ERROR:  syntax error at or near "\" at character 44
 2018-06-26 15:15:08.460 EEST [82365] STATEMENT:  INSERT INTO accounts VALUES (DEFAULT, admin\, \b0tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae\, true);
 2018-06-26 15:15:20.084 EEST [82369] FATAL:  database "'b0tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae\, true)" does not exist
+2018-06-26 15:25:51.970 EEST [82553] ERROR:  database "kurssikartta-test" is being accessed by other users
+2018-06-26 15:25:51.970 EEST [82553] DETAIL:  There is 1 other session using the database.
+2018-06-26 15:25:51.970 EEST [82553] STATEMENT:  DROP DATABASE "kurssikartta-test";
+2018-06-26 15:28:19.989 EEST [82618] FATAL:  database "mikkomo" does not exist
+2018-06-26 15:28:20.006 EEST [82620] FATAL:  database "mikkomo" does not exist
+2018-06-26 15:28:20.022 EEST [82622] FATAL:  database "mikkomo" does not exist
+2018-06-26 15:35:40.010 EEST [82708] FATAL:  database "mikkomo" does not exist
+2018-06-26 15:35:40.480 EEST [82712] FATAL:  database "CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNI" does not exist
+2018-06-26 15:35:40.495 EEST [82714] FATAL:  database "INSERT INTO accounts VALUES (DEFAULT, '\admin\', '$2b0tWSs8g8yK" does not exist
+2018-06-26 15:36:19.604 EEST [82724] FATAL:  database "DROP DATABASE IF EXISTS kurssikartta_test;" does not exist
+2018-06-26 15:36:19.635 EEST [82726] ERROR:  database "kurssikartta_test" already exists
+2018-06-26 15:36:19.635 EEST [82726] STATEMENT:  CREATE DATABASE kurssikartta_test;
+2018-06-26 15:36:19.661 EEST [82728] FATAL:  database "CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNI" does not exist
+2018-06-26 15:36:19.679 EEST [82730] FATAL:  database "INSERT INTO accounts VALUES (DEFAULT, '\admin\', '$2b0tWSs8g8yK" does not exist
+2018-06-26 15:36:52.321 EEST [82738] FATAL:  database "DROP DATABASE IF EXISTS kurssikartta_test;" does not exist
+2018-06-26 15:36:52.348 EEST [82740] ERROR:  database "kurssikartta_test" already exists
+2018-06-26 15:36:52.348 EEST [82740] STATEMENT:  CREATE DATABASE kurssikartta_test;
+2018-06-26 15:36:52.371 EEST [82742] FATAL:  database "CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNI" does not exist
+2018-06-26 15:36:52.388 EEST [82744] FATAL:  database "INSERT INTO accounts VALUES (DEFAULT, '\admin\', '$2b0tWSs8g8yK" does not exist
+2018-06-26 15:37:07.847 EEST [82751] FATAL:  database "DROP DATABASE IF EXISTS kurssikartta_test;" does not exist
+2018-06-26 15:37:07.878 EEST [82753] ERROR:  database "kurssikartta_test" already exists
+2018-06-26 15:37:07.878 EEST [82753] STATEMENT:  CREATE DATABASE kurssikartta_test;
+2018-06-26 15:37:07.903 EEST [82755] FATAL:  database "CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNI" does not exist
+2018-06-26 15:37:07.920 EEST [82757] FATAL:  database "INSERT INTO accounts VALUES (DEFAULT, '\admin\', '$2b0tWSs8g8yK" does not exist
+2018-06-26 15:37:18.824 EEST [82768] FATAL:  database "DROP DATABASE IF EXISTS kurssikartta_test;" does not exist
+2018-06-26 15:37:18.852 EEST [82770] ERROR:  database "kurssikartta_test" already exists
+2018-06-26 15:37:18.852 EEST [82770] STATEMENT:  CREATE DATABASE kurssikartta_test;
+2018-06-26 15:37:18.876 EEST [82772] FATAL:  database "CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNI" does not exist
+2018-06-26 15:37:18.894 EEST [82774] FATAL:  database "INSERT INTO accounts VALUES (DEFAULT, '\admin\', '$2b0tWSs8g8yK" does not exist
+2018-06-26 15:37:45.532 EEST [82782] FATAL:  database "mikkomo" does not exist
+2018-06-26 15:37:45.560 EEST [82784] ERROR:  database "kurssikartta_test" already exists
+2018-06-26 15:37:45.560 EEST [82784] STATEMENT:  CREATE DATABASE kurssikartta_test;
+2018-06-26 15:37:45.582 EEST [82786] FATAL:  database "CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNI" does not exist
+2018-06-26 15:37:45.605 EEST [82788] FATAL:  database "INSERT INTO accounts VALUES (DEFAULT, '\admin\', '$2b0tWSs8g8yK" does not exist
+2018-06-26 15:38:09.513 EEST [82797] FATAL:  role "kurssikartta_test" does not exist
+2018-06-26 15:38:09.543 EEST [82799] ERROR:  database "kurssikartta_test" already exists
+2018-06-26 15:38:09.543 EEST [82799] STATEMENT:  CREATE DATABASE kurssikartta_test;
+2018-06-26 15:38:09.570 EEST [82801] FATAL:  database "CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNI" does not exist
+2018-06-26 15:38:09.587 EEST [82803] FATAL:  database "INSERT INTO accounts VALUES (DEFAULT, '\admin\', '$2b0tWSs8g8yK" does not exist
+2018-06-26 15:38:23.586 EEST [82815] FATAL:  database "CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNI" does not exist
+2018-06-26 15:38:23.603 EEST [82817] FATAL:  database "INSERT INTO accounts VALUES (DEFAULT, '\admin\', '$2b0tWSs8g8yK" does not exist
