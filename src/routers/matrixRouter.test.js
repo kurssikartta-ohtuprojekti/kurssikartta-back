@@ -76,7 +76,7 @@ test('after a HTTP DELETE is sent to /matrix/:id with invalid token, an error me
         .set({ authorization: 'not-a-token' })
         .expect(403)
 
-    expect(res.body).toEqual({ "error": { "message": "jwt malformed", "name": "JsonWebTokenError" } })
+    expect(res.body).toEqual({ "error": "unauthorized action"})
     await dataEqualsOriginal()
 })
 
@@ -217,7 +217,7 @@ test('after a HTTP POST is sent to /matrix/:id with an invalid valid token, an e
         })
         .expect(403)
 
-    expect(res.body).toEqual({ "error": { "message": "invalid token", "name": "JsonWebTokenError" } })
+    expect(res.body).toEqual({ "error": "unauthorized action"})
 
     await dataEqualsOriginal()
 
@@ -458,7 +458,7 @@ test('after a HTTP POST is sent to /matrix with malformed token, error 403 is re
         })
         .expect(403)
 
-    expect(res.body).toEqual({ "error": { "message": "jwt malformed", "name": "JsonWebTokenError" } })
+    expect(res.body).toEqual({ "error": "unauthorized action" })
     
 await dataEqualsOriginal
 })

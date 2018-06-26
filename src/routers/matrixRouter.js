@@ -2,10 +2,10 @@ const express = require('express')
 const matrixRouter = express.Router()
 const jsonfile = require('jsonfile')
 const jwt = require('jsonwebtoken')
-const { getAccount } = require('./../utils/accountHandler')
 const paths = require('./../other/paths')
 const messages = require('./../other/messages')
 const { inputDataForUpdateIsValid, inputDataForCreationIsValid } = require('./../utils/courseMapMarixValidator')
+const { validateToken } = require('./../utils/tokenHandler')
 
 const parse = (string) => {
     const int = parseInt(string, 10)
@@ -52,43 +52,19 @@ matrixRouter.get('/matrix/:id', async (req, res) => {
     })
 })
 
-const validateToken = async (token, res) => {
 
-    try {
-        console.log('2.1')
-        const decoded = await jwt.verify(token, process.env.SECRET)
-        console.log('decoded: ', decoded)
-        return decoded.username
-
-    } catch (err) {
-        console.log('2.2')
-
-        res.status(403).json({ error: err })
-        return undefined
-    }
-    console.log('2.3')
-
-}
 
 const handleAdminAuthentication = async (req, res) => {
-    console.log('1')
 
     if (req.get('authorization') === undefined) {
         res.status(403).json({ error: messages.NO_TOKEN })
         return false
     }
 
-    const token = req.get('authorization')
-    console.log('2')
-
-    const account = await validateToken(token, res)
-    console.log('3')
-    console.log('account: ', account)
-    if (account !== undefined && account !== 'admin') {
+    const decoded = await validateToken(req.get('authorization'))
+    
+    if (decoded === false || decoded.role !== 'admin') {
         res.status(403).json({ error: messages.UNAUTHROZED_ACTION })
-        return false
-    }
-    if (account === undefined) {
         return false
     }
 
@@ -97,9 +73,7 @@ const handleAdminAuthentication = async (req, res) => {
 
 matrixRouter.post('/matrix', async (req, res) => {
 
-
-    const authedRequest = await handleAdminAuthentication(req, res)
-    if (!authedRequest) return
+    if (! await handleAdminAuthentication(req, res)) return
 
 
     if (!inputDataForCreationIsValid(req.body)) {
@@ -136,8 +110,7 @@ matrixRouter.post('/matrix', async (req, res) => {
 
 matrixRouter.post('/matrix/:id', async (req, res) => {
 
-    const authedRequest = await handleAdminAuthentication(req, res)
-    if (!authedRequest) return
+    if (! await handleAdminAuthentication(req, res)) return
 
     const id = parse(req.params.id)
 
@@ -182,8 +155,7 @@ matrixRouter.post('/matrix/:id', async (req, res) => {
 
 matrixRouter.delete('/matrix/:id', async (req, res) => {
 
-    const authedRequest = await handleAdminAuthentication(req, res)
-    if (!authedRequest) return
+    if (! await handleAdminAuthentication(req, res)) return
 
 
     const id = parse(req.params.id)

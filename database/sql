@@ -1,0 +1,14 @@
+CREATE TABLE accounts (
+  id SERIAL PRIMARY KEY,
+  username text UNIQUE NOT NULL,
+  passwordHash text NOT NULL,
+  role text NOT NULL
+);
+
+
+INSERT INTO accounts(username, passwordhash, role) VALUES ('admin', '$2b$10$HVRrOciJcxECI.D7Nkgd4Obnb8LY.0uWYNd8EhSvygDiAFWYzwlw6', 'admim');
+
+
+psql -c "INSERT INTO accounts VALUES (DEFAULT, 'admin', '\$2b\$10\$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae\', 'admin');"
+// cli one-liner, pass = hevonen
+
