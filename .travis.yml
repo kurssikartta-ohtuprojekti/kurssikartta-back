@@ -5,4 +5,4 @@ node_js:
 services:
   - postgresql
 before_script:
-  - sh reset_test_db_sh
+  - sh reset_test_db.sh
