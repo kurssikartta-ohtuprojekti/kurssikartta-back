@@ -1,8 +1,8 @@
 const { Client } = require('pg')
 
+const conn = process.env.DATABASE_URL
 
-const client = new Client({
-
+const client = conn ? new Client({ connectionString: conn }) : new Client({
     database: (process.env.NODE_ENV === 'test') ? 'kurssikartta_test' : 'kurssikartta'
 })
 
@@ -26,8 +26,8 @@ const saveAccount = async (account) => {
         values: [account.username, account.passwordhash, account.role]
     }
 
-   const result = await client.query(query)
-  // add error handling
+    const result = await client.query(query)
+    // add error handling
 
 }
 
