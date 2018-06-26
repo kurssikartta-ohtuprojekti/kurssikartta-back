@@ -1,10 +1,7 @@
 const express = require('express')
-const matrixRouter = express.Router()
-const jsonfile = require('jsonfile')
-const paths = require('./../other/paths')
+const registerRouter = express.Router()
 const messages = require('./../other/messages')
-const accountCriteria = require('./other/passwordCriteria')
-const { getNextAccountId } = require('./../utils/accountHandler')
+const accountCriteria = require('./../other/accountCriteria')
 const bcrypt = require('bcrypt')
 const {getAccountByName, saveAccount} = require('../utils/psqlAccountHandler')
 const { createToken } = require('./../utils/tokenHandler')
@@ -50,3 +47,5 @@ registerRouter.post('/register', async (req, res) => {
     res.status(201).send({ token, username: req.body.username })
 
 })
+
+module.exports = registerRouter
