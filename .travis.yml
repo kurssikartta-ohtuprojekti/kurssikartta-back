@@ -6,5 +6,5 @@ services:
   - postgresql
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
-  - psql -c 'CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNIQUE NOT NULL, passwordHash text NOT NULL, role boolean);' -U postgres
-  - psql -c 'INSERT INTO accounts(username, passwordhash, role) VALUES ("admin", '$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae', true);' -U postgres
+  - psql -c 'CREATE TABLE accounts (id SERIAL PRIMARY KEY, username text UNIQUE NOT NULL, passwordhash text NOT NULL, role boolean);' -U postgres
+  - psql -c 'INSERT INTO accounts(username, passwordhash, role) VALUES (admin, '$2b$10$4tWSs8g8yKlEW0m0dJVnXe.vqNLAiPanrhUv8ekT.TqmNUN4CXnae', true);' -U postgres
