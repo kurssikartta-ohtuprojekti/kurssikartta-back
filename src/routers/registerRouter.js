@@ -8,8 +8,10 @@ const { createToken } = require('./../utils/tokenHandler')
 
 
 const validatePassword = (password) => {
-    console.log('1.1')
-    console.log('pw: ', password)
+
+    //console.log('pw regsx', PW_REQUIRED_REGEXES)
+  //  console.log('1.1')
+ //   console.log('pw: ', password)
     return (password !== undefined
         && password.length >= accountCriteria.PW_MIN_LENGTH
         && password.length <= accountCriteria.PW_MAX_LENGTH
