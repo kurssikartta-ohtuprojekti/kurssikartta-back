@@ -24,7 +24,7 @@ const validateUsername = (username) => {
 registerRouter.post('/register', async (req, res) => {
 
     if (req.password === undefined || req.username === undefined) return res.status(400).json({ error: messages.NO_USERNAME_OR_PASSWORD })
-
+    
     const password = req.password
     const username = req.username
 
@@ -40,11 +40,11 @@ registerRouter.post('/register', async (req, res) => {
            // id: getNextAccountId(),
             username: username,
             passwordhash: passwordHash,
-            role: false
+            role: 'user'
     }
     saveAccount(newAccount)
     const token = createToken(newAccount)
-    res.status(201).send({ token, username: req.body.username })
+    res.status(201).send({ token, username: newAccount.username, role: newAcccount.role })
 
 })
 
