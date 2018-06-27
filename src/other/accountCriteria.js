@@ -10,7 +10,7 @@ const PW_REQUIRED_REGEXES = [/\d/, /^[a-z0-9_]+$/i] // huom tarkista validoinnit
 /* username */
 const USERNAME_MIN_LENGTH = 3
 const USERNAME_MAX_LENGTH = 10
-const USERNAME_REQUIRED_REGEXES = [/\d/, /^[a-z0-9_]+$/i] // huom tarkista validoinnit 
+const USERNAME_REQUIRED_REGEXES = [/^[a-z0-9_]+$/i] // huom tarkista validoinnit 
 /*
 /\d/ must contain a number
 /^[a-z0-9]+$/i must be alphanumeric, incasesensitive
