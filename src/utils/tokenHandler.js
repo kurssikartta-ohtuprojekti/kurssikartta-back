@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken')
 
 const createToken = (account) => {
     
-    return jwt.sign({ username: account.username, role: account.role }, process.env.SECRET)
+    return jwt.sign({ username: account.username, role: account.role }, process.env.SECRET, {expiresIn: process.env.LOGIN_EXPIRATION_TIME})
 }
 
 const validateToken = async (token) => {
