@@ -8,7 +8,7 @@ const { inputDataForUpdateIsValid, inputDataForCreationIsValid } = require('./..
 const { validateToken } = require('./../utils/tokenHandler')
 
 const parse = (string) => {
-    const int = parseInt(string, 10)
+    const int = parseInt(string, 10) // 10 = decimal system
 
     if (int === undefined || isNaN(int)) {
         return -1
@@ -62,7 +62,7 @@ const handleAdminAuthentication = async (req, res) => {
     }
 
     const decoded = await validateToken(req.get('authorization'))
-    
+
     if (decoded === false || decoded.role !== 'admin') {
         res.status(403).json({ error: messages.UNAUTHROZED_ACTION })
         return false

@@ -8,8 +8,7 @@ const { createToken } = require('./../utils/tokenHandler')
 
 
 const validatePassword = (password) => {
-    console.log('1.1')
-    console.log('pw: ', password)
+
     return (password !== undefined
         && password.length >= accountCriteria.PW_MIN_LENGTH
         && password.length <= accountCriteria.PW_MAX_LENGTH
@@ -24,18 +23,14 @@ const validateUsername = (username) => {
 }
 
 registerRouter.post('/register', async (req, res) => {
-    console.log('pw:', req.body.password)
-    console.log('username:', req.body.username)
 
     if (req.body.password === undefined || req.body.username === undefined) return res.status(400).json({ error: messages.NO_USERNAME_OR_PASSWORD })
 
     const password = req.body.password
     const username = req.body.username
-    console.log('1')
 
     if (!validatePassword(password)) return res.status(400).json({ error: messages.PW_MIN_CRITERIA_NOT_MET })
     if (!validateUsername(username)) return res.status(400).json({ error: messages.USERNAME_MIN_CRITERIA_NOT_MET })
-    console.log('2')
 
     if (await getAccountByName(username)) return { error: messages.USERNAME_TAKEN }
 
@@ -46,7 +41,7 @@ registerRouter.post('/register', async (req, res) => {
         passwordhash: passwordHash,
         role: 'user'
     }
-    await saveAccount(newAccount) // add error handling!
+    await saveAccount(newAccount) 
     const token = createToken(newAccount)
     return res.status(201).send({ token, username: newAccount.username, role: newAccount.role, courses: newAccount.courses })
 
