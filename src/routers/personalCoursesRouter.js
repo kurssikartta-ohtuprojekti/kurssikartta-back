@@ -3,6 +3,7 @@ const personalCoursesRouter = express.Router()
 const { validateToken } = require('./../utils/tokenHandler')
 const { updateAccountCoursesByName } = require('../utils/psqlAccountHandler')
 const { getAccountByName } = require('../utils/psqlAccountHandler')
+const messages = require('./../other/messages')
 
 const handleAuthentication = async (req, res) => {
 
@@ -24,7 +25,7 @@ const handleAuthentication = async (req, res) => {
 
 
 personalCoursesRouter.post('/my_courses', async (req, res) => {
-
+    console.log('req: ', req)
     console.log('body: ', req.body)
 
     const decoded = await handleAuthentication(req, res)
