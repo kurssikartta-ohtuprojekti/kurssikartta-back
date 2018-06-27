@@ -47,9 +47,9 @@ registerRouter.post('/register', async (req, res) => {
         passwordhash: passwordHash,
         role: 'user'
     }
-    saveAccount(newAccount)
+    await saveAccount(newAccount)
     const token = createToken(newAccount)
-    return res.status(201).send({ token, username: newAccount.username, role: newAccount.role })
+    return res.status(201).send({ token, username: newAccount.username, role: newAccount.role, courses: newAccount.courses })
 
 })
 
