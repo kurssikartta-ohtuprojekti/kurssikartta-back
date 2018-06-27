@@ -23,7 +23,7 @@ loginRouter.post('/login', async (req, res) => {
 
         const token = createToken(account)
 
-        res.status(200).send({ token, username: account.username, role: account.role, courses: account.courses })
+        res.status(200).send({ token, username: account.username, role: account.account, courses: account.courses })
 
     } else {
 

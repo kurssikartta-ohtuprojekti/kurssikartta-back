@@ -37,7 +37,6 @@ registerRouter.post('/register', async (req, res) => {
     if (!validateUsername(username)) return res.status(400).json({ error: messages.USERNAME_MIN_CRITERIA_NOT_MET })
     console.log('2')
 
-    // HUOM lisää regexit usernamen validoimiseksi
     if (await getAccountByName(username)) return { error: messages.USERNAME_TAKEN }
 
     const passwordHash = await bcrypt.hash(password, accountCriteria.SALT_ROUNDS)
@@ -47,7 +46,7 @@ registerRouter.post('/register', async (req, res) => {
         passwordhash: passwordHash,
         role: 'user'
     }
-    await saveAccount(newAccount)
+    await saveAccount(newAccount) // add error handling!
     const token = createToken(newAccount)
     return res.status(201).send({ token, username: newAccount.username, role: newAccount.role, courses: newAccount.courses })
 

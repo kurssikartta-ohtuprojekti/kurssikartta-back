@@ -25,35 +25,33 @@ const handleAuthentication = async (req, res) => {
 
 
 personalCoursesRouter.post('/my_courses', async (req, res) => {
-    console.log('req: ', req)
-    console.log('body: ', req.body)
 
     const decoded = await handleAuthentication(req, res)
 
     if (!decoded) return
 
-    console.log('decoded: ', decoded)
-    console.log('body: ', req.body)
+   // console.log('decoded: ', decoded)
+   // console.log('body: ', req.body)
     const username = decoded.username
-    console.log('username: ', username)
-    console.log('courses: ', req.body.courses)
+   // console.log('username: ', username)
+   // console.log('courses: ', req.body.courses)
     await updateAccountCoursesByName(username, req.body.courses)
     const account = await getAccountByName(username)
-    return res.status(200).json(account)
+    return res.status(200).json({username: account.username, role: account.role, courses: account.courses})
 
 })
 
 personalCoursesRouter.get('/my_courses', async (req, res) => {
     const decoded = await handleAuthentication(req, res)
 
-    console.log('decoded: ', decoded)
+  //  console.log('decoded: ', decoded)
 
     if (!decoded) return
     const username = decoded.username
 
-    console.log('username: ', username)
+  //  console.log('username: ', username)
     const account = await getAccountByName(username)
-    return res.status(200).json(account)
+    return res.status(200).json({username: account.username, role: account.role, courses: account.courses})
 
 })
 
