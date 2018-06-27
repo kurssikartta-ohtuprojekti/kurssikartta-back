@@ -1,8 +1,6 @@
 const express = require('express')
 const loginRouter = express.Router()
 const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
-//const { getAccount } = require('./../utils/accountHandler')
 const { getAccountByName } = require('../utils/psqlAccountHandler')
 const { createToken } = require('./../utils/tokenHandler')
 const messages = require('./../other/messages')
@@ -10,7 +8,6 @@ const messages = require('./../other/messages')
 
 loginRouter.post('/login', async (req, res) => {
 
-    
 
     if (req.body.username == undefined || req.body.password == undefined) {
         return res.status(401).send({ error: messages.NO_USERNAME_OR_PASSWORD })
@@ -32,8 +29,11 @@ loginRouter.post('/login', async (req, res) => {
 
 })
 
+/*
+
+
 loginRouter.post('/logout', async (req, res) => {
     const token = req.get('authorization')
 })
-
+*/
 module.exports = loginRouter

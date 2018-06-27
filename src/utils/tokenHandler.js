@@ -12,12 +12,11 @@ const createToken = (account) => {
 const validateToken = async (token) => {
 
     try {
-        //console.log('2.1')
         const decoded = await jwt.verify(token, process.env.SECRET)
-      //  console.log('decoded: ', decoded)
         return decoded
 
     } catch (err) {
+        console.log(err)
         return false
     }
 

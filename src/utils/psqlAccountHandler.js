@@ -62,7 +62,7 @@ const saveAccount = async (account) => {
     try {
 
         const query = {
-            text: 'INSERT INTO accounts(username, passwordhash, role) VALUES ($1, $2, $3)',
+            text: 'INSERT INTO accounts(username, passwordhash, role, courses) VALUES ($1, $2, $3, \'{}\')',
             values: [account.username, account.passwordhash, account.role]
         }
 

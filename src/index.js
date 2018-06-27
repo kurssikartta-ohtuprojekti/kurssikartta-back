@@ -39,12 +39,12 @@ server.listen(PORT, () => {
 server.on('error', (e) => {
 
   if (e.code === 'EADDRINUSE' && process.env === 'test') {
-    
-    setTimeout(()=> {
+
+    setTimeout(() => {
       PORT += 1
       server.listen(PORT)
     }, 200)
-   
+
 
   } else {
     console.log('error: ', e.code)
