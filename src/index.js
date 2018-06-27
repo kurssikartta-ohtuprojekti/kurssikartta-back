@@ -9,6 +9,7 @@ const courseUpdate = require('./utils/courseUpdate')
 const loginRouter = require('./routers/loginRouter')
 const courseRouter = require('./routers/courseRouter')
 const registerRouter = require('./routers/registerRouter')
+const personalCoursesRouter = require('./routers/personalCoursesRouter')
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -16,7 +17,7 @@ app.use(courseRouter)
 app.use(loginRouter)
 app.use(matrixRouter)
 app.use(registerRouter)
-
+app.use(personalCoursesRouter)
 app.get('/', (req, res) => {
   res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For a single course /courses/:id </br> For database update /update </p>')
 })
