@@ -20,9 +20,20 @@ const getAccountByName = async (username) => {
 
 }
 
+const updateAccountCoursesByName = async (username, courses) => {
+    const query = {
+        text: 'UPDATE Accounts SET courses = $2 WHERE username = $1',
+        values: [username, courses]
+    }
+
+    const result = await client.query(query)
+    return result.rows[0]
+
+}
+
 const saveAccount = async (account) => {
     const query = {
-        text: 'INSERT INTO accounts VALUES ($1, $2, $3)',
+        text: 'INSERT INTO accounts(username, passwordhash, role) VALUES ($1, $2, $3)',
         values: [account.username, account.passwordhash, account.role]
     }
 
@@ -32,5 +43,5 @@ const saveAccount = async (account) => {
 }
 
 module.exports = {
-    getAccountByName, saveAccount
+    getAccountByName, saveAccount, updateAccountCoursesByName
 }
