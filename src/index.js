@@ -18,6 +18,8 @@ app.use(loginRouter)
 app.use(matrixRouter)
 app.use(registerRouter)
 app.use(personalCoursesRouter)
+
+
 app.get('/', (req, res) => {
   res.send('<h1>Kurssikartta!</h1> <p> For all courses: /courses </br> For a single course /courses/:id </br> For database update /update </p>')
 })
