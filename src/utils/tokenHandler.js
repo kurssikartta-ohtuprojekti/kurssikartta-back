@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken')
 
 
 const createToken = (account) => {
-    
+  //  console.log('env exp time:', process.env.LOGIN_EXPIRATION_TIME)
     return jwt.sign({ username: account.username, role: account.role }, process.env.SECRET, {expiresIn: process.env.LOGIN_EXPIRATION_TIME})
 }
 
