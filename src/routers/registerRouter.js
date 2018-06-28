@@ -60,12 +60,12 @@ registerRouter.post('/register/delete', async (req, res) => {
     }
 
     const account = await getAccountByName(req.body.username)
-    console.log(account)
+    // console.log(account)
 
     if (account !== undefined) {
         if (await bcrypt.compare(req.body.password, account.passwordhash)) {
             await deleteAccount(account)
-            console.log("deleted")
+            // console.log("deleted")
             return res.status(204).send()
         } else {
             return res.status(401).send({ error: messages.INVALID_USERNAME_OR_PASSWORD })
