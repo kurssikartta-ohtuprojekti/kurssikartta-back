@@ -5,6 +5,8 @@ const accountCriteria = require('./../other/accountCriteria')
 const bcrypt = require('bcrypt')
 const { getAccountByName, saveAccount, deleteAccount } = require('../utils/psqlAccountHandler')
 const { createToken } = require('./../utils/tokenHandler')
+const { validateToken } = require('./../utils/tokenHandler')
+
 
 
 const validatePassword = (password) => {
@@ -23,7 +25,6 @@ const validateUsername = (username) => {
 }
 
 registerRouter.post('/register', async (req, res) => {
-
     if (req.body.password === undefined || req.body.username === undefined) return res.status(400).json({ error: messages.NO_USERNAME_OR_PASSWORD })
 
     const password = req.body.password
@@ -47,19 +48,31 @@ registerRouter.post('/register', async (req, res) => {
 
 })
 
-registerRouter.delete('/register/:id', async (req, res) => {
+registerRouter.post('/register/delete', async (req, res) => {
 
-    if (! await handleAdminAuthentication(req, res)) return
+    // if (! await handleAdminAuthentication(req, res)) return
 
+    // console.log(req)
+    // console.log(req.body)
 
-    const id = parse(req.params.id)
-
-    const account = {
-        username: username,
+    if (req.body.username == undefined || req.body.password == undefined) {
+        return res.status(401).send({ error: messages.NO_USERNAME_OR_PASSWORD })
     }
 
-    await deleteAccount(account)
-    return res.status(204).send()
+    const account = await getAccountByName(req.body.username)
+    console.log(account)
+
+    if (account !== undefined) {
+        if (await bcrypt.compare(req.body.password, account.passwordhash)) {
+            await deleteAccount(account)
+            console.log("deleted")
+            return res.status(204).send()
+        } else {
+            return res.status(401).send({ error: messages.INVALID_USERNAME_OR_PASSWORD })
+        }
+    } else {
+        res.status(400).json({ error: messages.ACCOUNT_NOT_FOUND })
+    }
 })
 
 const handleAdminAuthentication = async (req, res) => {
