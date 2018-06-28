@@ -77,6 +77,28 @@ const saveAccount = async (account) => {
 
 }
 
+const deleteAccount = async (account) => {
+
+    const client = await pool.connect()
+
+    try {
+
+        const query = {
+            text: 'DELETE FROM accounts WHERE username = $1',
+            values: [account.username]
+        }
+
+        await client.query(query)
+    }
+    catch (error) {
+        console.log(error)
+    }
+    finally {
+        client.release()
+    }
+
+}
+
 module.exports = {
-    getAccountByName, saveAccount, updateAccountCoursesByName
+    getAccountByName, saveAccount, updateAccountCoursesByName, deleteAccount
 }

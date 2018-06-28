@@ -30,10 +30,10 @@
     "cors": "^2.8.4",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
-    "install": "^0.11.0",
+    "install": "^0.11.2",
     "jsonfile": "^4.0.0",
-    "libpq": "^1.8.8",
     "jsonwebtoken": "^8.3.0",
+    "libpq": "^1.8.8",
     "npm": "^6.1.0",
     "pg": "^7.4.3",
     "request": "^2.87.0"
