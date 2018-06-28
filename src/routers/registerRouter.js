@@ -3,7 +3,7 @@ const registerRouter = express.Router()
 const messages = require('./../other/messages')
 const accountCriteria = require('./../other/accountCriteria')
 const bcrypt = require('bcrypt')
-const { getAccountByName, saveAccount } = require('../utils/psqlAccountHandler')
+const { getAccountByName, saveAccount, deleteAccount } = require('../utils/psqlAccountHandler')
 const { createToken } = require('./../utils/tokenHandler')
 
 
@@ -41,10 +41,42 @@ registerRouter.post('/register', async (req, res) => {
         passwordhash: passwordHash,
         role: 'user'
     }
-    await saveAccount(newAccount) 
+    await saveAccount(newAccount)
     const token = createToken(newAccount)
     return res.status(201).send({ token, username: newAccount.username, role: newAccount.role, courses: newAccount.courses })
 
 })
+
+registerRouter.delete('/register/:id', async (req, res) => {
+
+    if (! await handleAdminAuthentication(req, res)) return
+
+
+    const id = parse(req.params.id)
+
+    const account = {
+        username: username,
+    }
+
+    await deleteAccount(account)
+    return res.status(204).send()
+})
+
+const handleAdminAuthentication = async (req, res) => {
+
+    if (req.get('authorization') === undefined) {
+        res.status(403).json({ error: messages.NO_TOKEN })
+        return false
+    }
+
+    const decoded = await validateToken(req.get('authorization'))
+
+    if (decoded === false || decoded.role !== 'admin') {
+        res.status(403).json({ error: messages.UNAUTHROZED_ACTION })
+        return false
+    }
+
+    return true
+}
 
 module.exports = registerRouter
