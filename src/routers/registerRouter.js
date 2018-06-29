@@ -28,7 +28,7 @@ const validateUsername = (username) => {
 registerRouter.post('/register', async (req, res) => {
     if (req.body.password === undefined || req.body.username === undefined) return res.status(400).json({ error: messages.NO_USERNAME_OR_PASSWORD })
 
-    if (! await verifyHumanity(req, res)) {
+    if (await verifyHumanity(req, res)) {
         return res.status(400).json({ error: messages.NOT_HUMAN })
     }
 
@@ -55,19 +55,15 @@ registerRouter.post('/register', async (req, res) => {
 
 registerRouter.post('/register/delete', async (req, res) => {
 
-    // if (! await handleAdminAuthentication(req, res)) return
-
     if (req.body.username == undefined || req.body.password == undefined) {
         return res.status(401).send({ error: messages.NO_USERNAME_OR_PASSWORD })
     }
 
     const account = await getAccountByName(req.body.username)
-    // console.log(account)
 
     if (account !== undefined) {
         if (await bcrypt.compare(req.body.password, account.passwordhash)) {
             await deleteAccount(account)
-            // console.log("deleted")
             return res.status(204).send()
         } else {
             return res.status(401).send({ error: messages.INVALID_USERNAME_OR_PASSWORD })
@@ -76,23 +72,6 @@ registerRouter.post('/register/delete', async (req, res) => {
         res.status(400).json({ error: messages.ACCOUNT_NOT_FOUND })
     }
 })
-
-const handleAdminAuthentication = async (req, res) => {
-
-    if (req.get('authorization') === undefined) {
-        res.status(403).json({ error: messages.NO_TOKEN })
-        return false
-    }
-
-    const decoded = await validateToken(req.get('authorization'))
-
-    if (decoded === false || decoded.role !== 'admin') {
-        res.status(403).json({ error: messages.UNAUTHROZED_ACTION })
-        return false
-    }
-
-    return true
-}
 
 const verifyHumanity = async (req) => {
 
@@ -105,9 +84,7 @@ const verifyHumanity = async (req) => {
         }
     });
 
-    // console.log(response.data)
-
-    if (response.data.success) {
+    if (response.data.success === 'true') {
         return true;
     } else {
         return false;

@@ -2,11 +2,11 @@ var request = require('request');
 var path = require('path');
 var fs = require('fs');
 
-module.exports = function (req, res, next) {
+module.exports = function (res, url) {
   // Give spreadsheet information
-  var id = "1K0w4aGHVwqZJpB8wm9sa9eye3nsQXPn2KvacnZGmlh8",
-    sheet = 1,
-    url = 'https://spreadsheets.google.com/feeds/list/' + id + '/' + sheet + '/public/values?alt=json';
+  // var id = "1K0w4aGHVwqZJpB8wm9sa9eye3nsQXPn2KvacnZGmlh8",
+  //   sheet = 1,
+  //   url = 'https://spreadsheets.google.com/feeds/list/' + id + '/' + sheet + '/public/values?alt=json';
 
   // Get spreadsheet information and parse them to JSON
   request(url, function (error, response, body) {
