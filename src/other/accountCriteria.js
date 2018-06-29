@@ -1,5 +1,5 @@
 /* password */
-const PW_MIN_LENGTH = process.env.PW_MIN_LENGTH || 8
+const PW_MIN_LENGTH = process.env.PW_MIN_LENGTH || 6
 const PW_MAX_LENGTH = process.env.PW_MAX_LENGTH || 100
 const PW_REQUIRED_REGEXES = [/\d/, /^[a-z0-9_]+$/i] // huom tarkista validoinnit 
 /*
