@@ -24,6 +24,9 @@ const VALID_TOKEN = 'token is valid'
 const UPDATE_DONE = 'resource updated'
 // const DELETED = 'resource deleted'
 
+// recaptcha
+const NOT_HUMAN = 'failed recaptcha'
+
 module.exports = {
     UNAUTHROZED_ACTION,
     FILE_ERROR,
@@ -41,5 +44,5 @@ module.exports = {
     PW_MIN_CRITERIA_NOT_MET,
     USERNAME_MIN_CRITERIA_NOT_MET,
     USERNAME_TAKEN,
-    
+    NOT_HUMAN,
 }

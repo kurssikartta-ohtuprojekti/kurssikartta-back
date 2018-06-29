@@ -6,6 +6,7 @@ const bcrypt = require('bcrypt')
 const { getAccountByName, saveAccount, deleteAccount } = require('../utils/psqlAccountHandler')
 const { createToken } = require('./../utils/tokenHandler')
 const { validateToken } = require('./../utils/tokenHandler')
+const axios = require('axios');
 
 
 
@@ -26,6 +27,10 @@ const validateUsername = (username) => {
 
 registerRouter.post('/register', async (req, res) => {
     if (req.body.password === undefined || req.body.username === undefined) return res.status(400).json({ error: messages.NO_USERNAME_OR_PASSWORD })
+
+    if (! await verifyHumanity(req, res)) {
+        return res.status(400).json({ error: messages.NOT_HUMAN })
+    }
 
     const password = req.body.password
     const username = req.body.username
@@ -51,9 +56,6 @@ registerRouter.post('/register', async (req, res) => {
 registerRouter.post('/register/delete', async (req, res) => {
 
     // if (! await handleAdminAuthentication(req, res)) return
-
-    // console.log(req)
-    // console.log(req.body)
 
     if (req.body.username == undefined || req.body.password == undefined) {
         return res.status(401).send({ error: messages.NO_USERNAME_OR_PASSWORD })
@@ -90,6 +92,26 @@ const handleAdminAuthentication = async (req, res) => {
     }
 
     return true
+}
+
+const verifyHumanity = async (req) => {
+
+    const response = await axios({
+        method: 'post',
+        url: 'https://www.google.com/recaptcha/api/siteverify',
+        params: {
+            secret: process.env.CAPTCHASECRET,
+            response: req.body.reCaptchaResponse,
+        }
+    });
+
+    // console.log(response.data)
+
+    if (response.data.success) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 module.exports = registerRouter
