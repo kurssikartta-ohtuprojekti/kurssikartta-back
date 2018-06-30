@@ -10,6 +10,7 @@ const loginRouter = require('./routers/loginRouter')
 const courseRouter = require('./routers/courseRouter')
 const registerRouter = require('./routers/registerRouter')
 const personalCoursesRouter = require('./routers/personalCoursesRouter')
+const courseListRouter = require('./routers/courseListRouter')
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -18,6 +19,7 @@ app.use(loginRouter)
 app.use(matrixRouter)
 app.use(registerRouter)
 app.use(personalCoursesRouter)
+app.use(courseListRouter)
 
 
 app.get('/', (req, res) => {
@@ -25,7 +27,7 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/update', courseUpdate);
+// app.get('/update', courseUpdate);
 
 
 const server = require('http').createServer(app);
