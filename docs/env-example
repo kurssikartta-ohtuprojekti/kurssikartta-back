@@ -12,8 +12,8 @@ LOGIN_EXPIRATION_TIME = 2h
 
 ## username and & password settings
 
-PW_MIN_LENGTH = 8
-PW_MAX_LENGTH = 100
+PW_MIN_LENGTH = 6
+PW_MAX_LENGTH = 20
 # PW_VALIDATIONS = /\d/;/^[a-z0-9_]+$/i # not implemented – must be changed in code
 
 USERNAME_MIN_LENGTH = 3
